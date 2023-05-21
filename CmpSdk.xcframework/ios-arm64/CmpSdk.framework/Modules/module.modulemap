@@ -1,0 +1,6 @@
+framework module CmpSdk {
+  umbrella header "CmpSdk-umbrella.h"
+
+  export *
+  module * { export * }
+}
