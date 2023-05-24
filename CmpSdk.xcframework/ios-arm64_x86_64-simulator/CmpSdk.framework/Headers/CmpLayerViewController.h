@@ -12,7 +12,6 @@
 @protocol WKScriptMessageHandler;
 @class CmpConsentDto;
 @protocol CmpLayerViewControllerDelegate <NSObject>
-- (void)didReceivedConsentString:(CmpLayerViewController *)cmpLayerViewController consentString:(NSString *)consentString;
 - (void)didReceivedConsentDto:(CmpLayerViewController *)cmpLayerViewController:(CmpConsentDto *)cmpUserConsentDto;
 - (void)didFinishedLoading:(CmpLayerViewController *)cmpLayerViewController;
 - (void)cancelConsentLayer:(CmpLayerViewController *)cmpLayerViewController;
@@ -41,7 +40,9 @@
 
 @property(nonatomic, copy) void (^onCmpLayerOpen)(void);
 
-@property(nonatomic, copy) void (^onCheckApiResponse)(void);
+@property(nonatomic, copy) void (^onCheckApiResponseOpen)(void);
+
+@property(nonatomic, copy) void (^onCheckApiResponseNotOpen)(void);
 
 - (void)initWebView;
 - (void)reset;
