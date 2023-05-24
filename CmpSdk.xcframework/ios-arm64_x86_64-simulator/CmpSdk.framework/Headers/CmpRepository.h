@@ -29,6 +29,7 @@ static NSString *const CMP_REGULATION_STATUS = @"IABTCF_RegulationStatus";
 + (void)saveCmpUserConsent:(CmpConsentDto *)userConsent;
 + (CmpConsentDto *)fetchCmpUserConsent;
 + (NSString *)getCmpStringBase64Encoded;
++ (void)debugUserDefaults;
 + (void)removeCmpConsent;
 + (BOOL)hasConsent;
 @end

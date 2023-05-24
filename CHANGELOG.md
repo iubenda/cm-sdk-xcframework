@@ -12,6 +12,8 @@ All notable changes to this project will be documented in this file.
 
 ### Fixes
 - disablePurposeList and enablePurposeList fix
+- getDisableVendors and purpose fix
+- close Listener now executed correctly
 
 ### Version 1.6.3 (Released on 2023-05-14)
 
