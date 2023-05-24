@@ -839,13 +839,15 @@ extern CMPConsentTool *consentTool;
 /// Checks with the Consentmanager server, if the user needs to give a consent and the consent layer has to be opened
 ///
 /// - Parameter onCmpLayerOpen: callback when the consent layer needs to be open
-- (void)check:(void (^)(void))onCmpLayerOpen;
+/// - Parameter onCmpLayerNotOpen:callback when the consent layer don't need to be open
+- (void)check:(void (^)(void))onCmpLayerOpen onCmpLayerNotOpen:(void (^)(void))onCmpLayerNotOpen;
 
 /// Checks with the Consentmanager server, if the user needs to give a consent and the consent layer has to be opened
 ///
 /// - Parameter onCmpLayerOpen: Callback when the consent layer needs to be open. The block should have the following signature: `void (^)(CmpErrorType, NSString *)`
 /// - Parameter isCached: BOOL flag when TRUE, the request will be cached and the response will be saved
-- (void)check:(void (^)(void))onCmpLayerOpen isCached:(BOOL)isCached;
+/// - Parameter onCmpLayerNotOpen: Callback when the consent layer does not need to be open. The block should have the following signature: `void (^)(CmpErrorType, NSString *)`
+- (void)check:(void (^)(void))onCmpLayerOpen isCached:(BOOL)isCached onCmpLayerNotOpen:(void (^)(void))onCmpLayerNotOpen;
 
 /// Accepts the consent layer and behaves the same when the user `did accepts` the consent
 ///
