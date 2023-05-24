@@ -2,7 +2,59 @@
 
 All notable changes to this project will be documented in this file.
 
-### Version 1.6.0 
+### Version 1.6.4 (Released on 2023-05-24)
+
+### Added
+- updateVendor Parameter to updateVendors in disable/enable PurposeList API
+
+### Refactor
+- Documentation updates
+
+### Fixes
+- disablePurposeList and enablePurposeList fix
+
+### Version 1.6.3 (Released on 2023-05-14)
+
+### Added
+- Check API to requests server if consent layer needs to be open.
+- Adding enable and disable vendor and purpose with feedback callback
+- Check API caching feature
+- Adding design ID parameter to set consent design
+
+### Refactor
+- Remove Webview after disappear
+- Adding V4 URL for old Cmp Repository
+
+### Fixes
+- disableVendorList fix
+
+### Version 1.6.2 (Released on 2023-04-21)
+
+### Added
+- Check API to requests server if consent layer needs to be open.
+
+### Fixes
+- Bug regarding to fetch the Vendor and Purpose List
+
+### Version 1.6.1 (Released on 2023-04-12)
+
+### Refactor
+- Added old constructor API to CMPConsentTool
+
+#### Added
+- Feature new codeIds.
+- Cmp Error Types on error callback.
+- Cmp Button Event callbacks. Callback gives information about the user clicked button
+#### Refactor
+- Changed constructor calls. Chainable callbacks and removed autoupdate
+- Updated signature.
+- Synchronized API function naming.
+- Refactored signature of API functions, changed process of read write consent.
+- Refactored service class to singleton instance with listener properties.
+- Refactored internal naming and refactored backend consent process.
+- Changed signature of API functions getAgreed becomes getEnabled.
+
+### Version 1.6.0 (Released on 2023-03-17)
 
 #### Added
 - Feature new codeIds.
@@ -125,9 +177,9 @@ All notable changes to this project will be documented in this file.
 
 ### Version 1.2.6 (Released on 2022-01-03)
 #### Added
-- log verbose level 
+- log verbose level
 
-#### Fixed 
+#### Fixed
 - Additional process flow control
 
 ### Version 1.2.3 (Released on 2021-12-09)
@@ -135,7 +187,7 @@ All notable changes to this project will be documented in this file.
 - basic improvements and project cleanup
 
 ### Version 1.2.2 (Released on 2021-12-09)
-#### Fixed 
+#### Fixed
 - decode String bug
 
 #### Refactored
@@ -146,8 +198,8 @@ All notable changes to this project will be documented in this file.
 - Timeout for specific events
 
 ### Version 1.2.0 (Released on 2021-11-30)
-#### Added 
-- Placeholder feature 
+#### Added
+- Placeholder feature
 - ATT Support
 
 #### Changed
@@ -156,7 +208,7 @@ All notable changes to this project will be documented in this file.
 
 #### Refactored
 - Restructure Project
-- Improved performance of consentlayer 
+- Improved performance of consentlayer
 - Preparing for new Interface Structure
 
 ### Version 1.1.1 (Released on 2021-09-05)
