@@ -33,5 +33,9 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = "CmpSdk.xcframework"
   spec.platform = :ios
   spec.ios.deployment_target  = '11.0'
+  spec.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
