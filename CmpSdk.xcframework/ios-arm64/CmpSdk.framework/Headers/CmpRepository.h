@@ -24,12 +24,32 @@ static NSString *const PUBLISHER_CUSTOM_PURPOSES_LEGITIMATE_INTERESTS = @"IABTCF
 static NSString *const PURPOSE_ONE_TREATMENT = @"IABTCF_PurposeOneTreatment";
 static NSString *const USE_NONE_STANDARD_STACKS = @"IABTCF_UseNoneStandardStacks";
 static NSString *const CMP_REGULATION_STATUS = @"IABTCF_RegulationStatus";
+static NSString *const CMP_ACCEPTED = @"IABConsent_CMPAccepted";
+static NSString *const CONSENT_STRING = @"CMConsent_ConsentString";
 
 @interface CmpRepository : NSObject
 + (void)saveCmpUserConsent:(CmpConsentDto *)userConsent;
++ (void)removeCmpConsent;
+
++ (BOOL)saveMetadata:(CmpConsentDto *)userConsent;
++ (void)removeMetadata;
+
 + (CmpConsentDto *)fetchCmpUserConsent;
 + (NSString *)getCmpStringBase64Encoded;
-+ (void)debugUserDefaults;
-+ (void)removeCmpConsent;
+
 + (BOOL)hasConsent;
++ (void)reset;
+
++ (void)setConsentString:(NSString *)consentString;
++ (NSString *)getConsentString;
+
++ (void)setLastRequested:(NSString *)lastRequested;
++ (NSString *)lastRequested;
+
++ (void)setCmpPresent:(BOOL)cmpPresent;
+
++ (void)setNeedsAcceptance:(BOOL)needsAcceptance;
++ (BOOL)getNeedsAcceptance;
+
++ (void)debugUserDefaults;
 @end

@@ -14,14 +14,7 @@ FOUNDATION_EXPORT const unsigned char ConsentManagerVersionString[];
 
 #import <CmpSdk/CMPConsentTool.h>
 #import <CmpSdk/CMPConsentV2Constant.h>
-#import <CmpSdk/CMPConsentV2Parser.h>
-#import <CmpSdk/CMPDataStorageConsentManagerUserDefaults.h>
-#import <CmpSdk/CMPDataStoragePrivateUserDefaults.h>
-#import <CmpSdk/CMPDataStorageV1Protocol.h>
-#import <CmpSdk/CMPDataStorageV1UserDefaults.h>
-#import <CmpSdk/CMPDataStorageV2UserDefaults.h>
 #import <CmpSdk/CMPServerResponse.h>
-#import <CmpSdk/CMPSettings.h>
 #import <CmpSdk/CMPTypes.h>
 #import <CmpSdk/CmpButtonEvents.h>
 #import <CmpSdk/CmpConfig.h>
@@ -30,5 +23,3 @@ FOUNDATION_EXPORT const unsigned char ConsentManagerVersionString[];
 #import <CmpSdk/CmpReachability.h>
 #import <CmpSdk/CmpUtils.h>
 #import <CmpSdk/Metadata.h>
-#import <CmpSdk/PublisherRestriction.h>
-#import <CmpSdk/PublisherRestrictionTypeValue.h>

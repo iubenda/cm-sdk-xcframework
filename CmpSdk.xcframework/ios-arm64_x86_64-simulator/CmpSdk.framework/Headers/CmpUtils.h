@@ -30,12 +30,6 @@
 
 + (BOOL)isNetworkAvailable;
 
-+ (CMPServerResponse *)getAndSaveServerResponse:(void (^)(NSString *error))networkErrorListener serverErrorListener:(void (^)(
-                                                                                                                        NSString *error))serverErrorListener
-                                    withConsent:(NSString *)consent;
-
-+ (CMPServerResponse *)getServerResponse:(void (^)(CmpErrorType, NSString *))errorListener withConsent:(NSString *)consent;
-
 + (const char *)binaryConsentFrom:(NSString *)consentString;
 
 + (NSString *)binaryStringConsentFrom:(NSString *)consentString;

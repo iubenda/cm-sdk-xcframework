@@ -4,7 +4,6 @@
 //
 
 #import "CMPServerResponse.h"
-#import "CMPSettings.h"
 #import "CmpButtonEvents.h"
 #import "CmpConfig.h"
 #import "CmpConsentService.h"
@@ -39,7 +38,8 @@ extern CMPConsentTool *consentTool;
 @property(nonatomic, copy) void (^openListener)(void);
 
 /// If this listener is set, this listener will be called, apart from openening an own View
-@property(nonatomic, copy) void (^customOpenListener)(CMPSettings *settings) __attribute__((deprecated("Use -openListener, -closeListener instead. This method will be removed in future versions.")));
+@property(nonatomic, copy) void (^customOpenListener)(void);
+__attribute__((deprecated("Use -openListener, -closeListener instead. This method will be removed in future versions.")));
 ;
 
 /// Listener will be called, if an error occurs while calling the Server or showing the view.
@@ -693,7 +693,7 @@ extern CMPConsentTool *consentTool;
 ///
 /// - Parameters:
 ///     - listener: listener callback
-- (instancetype)withCustomOpenListener:(void (^)(CMPSettings *))listener __attribute__((deprecated("Use -openListener, -closeListener instead. This method will be removed in future versions.")));
+- (instancetype)withCustomOpenListener:(void (^)(void))listener __attribute__((deprecated("Use -openListener, -closeListener instead. This method will be removed in future versions.")));
 
 /// Adds a Cmp not opened callback to get notification when consent layer is not opening
 /// Most common reason is that the user already gave a consent
@@ -802,9 +802,10 @@ extern CMPConsentTool *consentTool;
 ///
 /// - Parameters:
 ///     - cmpData: Cmp data String base64 encoded
+///     - onFinish: Callback for handling consent received event. it will be called when consent is received and processed.
 /// - Use `exportCmpString`
 /// - Returns: Imports the given Cmp String
-- (BOOL)importCmpString:(NSString *)cmpData;
+- (void)importCmpString:(NSString *)cmpData :(void (^)(void))onFinish;
 
 /// Exports the CmpData String which can be imported by ``importCmpString:cmpData``
 ///

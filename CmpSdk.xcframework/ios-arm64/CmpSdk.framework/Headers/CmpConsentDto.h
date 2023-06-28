@@ -51,6 +51,7 @@
 - (NSString *)getAllVendors;
 - (NSArray *)getAllPurposeList;
 - (NSString *)getAllPurposes;
+- (NSDictionary *)getMetadata;
 
 #pragma mark Core
 - (NSString *)description;
