@@ -62,8 +62,6 @@
  */
 + (BOOL)isValid;
 
-+ (void)setSkipToCustomizePage;
-
 + (void)setCustomLayout:(CGRect)cl;
 
 + (CGRect)getCustomLayout;
@@ -86,7 +84,7 @@
 
 + (void)setAppleTrackingStatus:(NSUInteger)status;
 
-+ (void)setAutoAppleTracking:(BOOL)addAttActive;
++ (void)setAutoAppleTracking;
 
 + (BOOL)getAutoAppleTracking;
 
@@ -106,6 +104,8 @@
 + (NSString *)getConsentToolURLString:(NSString *)consent;
 
 + (NSInteger)getAppleTrackingStatus;
+
++ (void)setSkipToCustomizePage:(BOOL)toCustomizePage;
 
 + (BOOL)getSkipToCustomizePage;
 

@@ -13,7 +13,6 @@ FOUNDATION_EXPORT double ConsentManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char ConsentManagerVersionString[];
 
 #import <CmpSdk/CMPConsentTool.h>
-#import <CmpSdk/CMPConsentV2Constant.h>
 #import <CmpSdk/CMPServerResponse.h>
 #import <CmpSdk/CMPTypes.h>
 #import <CmpSdk/CmpButtonEvents.h>
