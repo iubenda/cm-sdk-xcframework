@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CmpSdk"
-  spec.version      = "1.7.2"
+  spec.version      = "1.7.3"
   spec.summary      = "Provides functionality to inform the user about data protection and collect consent from the user."
   spec.description  = <<-DESC
           The ConsentManager SDK for iOS apps implements and provides functionality to inform the user about data protection and ask and collect consent from the user.
@@ -28,10 +28,10 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "Skander Ben Abdelmalak" => "skander@consentmanager.net" }
 
-  spec.platform     = :ios, "11.0"
+  spec.platform     = :ios, "12.0"
   spec.source       = { :git => "https://github.com/iubenda/cm-sdk-xcframework.git", :tag => "#{spec.version}" }
   spec.vendored_frameworks = "CmpSdk.xcframework"
   spec.platform = :ios
-  spec.ios.deployment_target  = '11.0'
+  spec.ios.deployment_target  = '12.0'
 
 end

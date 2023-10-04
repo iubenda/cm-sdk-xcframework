@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+### Version 1.7.2 (Released on 2023-08-09)
+
+### Refactor
+
+- CmpConfig optimized
+
+### Version 1.7.1 (Released on 2023-07-04)
+
+### Fixes
+
+- Serialization fix for NSString 
+
+### Version 1.7.0 (Released on 2023-06-28)
+
+### Refactor
+
+- Refactoring Cmp consent process
+
 ### Version 1.6.4 (Released on 2023-05-24)
 
 ### Added
