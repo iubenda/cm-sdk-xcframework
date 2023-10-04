@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "CmpSdk",
     platforms: [
-        .iOS(.v11) // or the appropriate platform
+        .iOS(.v12) // or the appropriate platform
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
