@@ -1,6 +1,18 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+### Version 1.7.3 (Released on 2023-10-03)
+
+### Added
+- Feature & Stability Improvements: New enhancements added to the system.
+- Retry Logic: New retry mechanism introduced for better reliability.
+  
+### Refactor
+- Codebase: Significant refactoring done for improved code stability.
+- ViewController: Operations focused on refactoring the ViewController and streamlining debug logs.
+### Fixes
+- Deprecated Class Removal: An outdated class that was no longer in use has been removed.
+- Cleanup: General tidying up of the codebase.
 
 ### Version 1.7.2 (Released on 2023-08-09)
 
@@ -287,5 +299,4 @@ All notable changes to this project will be documented in this file.
 ### Version 0.0.1 (Released on 2021-02-27)
 #### Added
 - Providing integration through cocoapod
-
 
