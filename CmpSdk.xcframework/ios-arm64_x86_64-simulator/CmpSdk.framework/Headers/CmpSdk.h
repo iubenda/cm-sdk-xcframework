@@ -12,7 +12,6 @@ FOUNDATION_EXPORT double ConsentManagerVersionNumber;
 //! Project version string for ConsentManager.
 FOUNDATION_EXPORT const unsigned char ConsentManagerVersionString[];
 
-#import <CmpSdk/CMPTypes.h>
 #import <CmpSdk/CmpButtonEvents.h>
 #import <CmpSdk/CmpConfig.h>
 #import <CmpSdk/CmpErrorTypes.h>

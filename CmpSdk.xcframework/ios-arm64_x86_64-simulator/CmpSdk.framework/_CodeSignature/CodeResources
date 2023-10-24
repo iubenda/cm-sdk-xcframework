@@ -10,15 +10,7 @@
 		</data>
 		<key>Headers/CMPConsentTool.h</key>
 		<data>
-		GVO7gVR7awAKHZFs7cEk1WF1gTs=
-		</data>
-		<key>Headers/CMPConsentV2Constant.h</key>
-		<data>
-		aNoN2qjhf9/xv+lR7IV98ftspf8=
-		</data>
-		<key>Headers/CMPTypes.h</key>
-		<data>
-		acUJtGZBbxxkcq+UcZtbXdPYmRo=
+		/P2QrE6pbAsN2aTBw62DhH0CklM=
 		</data>
 		<key>Headers/CmpButtonEvents.h</key>
 		<data>
@@ -26,7 +18,7 @@
 		</data>
 		<key>Headers/CmpConfig.h</key>
 		<data>
-		vHYcaUTn1isACC0XTV2VMoOMa+g=
+		+K9kH05mk7cpQp7YKRng68cK7jM=
 		</data>
 		<key>Headers/CmpConsentDto.h</key>
 		<data>
@@ -54,15 +46,15 @@
 		</data>
 		<key>Headers/CmpSdk-umbrella.h</key>
 		<data>
-		Ac385sC4YHRLdX0C1+za8MnLW+U=
+		7Iiw8lQiVJKinLvRHJ317aoBuLc=
 		</data>
 		<key>Headers/CmpSdk.h</key>
 		<data>
-		WeSFf4Ck27VtxzcOWOcPT0jejkk=
+		99tBZj1uXLoEUhzuj05F+Xr3Cw0=
 		</data>
 		<key>Headers/CmpUtils.h</key>
 		<data>
-		1/7j4kpj3IDRxwvwi7DcguVgswA=
+		Y530Av2rDnwr7wbuD8xpRIrQsq4=
 		</data>
 		<key>Headers/Logger.h</key>
 		<data>
@@ -74,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/YsFGNpyByanc9muwATsq08d5lQ=
+		eoM0T8FtlTcNZev3r0nTyj9vW5k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -94,21 +86,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4+LnaFn03VmaaNlWXcqQvaWsIwnAHfL492X1CLSNf/U=
-			</data>
-		</dict>
-		<key>Headers/CMPConsentV2Constant.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Ncdnem2FFkTGdeTSBLEfWa7hkND+8Ps5CVyYUsPj3iw=
-			</data>
-		</dict>
-		<key>Headers/CMPTypes.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UcpQll51i+vSkDMjzxjM9mpP4/MhGysaoiJ5EJ0MpSQ=
+			av0Nv3Mv3G91GpnVBqbtcFdRbyZFIq5+IeXpCZ7T5W4=
 			</data>
 		</dict>
 		<key>Headers/CmpButtonEvents.h</key>
@@ -122,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QXTlARPwC4BNBiEQVC9atmdr1NUjzyGC+9BbVduBe1Y=
+			CPqcFF827lkkyFpjKQoIoM6tQBZO/bpkRX92lFU4VK0=
 			</data>
 		</dict>
 		<key>Headers/CmpConsentDto.h</key>
@@ -171,21 +149,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pQifgx6KOx1GV5ZBF2a/82ShmRjE6mQYC7Hmp4zP3H0=
+			74BzgpBUU6riwbJp9Tnetp+CdXcxgmbvQzezdMlbbfw=
 			</data>
 		</dict>
 		<key>Headers/CmpSdk.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cEhCHED4yEo+OeUr+wO9zplVwvrXC8mVFalFOADDcLM=
+			Fu41vfQBq2n4F1JXVwRtN+fGbF8s4MsWniVFPkgkHlo=
 			</data>
 		</dict>
 		<key>Headers/CmpUtils.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T75ob6FtjS68x2WeIx5G2XGyCDxWO3L7oktsCX+g6ls=
+			jCN7hZCUXeAt/XVZP2JKEaT7GEDN+Bq4KW4jTtd1Hws=
 			</data>
 		</dict>
 		<key>Headers/Logger.h</key>

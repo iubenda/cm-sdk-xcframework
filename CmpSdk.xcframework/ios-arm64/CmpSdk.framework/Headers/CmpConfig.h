@@ -100,11 +100,6 @@
  */
 + (void)setValues:(NSString *)domain addCodeId:(NSString *)appId addAppName:(NSString *)appName addLanguage:(NSString *)language;
 
-/**
- Returns the ConsentManager url String which needs to be called, to get the url for the consentView
- */
-+ (NSString *)getConsentToolURLString:(NSString *)consent;
-
 + (NSInteger)getAppleTrackingStatus;
 
 + (void)setSkipToCustomizePage:(BOOL)toCustomizePage;

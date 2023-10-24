@@ -709,6 +709,8 @@ extern CMPConsentTool *consentTool;
 /// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)` close listener callback
 - (void)openCmpConsentToolView:(void (^)(void))closeListener __attribute__((deprecated("Use `-openCmpConsentToolView` instead. This method will be removed in future versions.The closelistener should be already declared on instantiation")));
 
+- (void)requestATT;
+
 /// Get vendor ids comma separated
 ///
 /// - Returns: The Vendors `String`, that was set by consentmanager
