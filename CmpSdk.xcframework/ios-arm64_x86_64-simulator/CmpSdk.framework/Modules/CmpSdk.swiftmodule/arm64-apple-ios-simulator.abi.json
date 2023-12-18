@@ -1,0 +1,169 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CmpSdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 155,
+      "length": 17,
+      "value": "\"IABTCF_CmpSdkID\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 203,
+      "length": 22,
+      "value": "\"IABTCF_CmpSdkVersion\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 255,
+      "length": 22,
+      "value": "\"IABTCF_PolicyVersion\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 305,
+      "length": 20,
+      "value": "\"IABTCF_gdprApplies\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 353,
+      "length": 20,
+      "value": "\"IABTCF_PublisherCC\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 398,
+      "length": 17,
+      "value": "\"IABTCF_TCString\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 446,
+      "length": 23,
+      "value": "\"IABTCF_VendorConsents\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 512,
+      "length": 34,
+      "value": "\"IABTCF_VendorLegitimateInterests\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 578,
+      "length": 24,
+      "value": "\"IABTCF_PurposeConsents\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 646,
+      "length": 35,
+      "value": "\"IABTCF_PurposeLegitimateInterests\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 721,
+      "length": 30,
+      "value": "\"IABTCF_SpecialFeaturesOptIns\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 789,
+      "length": 32,
+      "value": "\"IABTCF_PublisherRestrictions%d\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 873,
+      "length": 25,
+      "value": "\"IABTCF_PublisherConsent\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 944,
+      "length": 37,
+      "value": "\"IABTCF_PublisherLegitimateInterests\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 1031,
+      "length": 40,
+      "value": "\"IABTCF_PublisherCustomPurposesConsents\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 1133,
+      "length": 51,
+      "value": "\"IABTCF_PublisherCustomPurposesLegitimateInterests\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 1221,
+      "length": 28,
+      "value": "\"IABTCF_PurposeOneTreatment\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 1289,
+      "length": 30,
+      "value": "\"IABTCF_UseNoneStandardStacks\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 1356,
+      "length": 25,
+      "value": "\"IABTCF_RegulationStatus\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 1428,
+      "length": 25,
+      "value": "\"CMConsent_ConsentString\""
+    },
+    {
+      "filePath": "\/Users\/skanderbenabdelmalak\/Development\/Customer\/jWinkler\/ios\/V2CmpSdk\/CmpSdk\/CmpSdk\/Classes\/Repository\/CmpRepository.swift",
+      "kind": "StringLiteral",
+      "offset": 1489,
+      "length": 18,
+      "value": "\"cmp_user_consent\""
+    }
+  ]
+}
