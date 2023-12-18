@@ -4,3 +4,8 @@ framework module CmpSdk {
   export *
   module * { export * }
 }
+
+module CmpSdk.Swift {
+  header "CmpSdk-Swift.h"
+  requires objc
+}

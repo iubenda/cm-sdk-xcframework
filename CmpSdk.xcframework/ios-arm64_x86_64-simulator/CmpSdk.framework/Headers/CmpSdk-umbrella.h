@@ -10,21 +10,7 @@
 #endif
 #endif
 
-#import "CmpConfig.h"
-#import "CMPConsentTool.h"
-#import "CmpButtonEvents.h"
-#import "CmpErrorTypes.h"
-#import "ATTrackingHelper.h"
-#import "Logger.h"
-#import "CmpReachability.h"
-#import "CmpUtils.h"
-#import "CmpConsentDto.h"
-#import "Metadata.h"
-#import "CmpLayerViewController.h"
-#import "CmpRepository.h"
-#import "CmpConsentService.h"
-#import "CmpSdk.h"
-
+#import <CmpSdk/Cmpsdk.h>
 FOUNDATION_EXPORT double CmpSdkVersionNumber;
 FOUNDATION_EXPORT const unsigned char CmpSdkVersionString[];
 

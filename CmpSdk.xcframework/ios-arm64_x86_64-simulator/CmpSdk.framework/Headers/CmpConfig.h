@@ -1,115 +1,56 @@
 //
 //  CmpConfig.h
-//  GDPR
+//  CmpSdk
 //
-
+//  Created by Skander Ben Abdelmalak on 12.12.23.
+//
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CmpSdk/CmpLogLevel.h>
+#import <CmpSdk/CmpLayout.h>
+NS_ASSUME_NONNULL_BEGIN
 
-/**
- Object that provides the interface for storing and retrieving GDPR-related information
- */
 @interface CmpConfig : NSObject
 
-/**
- NSURL that is used to create and load the request into the WKWebView – it is the request for the consent webpage. This property is mandatory.
- */
-@property(class) NSString *domain;
+@property (class, nonatomic, readonly) CmpConfig *sharedConfig;
 
-/**
- Language that is used to create and load the request into the WKWebView – it is the request for the consent webpage. This property is mandatory.
- */
+@property (nonatomic, strong, readonly) NSString *id;
+@property (nonatomic, strong, readonly) NSString *domain;
+@property (nonatomic, strong, readonly) NSString *appName;
+@property (nonatomic, strong, readonly) NSString *language;
+@property (nonatomic, strong, readonly) NSString *packageName;
+// General configurations
+@property (nonatomic, strong, nullable) NSString *idfa;
+@property (nonatomic, assign) BOOL isDebugMode;
+@property (nonatomic, assign) CmpLogLevel logLevel;
+// ATT
+@property (nonatomic, assign) BOOL isAutomaticATTRequest;
+// Webview configurations
+@property (nonatomic, assign) NSInteger timeout;
+@property (nonatomic, assign) NSInteger maxRetries;
+@property (nonatomic, assign) NSInteger retryDelay;
+@property (nonatomic, strong, nullable) NSString *designId;
+@property (nonatomic, assign) BOOL isJumpToSettingsPage;
 
-@property(class) NSString *language;
+// Layout configurations
+@property (nonatomic, strong) CmpLayout *cmpLayout;
 
-/**
- Color that is used for the background of the WKWebView
- */
-@property(class) UIColor *backgroundColor;
-/**
- AppName that is used to create and load the request into the WKWebView – it is the request for the consent webpage. This property is mandatory.
- */
-@property(class) NSString *appName;
+- (CmpConfig *)setupWithId:(NSString *)id domain:(NSString *)domain appName:(NSString *)appName language:(NSString *)language;
 
-/**
- User ID that is used to create and load the request into the WKWebView – it is the request for the consent webpage. This property is mandatory.
- */
-@property(class) NSString *codeId;
+- (CmpConfig *)withTimeout:(NSTimeInterval)timeout;
+- (CmpConfig *)withJumpToSettingsPage:(BOOL)jumpToSettingsPage;
+- (CmpConfig *)withDebugMode:(BOOL)debugMode;
+- (CmpConfig *)withDesignId:(NSString *)designId;
+- (CmpConfig *)withAutomaticATTRequest:(BOOL)isAutomaticATTRequest;
+- (CmpConfig *)withRetryDelay:(NSInteger)retryDelay;
+- (CmpConfig *)withMaxRetries:(NSInteger)maxRetries;
 
-+ (void)setDomain:(NSString *)consentToolDomain;
-
-+ (NSString *)domain;
-
-+ (void)setCodeId:(NSString *)consentToolId;
-
-+ (NSString *)codeId;
-
-+ (void)setAppName:(NSString *)consentToolAppName;
-
-+ (NSString *)appName;
-
-+ (void)setLanguage:(NSString *)consentToolLanguage;
-
-+ (UIColor *)backgroundColor;
-
-+ (void)setBackgroundColor:(UIColor *)backgroundColor;
-
-+ (NSString *)language;
-
-+ (long)timeout;
-
-/**
- Returns if all Config parameter are set
- */
-+ (BOOL)isValid;
-
-+ (void)setCustomLayout:(CGRect)cl;
-
-+ (CGRect)getCustomLayout;
-
-+ (void)removeCustomLayout;
-
-+ (BOOL)hasCustomLayout;
-/**
- Returns the Advertising Device ID
- */
-+ (void)setIDFA:(NSString *)setIDFA;
-
-+ (NSString *)getIdfa;
-
-- (CmpConfig *)setTimeout:(long)t;
-
-+ (void)setDesignId:(NSString *)design;
-
-+ (NSString *)getDesignId;
-
-+ (void)setAppleTrackingStatus:(NSUInteger)status;
-
-+ (void)setAutoAppleTracking;
-
-+ (BOOL)getAutoAppleTracking;
-
-+ (NSInteger)getVerboseLevel;
-
-+ (long)getTimeout;
-
-+ (long)getRetryDelay;
-
-+ (void)setVerboseLevel:(NSInteger)level;
-/**
- Creates a new singleton Instance from the config and returns this
- */
-+ (void)setValues:(NSString *)domain addCodeId:(NSString *)appId addAppName:(NSString *)appName addLanguage:(NSString *)language;
-
-+ (NSInteger)getAppleTrackingStatus;
-
-+ (void)setSkipToCustomizePage:(BOOL)toCustomizePage;
-
-+ (BOOL)getSkipToCustomizePage;
-
-+ (void)setModalTransitionStyle:(NSInteger)style;
-
-+ (NSInteger)getModalTransitionStyle;
-
-+ (NSString *)description;
+- (CmpLayout *)getCmpLayout;
+- (BOOL)isValid;
+- (void)setJumpToSettingsPage;
+- (void)enableDebugMode;
+- (void)reset;
 
 @end
+
+NS_ASSUME_NONNULL_END

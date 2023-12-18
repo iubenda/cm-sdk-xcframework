@@ -2,17 +2,19 @@
 //  CMPConsentTool.h
 //  GDPR
 //
-
-#import "CmpButtonEvents.h"
-#import "CmpConfig.h"
-#import "CmpConsentService.h"
-#import "CmpErrorTypes.h"
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
-
+#import <CmpSdk/CmpButtonEvent.h>
+#import <CmpSdk/CmpConfig.h>
+#import <CmpSdk/CmpErrorTypes.h>
+#import <CmpSdk/CmpCallbackTypes.h>
+#import <CmpSdk/CmpEventListenerTypes.h>
 #define UIKitLocalizedString(key) [[NSBundle bundleWithIdentifier:@"com.apple.UIKit"] localizedStringForKey:key value:@"" table:nil]
+
+typedef void (^CmpViewControllerConfigurationBlock)(UIViewController *viewController);
+typedef void (^CmpUIViewConfigurationBlock)(UIView *view);
 
 @class CmpLayerViewController;
 
@@ -24,622 +26,6 @@ extern CMPConsentTool *consentTool;
 
 /// The Config set to the CMPConsentTool while initialisation
 @property(nonatomic, retain) CmpConfig *cmpConfig;
-
-@property(nonatomic, weak) UIViewController *viewController;
-
-@property(nonatomic, strong) CmpConsentService *consentServiceInstance;
-
-/// This listener will be called, if the View of the consentTool will be closed
-@property(nonatomic, copy) void (^closeListener)(void);
-
-/// This listener will be called, if the View of the consentTool will be opened
-@property(nonatomic, copy) void (^openListener)(void);
-
-/// Listener will be called, if an error occurs while calling the Server or showing the view.
-@property(nonatomic, copy) void (^errorListener)(CmpErrorType errorType, NSString *errorMessage);
-
-/// Listener for Event when CMP doesn't need to be opened
-@property(nonatomic, copy) void (^onCMPNotOpenedListener)(void);
-
-/// Listener for Event when Button is clicked and Consent layer is closing
-@property(nonatomic, copy) void (^onCmpButtonClickedCallback)(CmpButtonEvent event);
-
-#pragma mark - init < 1.6.0
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: String cmp domain
-/// - Parameter cmpId: String cmp id
-/// - Parameter appName: String App name
-/// - Parameter language: String language
-/// - Parameter idfa: String IDFA String String IDFA String
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addIDFA:(NSString *)idfa addViewController:(UIViewController *)viewController addOpenListener:(void (^)(
-                                                                                                                                                                                                                        void))openListener
-     addCloseListener:(void (^)(void))closeListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config: ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOpenListener:(void (^)(
-                                                                                                                                     void))openListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addCloseListener:(void (^)(
-                                                                                                                                      void))closeListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOnCMPNotOpenedListener:(void (^)(
-
-                                                                                                                                               void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOpenListener:(void (^)(
-                                                                                                                                     void))openListener
-      addCloseListener:(void (^)(void))closeListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOpenListener:(void (^)(
-                                                                                                                                     void))openListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addCloseListener:(void (^)(
-                                                                                                                                      void))closeListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController addOpenListener:(void (^)(void))openListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController addCloseListener:(void (^)(void))closeListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController addOpenListener:(void (^)(void))openListener addCloseListener:(void (^)(
-                                                                                                                                                       void))closeListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController addOpenListener:(void (^)(
-                                                                                                         void))openListener
-             addCloseListener:(void (^)(void))closeListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController addOpenListener:(void (^)(void))openListener addOnCMPNotOpenedListener:(void (^)(
-
-                                                                                                                                                                void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOpenListener:(void (^)(
-                                                                                                                                     void))openListener
-             addCloseListener:(void (^)(void))closeListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController addCloseListener:(void (^)(void))closeListener addOnCMPNotOpenedListener:(void (^)(
-                                                                                                                                                                  void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Parameter backendVerification: If enabled the consentmanager server will be requested to check if the consent layer needs to be opened
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController addOpenListener:(void (^)(
-                                                                                                         void))openListener
-             addCloseListener:(void (^)(void))closeListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener
-       addBackendVerification:(Boolean)backendVerification;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController addOpenListener:(void (^)(
-                                                                                                                                                                                               void))openListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController addCloseListener:(void (^)(
-                                                                                                                                                                                                void))closeListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController addOpenListener:(void (^)(
-                                                                                                                                                                                               void))openListener
-     addCloseListener:(void (^)(void))closeListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController addOnCMPNotOpenedListener:(void (^)(
-                                                                                                                                                                                                         void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController addOpenListener:(void (^)(
-                                                                                                                                                                                               void))openListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController addOpenListener:(void (^)(
-                                                                                                                                                                                               void))openListener
-             addCloseListener:(void (^)(void))closeListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOpenListener:(void (^)(
-                                                                                                                                                                                                                           void))openListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addCloseListener:(void (^)(
-                                                                                                                                                                                                                            void))closeListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOpenListener:(void (^)(
-                                                                                                                                                                                                                           void))openListener
-     addCloseListener:(void (^)(void))closeListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOnCMPNotOpenedListener:(void (^)(
-                                                                                                                                                                                                                                     void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOpenListener:(void (^)(
-                                                                                                                                                                                                                           void))openListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addCloseListener:(void (^)(
-                                                                                                                                                                                                                            void))closeListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOpenListener:(void (^)(
-                                                                                                                                                                                                                           void))openListener
-             addCloseListener:(void (^)(void))closeListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter idfa: IDFA `String`
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addIDFA:(NSString *)idfa addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter idfa: IDFA `String`
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addIDFA:(NSString *)idfa addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOpenListener:(void (^)(
-                                                                                                                                                                                                                                                    void))openListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter idfa: IDFA `String`
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addIDFA:(NSString *)idfa addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addCloseListener:(void (^)(
-                                                                                                                                                                                                                                                     void))closeListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter idfa: IDFA `String`
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addIDFA:(NSString *)idfa addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOnCMPNotOpenedListener:(void (^)(
-                                                                                                                                                                                                                                                              void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter idfa: IDFA `String`
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addIDFA:(NSString *)idfa addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addCloseListener:(void (^)(
-                                                                                                                                                                                                                                                     void))closeListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter idfa: IDFA `String`
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addIDFA:(NSString *)idfa addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOpenListener:(void (^)(
-                                                                                                                                                                                                                                                    void))openListener
-     addCloseListener:(void (^)(void))closeListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter idfa: IDFA `String`
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addIDFA:(NSString *)idfa addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOpenListener:(void (^)(
-                                                                                                                                                                                                                                                    void))openListener
-             addCloseListener:(void (^)(void))closeListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter idfa: IDFA `String`
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addIDFA:(NSString *)idfa addViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOpenListener:(void (^)(
-                                                                                                                                                                                                                                                    void))openListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter idfa: IDFA `String`
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addIDFA:(NSString *)idfa addViewController:(UIViewController *)viewController addCloseListener:(void (^)(
-                                                                                                                                                                                                                         void))closeListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController addCloseListener:(void (^)(
-                                                                                                                                                                                                void))closeListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Parameter errorListener: Callback to add action if an error occurred. The block should have the following signature: `void (^)(CmpErrorType, NSString *)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOpenListener:(void (^)(
-                                                                                                                                     void))openListener
-      addCloseListener:(void (^)(void))closeListener
-      addErrorListener:(void (^)(CmpErrorType, NSString *))errorListener;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter domain: `String` cmp domain
-/// - Parameter cmpId: `String` cmp id
-/// - Parameter appName: `String` App name
-/// - Parameter language: `String` language for the consentlayer
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Parameter backendVerification: If enabled the consentmanager server will be requested to check if the consent layer needs to be opened
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(NSString *)domain addId:(NSString *)cmpId addAppName:(NSString *)appName addLanguage:(NSString *)language addViewController:(UIViewController *)viewController addCloseListener:(void (^)(
-                                                                                                                                                                                                void))closeListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener
-      addBackendeVerification:(Boolean)backendVerification;
-
-/// Initializes a new instance of the class
-///
-/// - Parameter config ``CmpConfig`` instance
-/// - Parameter viewController: `UViewController` instance
-/// - Parameter autoupdate: Performs an automatic check to determine if the user needs to provide consent.
-/// - Parameter openListener: Callback which will be called when the consent layer is opened: The block should have the following signature: `void (^)(void)`.
-/// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)`
-/// - Parameter onCMPNotOpenedListener: Callback which will be called when the consent layer is `not opened`: The block should have the following signature: `void (^)(void)`
-/// - Parameter errorListener: Callback to add action if an error occurred. The block should have the following signature: `void (^)(CmpErrorType, NSString *)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController autoupdate:(BOOL)autoupdate addOpenListener:(void (^)(
-                                                                                                                                     void))openListener
-             addCloseListener:(void (^)(void))closeListener
-    addOnCMPNotOpenedListener:(void (^)(void))onCMPNotOpenedListener
-             addErrorListener:(void (^)(CmpErrorType, NSString *))errorListener;
-
-/// Initializes a new instance of the class
-/// - Parameters:
-///     - cmpConfig:  ``CmpConfig`` object.
-///     - viewController: `UIViewController` instance
-///     - errorListener: Callback to add action if an error occurred. The block should have the following signature: `void (^)(CmpErrorType, NSString *)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)init:(CmpConfig *)config withViewController:(UIViewController *)viewController addErrorListener:(void (^)(
-                                                                                                          CmpErrorType,
-                                                                                                          NSString *))errorListener;
-
-#pragma mark - initialize 1.6.0
 
 /// Initializes a new instance of the class with the specified CMP domain, code ID, app name, language, and view controller.
 ///
@@ -653,8 +39,7 @@ extern CMPConsentTool *consentTool;
 - (instancetype)initWithDomain:(NSString *)domain
                         codeId:(NSString *)codeId
                        appName:(NSString *)appName
-                      language:(NSString *)language
-                viewController:(UIViewController *)viewController;
+                      language:(NSString *)language;
 
 ///
 /// Initializes a new instance of the class with the specified ``CmpConfig`` and view controller.
@@ -663,8 +48,7 @@ extern CMPConsentTool *consentTool;
 ///     - cmpConfig: The ``CmpConfig`` object.
 ///     - viewController: `UIViewController` instance
 /// - Returns: ``CMPConsentTool`` instance
-- (instancetype)initWithCmpConfig:(CmpConfig *)cmpConfig
-                   viewController:(UIViewController *)viewController;
+- (instancetype)initWithCmpConfig:(CmpConfig *)cmpConfig;
 
 /// Adds a close listener to receive notifications when the consent layer is being closed.
 ///
@@ -693,6 +77,14 @@ extern CMPConsentTool *consentTool;
 /// - Parameter onCmpButtonClickedCallback: Callback that will be invoked with the ``CmpButtonEvent`` indicating which button was pressed. The block should have the following signature: `void (^)(CmpButtonEvent)`
 - (instancetype)withOnCmpButtonClickedCallback:(void (^)(CmpButtonEvent))onCmpButtonClickedCallback;
 
+/// Add a Cmp Button clicked callback to get notification which button was clicked in the consent layer
+/// - Parameter onCmpButtonClickedCallback Callback
+- (instancetype)withOnCmpATTrackingStatusChangedCallback:(CmpATTrackingStatusChangedListener)onATTrackingStatusChanged API_AVAILABLE(ios(14));
+  
+- (instancetype)withCmpViewControllerConfigurationBlock:(CmpViewControllerConfigurationBlock)controllerConfigurationBlock;
+
+- (instancetype)withCmpViewConfigurationBlock:(CmpUIViewConfigurationBlock)viewConfigurationBlock;
+  
 /// Initialize function will initialize the consent layer and checks automatically if the user needs a consent or not. This function will eventually open the consent layer and
 /// will interact wit the Apple Tracking Transparency API to ask the user for Consent
 ///
@@ -708,8 +100,6 @@ extern CMPConsentTool *consentTool;
 ///
 /// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)` close listener callback
 - (void)openCmpConsentToolView:(void (^)(void))closeListener __attribute__((deprecated("Use `-openCmpConsentToolView` instead. This method will be removed in future versions.The closelistener should be already declared on instantiation")));
-
-- (void)requestATT;
 
 /// Get vendor ids comma separated
 ///
@@ -785,7 +175,7 @@ extern CMPConsentTool *consentTool;
 ///     - onFinish: Callback for handling consent received event. it will be called when consent is received and processed.
 /// - Use `exportCmpString`
 /// - Returns: Imports the given Cmp String
-- (void)importCmpString:(NSString *)cmpData :(void (^)(void))onFinish;
+- (void)importCmpString:(NSString *)cmpString completion:(CmpImportCompletionHandler)completionHandler;
 
 /// Exports the CmpData String which can be imported by ``importCmpString:cmpData``
 ///
@@ -796,21 +186,15 @@ extern CMPConsentTool *consentTool;
 /// Checks if the consent layer was called today
 ///
 /// - Returns: TRUE if the CMPConsent Manager Server was requested today, otherwise FALSE
-- (BOOL)calledThisDay;
+- (BOOL)consentRequestedToday;
 
 /// Checks if the user needs acceptance
 ///
 /// - Returns:TRUE if the user needs to give a consent.
-- (BOOL)needsAcceptance;
+- (BOOL)isConsentRequired;
 
 /// Resets all data set by the ``CMPConsentTool``
 + (void)reset;
-
-/// Sets the errorlistener callback
-///
-/// - Parameter errorListener: Callback to add action if an error occurred. The block should have the following signature: `void (^)(CmpErrorType, NSString *)`
-/// - Returns: ``CMPConsentTool`` instance
-- (id)errorListener:(void (^)(CmpErrorType, NSString *))errorListener;
 
 /// Rejects the consent layer and behaves the same when the user `did not accept` the consent
 ///
@@ -960,4 +344,11 @@ extern CMPConsentTool *consentTool;
 /// - Returns: consent String
 - (NSString *)getConsentString;
 
+#pragma mark ATTracking
+
+- (void)requestATTPermissionWithCompletion:(void (^)(ATTrackingManagerAuthorizationStatus status))completion API_AVAILABLE(ios(14));
+
+- (NSDate *)getLastATTRequestDate;
+
+- (NSDate *)getLastConsentRequest;
 @end
