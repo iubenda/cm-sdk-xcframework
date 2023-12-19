@@ -8,6 +8,26 @@
 		<data>
 		3PEuqJAH+XKv0T5ow6RG4VPQ41c=
 		</data>
+		<key>Headers/CmpATTrackingManager.h</key>
+		<data>
+		BuziYoKEjOJXOpeQJQuU6H11vy0=
+		</data>
+		<key>Headers/CmpATTrackingStatus.h</key>
+		<data>
+		yuoHkERhs3uefi+FCFg9grD7M04=
+		</data>
+		<key>Headers/CmpAcceptRejectUseCaseProtocol.h</key>
+		<data>
+		eON5uL0eklWDbwR6V7iR0qIa3vs=
+		</data>
+		<key>Headers/CmpAcceptRejectUseCaseStrategy.h</key>
+		<data>
+		LyBOJD/LryNQiCyug7dLEVsID4Q=
+		</data>
+		<key>Headers/CmpBaseStrategy.h</key>
+		<data>
+		cfKyBIJz66h/Md0mjP+ZOh99+iE=
+		</data>
 		<key>Headers/CmpButtonEvent.h</key>
 		<data>
 		WXtxvrK0kozRXgcsco2Jftro4cg=
@@ -20,6 +40,18 @@
 		<data>
 		9uWHTeBTvSjfmkiq0A5jp75S3fs=
 		</data>
+		<key>Headers/CmpChangeItemFactory.h</key>
+		<data>
+		9WMC/cRoompE5JT+0LLHGGGlnAM=
+		</data>
+		<key>Headers/CmpCheckConsentUseCaseProtocol.h</key>
+		<data>
+		e//N76e2voGsGoYjQg2Xd0LzlvE=
+		</data>
+		<key>Headers/CmpCheckConsentUseCaseStrategy.h</key>
+		<data>
+		3N/MUz6cu6X0N2n9yaDZ83cwOJY=
+		</data>
 		<key>Headers/CmpConfig.h</key>
 		<data>
 		g+ISiqmIt5kQTitUVcOZ8nrtU78=
@@ -28,9 +60,49 @@
 		<data>
 		niQVF45wEw2hi0qorYpI7rm5Pqo=
 		</data>
+		<key>Headers/CmpConsentChangeInfoFactory.h</key>
+		<data>
+		IItKr/ls3dD39DQOfuNlDtEtbmA=
+		</data>
+		<key>Headers/CmpConsentChangeInfoNotifier.h</key>
+		<data>
+		p7fVmux+A86MYsxTCw/8LpVkMuM=
+		</data>
+		<key>Headers/CmpConsentChangeResult.h</key>
+		<data>
+		W/B/v2ATYLLSlT4Apl+Rx4SU8po=
+		</data>
+		<key>Headers/CmpConsentDTO.h</key>
+		<data>
+		3vLNMd8LMn+jTREODVsHiCZ/Fl0=
+		</data>
+		<key>Headers/CmpConstants.h</key>
+		<data>
+		Uw1Xx+I0cxGoxtUPsXgP2OlaMfU=
+		</data>
+		<key>Headers/CmpDryCheckUseCaseProtocol.h</key>
+		<data>
+		vdIrygZAp4vKYNaR4PVEid42tpo=
+		</data>
+		<key>Headers/CmpDryCheckUseCaseStrategy.h</key>
+		<data>
+		WoO8KmRifpnLZnvGw6A4XknyRs8=
+		</data>
+		<key>Headers/CmpEnableDisableUseCaseProtocol.h</key>
+		<data>
+		SJca18B0TWq9M9oBMknaQotgh9E=
+		</data>
+		<key>Headers/CmpEnableDisableUseCaseStrategy.h</key>
+		<data>
+		2LzMSsCOwDvrfPLr/ALD2eWTVoM=
+		</data>
 		<key>Headers/CmpErrorTypes.h</key>
 		<data>
 		dxWubJTs0XX9tqUOdY6jPNW9QJg=
+		</data>
+		<key>Headers/CmpEventBus.h</key>
+		<data>
+		kzZUhgndxN+Eir+ZoILGeup1pP4=
 		</data>
 		<key>Headers/CmpEventListenerTypes.h</key>
 		<data>
@@ -40,9 +112,41 @@
 		<data>
 		gnIBHc7dwGYgzFYF+a0OnqATbCY=
 		</data>
+		<key>Headers/CmpEventMetadataFactory.h</key>
+		<data>
+		7WQs967pFyRXMvE641Rn/ovcSSE=
+		</data>
+		<key>Headers/CmpEventRepository.h</key>
+		<data>
+		O1rg6SpNCby2YnN3GAUEiNhqx2A=
+		</data>
+		<key>Headers/CmpEventType.h</key>
+		<data>
+		nDyqUwndNGC1al/F0Y9npkvhCLM=
+		</data>
+		<key>Headers/CmpEventsProtocol.h</key>
+		<data>
+		B/JXvFCymSqJiLu9yfjrPtfpY/M=
+		</data>
+		<key>Headers/CmpFrameworkDescriptionRepository.h</key>
+		<data>
+		WFDVuDDqkwidIiQw1OEvFYHWadE=
+		</data>
+		<key>Headers/CmpImportUseCaseProtocol.h</key>
+		<data>
+		wamyH7JcVuzM8MtBcpRBur9E3qs=
+		</data>
+		<key>Headers/CmpImportUseCaseStrategy.h</key>
+		<data>
+		KmkkLhy7dMshT6FEQD1qfeOLO1k=
+		</data>
 		<key>Headers/CmpLayout.h</key>
 		<data>
 		ztw0hIlRBgJyyo+eyR03mE7PJmc=
+		</data>
+		<key>Headers/CmpLayoutAnimationStyle.h</key>
+		<data>
+		ifzHZLj7063NDpEoX/aUZCEG9Dk=
 		</data>
 		<key>Headers/CmpLog.h</key>
 		<data>
@@ -52,9 +156,25 @@
 		<data>
 		ibJCId+nTYKOCdnqdB6LUyhvkKM=
 		</data>
+		<key>Headers/CmpMigrationManager.h</key>
+		<data>
+		7PVcSBl+Oh3td0z6zN+m2rFDCEc=
+		</data>
 		<key>Headers/CmpNotificationConstants.h</key>
 		<data>
 		6vacpnBpnr7sRUG9yMghf7GU7M0=
+		</data>
+		<key>Headers/CmpReachability.h</key>
+		<data>
+		+kRz/pHBMudgxFwlpDRJNAp4xIQ=
+		</data>
+		<key>Headers/CmpRepository.h</key>
+		<data>
+		c+4lcXvFBaO3ma7Q5wt7Mb9Irgc=
+		</data>
+		<key>Headers/CmpRepositoryProtocol.h</key>
+		<data>
+		O0RUpZOd1glwoJ1Zl2vaIpxyQM8=
 		</data>
 		<key>Headers/CmpSdk-Swift.h</key>
 		<data>
@@ -62,55 +182,111 @@
 		</data>
 		<key>Headers/CmpSdk-umbrella.h</key>
 		<data>
-		rfeL1y7clklE6t/+r4sgWbykxpE=
+		oI7L4aj6y+cZK2Eiv05x9ep9kf8=
 		</data>
-		<key>Headers/CmpSdk.h</key>
+		<key>Headers/CmpService.h</key>
 		<data>
-		sI9HdAKlnJO2WvdkoN5KGm/eqI4=
+		H84vggmPuMFaV9rl/XGP315jDE4=
+		</data>
+		<key>Headers/CmpStore.h</key>
+		<data>
+		w5f5RucS/0jKzB5cu9bsEhkfAJY=
+		</data>
+		<key>Headers/CmpTCFConsentData.h</key>
+		<data>
+		fH/Ndn0+m+Msd6ALmnfAJepA62E=
+		</data>
+		<key>Headers/CmpUrlBuilder.h</key>
+		<data>
+		b7aLn1eaH+J63EmuyPgEUkvcOBg=
+		</data>
+		<key>Headers/CmpUrlParams.h</key>
+		<data>
+		OifVEyVWlyAlJw7msB2gpxMuKCg=
+		</data>
+		<key>Headers/CmpUseCase.h</key>
+		<data>
+		VuCdA/GeUTaumqu4Eowr9B0fkOc=
+		</data>
+		<key>Headers/CmpUtils.h</key>
+		<data>
+		DZOXb2YVLyGPcB7uKG0mijU07s4=
+		</data>
+		<key>Headers/CmpViewConfigurationBlock.h</key>
+		<data>
+		gjX3w6CRWm2zq/TUlMlZZIW6Xo8=
+		</data>
+		<key>Headers/CmpWebViewEventListenerTypes.h</key>
+		<data>
+		fTBmAfXsvdsmYxJX/U3BkKXTlm8=
+		</data>
+		<key>Headers/Metadata.h</key>
+		<data>
+		T8oNVnPe6nCA0Bwn+e/pxKDY+to=
+		</data>
+		<key>Headers/NSObject+DictionaryRepresentation.h</key>
+		<data>
+		NcT5dY1AEVlzCSm525/ABRYugh8=
+		</data>
+		<key>Headers/V2CmpEventHandler.h</key>
+		<data>
+		FlT2SkmzBgQfOsnAFge6EQzKC00=
+		</data>
+		<key>Headers/V2CmpUseCaseProtocol.h</key>
+		<data>
+		DaFFp4wl/cFV2Y9w4V4in+r5prI=
+		</data>
+		<key>Headers/V2CmpViewController.h</key>
+		<data>
+		K4w+Ftfuu3/UKy511+Bfl7UdBog=
+		</data>
+		<key>Headers/V2WebViewManager.h</key>
+		<data>
+		yiJtF+noNZarXg0vSuLQ2kdFWBI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5IJAv5wydFfGVMS9+DFh40Km24k=
+		BcOn6Cl+44E464Rp5qExxAgnQog=
 		</data>
 		<key>Modules/CmpSdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		E0j8AI9UE5aOfdjrGc6nVviyktE=
+		g4tDetOlAyuywaz5iOcjscdd5mM=
 		</data>
 		<key>Modules/CmpSdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3Uh0waKv8e0b4RppDLWxDGACe2g=
+		ldk36GO3+Vea09e3+O1X+INg+eE=
 		</data>
 		<key>Modules/CmpSdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3oAn1SFt/Iho2FVdBeRlzBWacOw=
+		cz9mXnh+FHjQcnFyM9OzNiV70Og=
 		</data>
 		<key>Modules/CmpSdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3Uh0waKv8e0b4RppDLWxDGACe2g=
+		ldk36GO3+Vea09e3+O1X+INg+eE=
 		</data>
 		<key>Modules/CmpSdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DPr+UPdodDvuXRsM00oDLlm0SWU=
+		yTKBJH+HXqsKXiYCwFivieTe4Y8=
 		</data>
 		<key>Modules/CmpSdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		E0j8AI9UE5aOfdjrGc6nVviyktE=
+		g4tDetOlAyuywaz5iOcjscdd5mM=
 		</data>
 		<key>Modules/CmpSdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vR/bjIgHN6LbWlXTQ38ai1wJuKA=
+		aZSL2c1ZXyclrlZZfdBX+1fZvAM=
 		</data>
 		<key>Modules/CmpSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		4FdLBQ/uCs43bO43yNesK3oceS4=
+		4OnfCt28qi2MhzACvoJgOGE+5VQ=
 		</data>
 		<key>Modules/CmpSdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		vR/bjIgHN6LbWlXTQ38ai1wJuKA=
+		aZSL2c1ZXyclrlZZfdBX+1fZvAM=
 		</data>
 		<key>Modules/CmpSdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		eOOWSxIlxqNgPk6+GoiT48YInRs=
+		Op+JQGzgUpeujRWbDwO2Mlh0iz4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -124,6 +300,41 @@
 			<key>hash2</key>
 			<data>
 			QyZ2hBFf8CY0+478GdZLKJ6E9ghMWL0XqJKVjo//PhA=
+			</data>
+		</dict>
+		<key>Headers/CmpATTrackingManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FTpS3FeKOpndHN7jeWkkeL9qn25X14y9q71tl/+BYU0=
+			</data>
+		</dict>
+		<key>Headers/CmpATTrackingStatus.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cE5IMLjQbVQgm8wSPUFuYoCx4OMrvWQ6LUNHjPh/i+o=
+			</data>
+		</dict>
+		<key>Headers/CmpAcceptRejectUseCaseProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2bPnJnWnHO4wSH39mVD6miyDX6QyRWTwtvBCHL33jJs=
+			</data>
+		</dict>
+		<key>Headers/CmpAcceptRejectUseCaseStrategy.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VGb4adMcwRw8NAmkMGaII/o3qSycQ3x0hYqbpdfHSqg=
+			</data>
+		</dict>
+		<key>Headers/CmpBaseStrategy.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nPKI9wdisqvkT7nVjYAF0EmvLJLPPoUIfHFpCFBx9rY=
 			</data>
 		</dict>
 		<key>Headers/CmpButtonEvent.h</key>
@@ -147,6 +358,27 @@
 			ZBxuryBqp2w3cxNKYnW5gc3wirRqRwX3BPbOtluUJeU=
 			</data>
 		</dict>
+		<key>Headers/CmpChangeItemFactory.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zrwc9QXjhhYDcFbD9Ank6635/u0Ir5KSAGkbz75n8AU=
+			</data>
+		</dict>
+		<key>Headers/CmpCheckConsentUseCaseProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vp0NX+O0Abtoy4o5x+teoXPbGGLPvoCEfZMHCvLxBj4=
+			</data>
+		</dict>
+		<key>Headers/CmpCheckConsentUseCaseStrategy.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SPUOCE9jWPRrpXXXKvq6pyZma1XTacqhqnDO5BNBKK4=
+			</data>
+		</dict>
 		<key>Headers/CmpConfig.h</key>
 		<dict>
 			<key>hash2</key>
@@ -161,11 +393,81 @@
 			wXbaGAdf7N9K5Lr1cMY2YsAg9ZOiubuX5xqikqVKWjE=
 			</data>
 		</dict>
+		<key>Headers/CmpConsentChangeInfoFactory.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2bJV7MaSCdeHtSlNkO65SD69KZMVMdambzxbdshZhjs=
+			</data>
+		</dict>
+		<key>Headers/CmpConsentChangeInfoNotifier.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CBbwQdRxFzUdh/S5OtXNnOTZ/M9J2X/MVcheZOwQAwc=
+			</data>
+		</dict>
+		<key>Headers/CmpConsentChangeResult.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JwQYu7hNwuKNRKPHThjvctPYUs7Dw50/BtopzVkJN4I=
+			</data>
+		</dict>
+		<key>Headers/CmpConsentDTO.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p29TV0cVkfySilGPJi/n6CsP8UjGCHARjWrLzbPBTp8=
+			</data>
+		</dict>
+		<key>Headers/CmpConstants.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pmtmWzLIhuaW9o2PYr2ufeMS6tqYConCPy95DTFdZxI=
+			</data>
+		</dict>
+		<key>Headers/CmpDryCheckUseCaseProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			e603Oq0v5fOeDNyFzs0ErO4/beKLBJ2cCSPxJ+u1v/M=
+			</data>
+		</dict>
+		<key>Headers/CmpDryCheckUseCaseStrategy.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iwW+RFR2LPXiQDzpefuKM9bt7YGn4d4HzQe08lpTFBI=
+			</data>
+		</dict>
+		<key>Headers/CmpEnableDisableUseCaseProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Pj+q8SeR6sVf9ifnfJUgOeQdjxjvcEhMULwb/r2MJAQ=
+			</data>
+		</dict>
+		<key>Headers/CmpEnableDisableUseCaseStrategy.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UJqJE+ZDk1QXDYRqy57PrqUI4D5OSTxehDLoTP8f57g=
+			</data>
+		</dict>
 		<key>Headers/CmpErrorTypes.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			mlSMJqVf3JD49bGwv6T77TBHKoXjLsIKL/vtD+ka8w0=
+			</data>
+		</dict>
+		<key>Headers/CmpEventBus.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			38QKxhMsb4KNLgO99Q6vovzNMHNEZhPRoa7dEU6YANY=
 			</data>
 		</dict>
 		<key>Headers/CmpEventListenerTypes.h</key>
@@ -182,11 +484,67 @@
 			+kZgv8m1bNkxLgX983LYeXEQc3qN5OajMDJyf9OUZ+U=
 			</data>
 		</dict>
+		<key>Headers/CmpEventMetadataFactory.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2nJvx7YN5WCPqdL509SzoEYxh8OAEAAwDUxF9aLgBko=
+			</data>
+		</dict>
+		<key>Headers/CmpEventRepository.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WSl828YVlrEWu8efyiCYEDvbnsbLVP4yLf9DS+TXuQ4=
+			</data>
+		</dict>
+		<key>Headers/CmpEventType.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Z0cyXOCVEc4HJgcveh4gG3y5HLQX9MecOJbf5ceG8Bc=
+			</data>
+		</dict>
+		<key>Headers/CmpEventsProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SYtMetUT7XGCxuyuU7maNXv7ol1rsUzuZXBisd8YqZQ=
+			</data>
+		</dict>
+		<key>Headers/CmpFrameworkDescriptionRepository.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cQtDJHSJ3lgGfXPxr0+aNARbu53JXQwPcvbb6c7CkWo=
+			</data>
+		</dict>
+		<key>Headers/CmpImportUseCaseProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Zf9btkVQkeOwhrBCklfflUrdcdBHYqc76MkFTe/RNE0=
+			</data>
+		</dict>
+		<key>Headers/CmpImportUseCaseStrategy.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VuUL18bcq/mKAy7vV/YMtTR1si93spqD2aalYbNxLOI=
+			</data>
+		</dict>
 		<key>Headers/CmpLayout.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			DTV1y/LiOOq4XygP5Q7rwQld0ToSO7PtwBCsOUqOU3s=
+			</data>
+		</dict>
+		<key>Headers/CmpLayoutAnimationStyle.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			24RkFgIbwwPUkS6H1f2s4nsqtTZqK84W+bbWWbvbwkI=
 			</data>
 		</dict>
 		<key>Headers/CmpLog.h</key>
@@ -203,11 +561,39 @@
 			7sl936yWPWauOcmElpU9c5xgx0ujoPDf8BqtZ+vI3t8=
 			</data>
 		</dict>
+		<key>Headers/CmpMigrationManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l5C8HHebNgGfapuwgSFpQpwMZJm6mKWD+ToDFpkZevY=
+			</data>
+		</dict>
 		<key>Headers/CmpNotificationConstants.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			/EEwvOBOVJWeQUEpz++aqJGoJiT13UpXDkH5HRpJuns=
+			</data>
+		</dict>
+		<key>Headers/CmpReachability.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pLXa8rkEu4VULBhHbbSZU9g0ZPFU1m7kp31txZsDHmg=
+			</data>
+		</dict>
+		<key>Headers/CmpRepository.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			U9TZgICd7RROqoWRZERam+QGTbJv/IRReSfH5l2wNTY=
+			</data>
+		</dict>
+		<key>Headers/CmpRepositoryProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iRsLvlEDcpgmRLszZjmEmj+z0zrSaZuRw0kTU1c5gY0=
 			</data>
 		</dict>
 		<key>Headers/CmpSdk-Swift.h</key>
@@ -221,84 +607,182 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			U3gKdZ90+ENM9yIelIkuit/dxbbNjLOT/NLB1xrD/RM=
+			ShRaC/52sBI/lkz5gNyoD3DIfWCT1SaQu1yDJ317EKo=
 			</data>
 		</dict>
-		<key>Headers/CmpSdk.h</key>
+		<key>Headers/CmpService.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uhZsymMRXz7wnHsyHGJcZuHpwoBOSwDzWdMF8o646x4=
+			YyRHWzdRBSyXwRaih50F4WbTqpbUPSNYab+D54NYYhs=
+			</data>
+		</dict>
+		<key>Headers/CmpStore.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AdPWhJHywzfxUmLyd+kzzD0e4pt+lHT9kRKYcqfa4os=
+			</data>
+		</dict>
+		<key>Headers/CmpTCFConsentData.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Y/zPX4PZ8HPBpsRaDQchs8A5MuJes7yGZx4yombswoQ=
+			</data>
+		</dict>
+		<key>Headers/CmpUrlBuilder.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fwenbhDog6aVZ+2PORCEz1FHLJ1yLKVyBogS28+Dx10=
+			</data>
+		</dict>
+		<key>Headers/CmpUrlParams.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7oQIRLCv9cLtOMjZfd0DHiCvq40p3b3xNyooqdHagl4=
+			</data>
+		</dict>
+		<key>Headers/CmpUseCase.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ASJvgxFP0H4ko9zpYBl2EE1eG6yvqmOucpZyUpzfmq0=
+			</data>
+		</dict>
+		<key>Headers/CmpUtils.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			we2Dkr1qojl/7aJDOijXD3YQ0A51BqoVcOTETf8dHiw=
+			</data>
+		</dict>
+		<key>Headers/CmpViewConfigurationBlock.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wqs0zAu8xids8qKpTGOBmCpwK/KdKnp7ibTW1OnBL8E=
+			</data>
+		</dict>
+		<key>Headers/CmpWebViewEventListenerTypes.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			s+7iozAtXa26uv+Ms5jom6p7NnpwIZHr9oLu8Ur5cYw=
+			</data>
+		</dict>
+		<key>Headers/Metadata.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qn8Nsi2TXp7KZvhl1au2mgCC6lPIDO5O1A6GjoyMhxU=
+			</data>
+		</dict>
+		<key>Headers/NSObject+DictionaryRepresentation.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XkxWJngSUgaTXKZV3MZFRnFZWAJvGgsglpoO7nB4sdw=
+			</data>
+		</dict>
+		<key>Headers/V2CmpEventHandler.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pc7p1ZxvOGAhmPhfKQSAji2dLEU96xyPHuuJH6gGz5c=
+			</data>
+		</dict>
+		<key>Headers/V2CmpUseCaseProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Rp+JRjSoCrqWyOaT4F5NATzzV4E5g/BQIxRcczFd6j4=
+			</data>
+		</dict>
+		<key>Headers/V2CmpViewController.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fjLNwlmie4NInn6NdIiSbB3BP8I9UJTL5yA/GbaImQ8=
+			</data>
+		</dict>
+		<key>Headers/V2WebViewManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			F9y3OEiLyGUFBnfuBt4g4avidWrkWewQImY82T6PH1A=
 			</data>
 		</dict>
 		<key>Modules/CmpSdk.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g9mJAtPyZ7SnZlxCsDYJyDwz3wIKJ6jBg+WsXAWxjF0=
+			pASsAu/IfY7jDVWSRf6YQoJFIhPYchlyAVGIHwp1F5s=
 			</data>
 		</dict>
 		<key>Modules/CmpSdk.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l19wOgMpoIu0Zv9ayu/LmNnODLi3WVBBnm2TAhgHd5E=
+			gox0CuuNSBrspAuPY4Ha8p0Y/FaKqQrEuIGRC6OaWDY=
 			</data>
 		</dict>
 		<key>Modules/CmpSdk.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U9MrRlpHTrXjdRI8wZsxpHMI7IHvplStjdCKXa+v/P0=
+			zc6lBu5L58zxgRXXOfi1u9HguLqqTuKIq+ROUi+odNc=
 			</data>
 		</dict>
 		<key>Modules/CmpSdk.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l19wOgMpoIu0Zv9ayu/LmNnODLi3WVBBnm2TAhgHd5E=
+			gox0CuuNSBrspAuPY4Ha8p0Y/FaKqQrEuIGRC6OaWDY=
 			</data>
 		</dict>
 		<key>Modules/CmpSdk.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d2JO0Gsfd75DWbtlKYo9PMPLHHE4pf4B6UJBmI3X/Lo=
+			yoHxrIK8T2feGbWl5fmVPaqz+PDX3CZ6b2/+/MCOH88=
 			</data>
 		</dict>
 		<key>Modules/CmpSdk.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g9mJAtPyZ7SnZlxCsDYJyDwz3wIKJ6jBg+WsXAWxjF0=
+			pASsAu/IfY7jDVWSRf6YQoJFIhPYchlyAVGIHwp1F5s=
 			</data>
 		</dict>
 		<key>Modules/CmpSdk.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xnyY/sFkwgxIqxsW3BIFRhghWvCXN7mjVgcIjZ35gXA=
+			1addaByCcj/oOyI9i1kcWBq9d3vMgrU32kvp1VBJlnU=
 			</data>
 		</dict>
 		<key>Modules/CmpSdk.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x4kyVI0YPlP7x9R+UNabMWtiqIaGKAuzc4GScrA0kfo=
+			nTeuaITfTheEmHdIdAdA6FX7HVd3MdlIuw6CyRtNelQ=
 			</data>
 		</dict>
 		<key>Modules/CmpSdk.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xnyY/sFkwgxIqxsW3BIFRhghWvCXN7mjVgcIjZ35gXA=
+			1addaByCcj/oOyI9i1kcWBq9d3vMgrU32kvp1VBJlnU=
 			</data>
 		</dict>
 		<key>Modules/CmpSdk.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WH14H6jNz3fLJCSq4Lhysirt8/3agVF030R4f2to/cg=
+			m4REq4yaSXg5eeYcim3e82qbytQOys+Ch4Q9xtbgxtQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
