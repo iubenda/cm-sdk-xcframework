@@ -1,6 +1,16 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+### Version 1.99.1 (Released on 2023-12-16)
+
+### Added
+- 
+
+### Fixed
+
+### Refactored 
+- Preparation release 2.0.0
+
 ### Version 1.7.3 (Released on 2023-10-03)
 
 ### Added
