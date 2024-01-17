@@ -31,7 +31,7 @@
 @property (nonatomic, strong) NSDate *updatedAt;
 @property (nonatomic, strong) NSNumber *changedCount;
 @property (nonatomic, strong) NSString *operationType;
-
+@property(nonatomic, strong) NSDictionary<NSString *, NSString *> *consentMode;
 #pragma mark Init
 
 + (CmpConsentDTO *)fromJSON:(NSDictionary *)jsonData :(CmpUseCase)useCase;
@@ -57,6 +57,7 @@
 - (NSArray *)getAllPurposeList;
 - (NSString *)getAllPurposes;
 - (NSArray<Metadata *> *)getMetadata;
+- (NSDictionary<NSString *, NSString *> *)getConsentModeStatus;
 
 #pragma mark Core
 - (NSString *)compareWithDTO:(CmpConsentDTO *)otherDTO;

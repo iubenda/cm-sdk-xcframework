@@ -23,6 +23,8 @@ static NSString * const kCmpEventHandler = @"EventHandler";
 @property (nonatomic, copy) CmpButtonClickedListener buttonClickedListener;
 @property (nonatomic, copy) CmpViewControllerConfigurationBlock viewControllerConfigurationBlock;
 @property (nonatomic, copy) CmpUIViewConfigurationBlock uiViewConfigurationBlock;
+@property (nonatomic, copy) CmpGoogleAnalyticsListener googleAnalyticsListener;
+
 // Registration methods for listeners
 - (void)registerOpenListener:(void (^)(void))listener;
 - (void)registerCloseListener:(void (^)(void))listener;
@@ -31,6 +33,8 @@ static NSString * const kCmpEventHandler = @"EventHandler";
 - (void)registerButtonClickedListener:(void (^)(CmpButtonEvent event))listener;
 - (void)registerViewControllerConfigurationBlock:(CmpViewControllerConfigurationBlock)configurationBlock;
 - (void)registerUIViewConfigurationBlock:(CmpUIViewConfigurationBlock)configurationBlock;
+
+-(void)registerGoogleAnalyticsListener:(CmpGoogleAnalyticsListener)googleAnalyticsListener;
 // Trigger methods
 - (void)triggerOpenListener;
 - (void)triggerCloseListener;
@@ -39,6 +43,7 @@ static NSString * const kCmpEventHandler = @"EventHandler";
 - (void)triggerButtonClickedListenerWithEvent:(CmpButtonEvent)event;
 - (void)triggerConfigureViewControllerBlock:(UIViewController*)viewController;
 - (void)triggerConfigureUIViewBlock:(UIView*)view;
+- (void)triggerUpdateGoogleConsentListener:(NSDictionary<NSNumber *, NSNumber *>*)consentMap;
 @end
 
 #endif /* V2CmpEventHandler_h */

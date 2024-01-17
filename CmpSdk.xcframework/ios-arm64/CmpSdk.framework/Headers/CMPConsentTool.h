@@ -80,11 +80,17 @@ extern CMPConsentTool *consentTool;
 /// Add a Cmp Button clicked callback to get notification which button was clicked in the consent layer
 /// - Parameter onCmpButtonClickedCallback Callback
 - (instancetype)withOnCmpATTrackingStatusChangedCallback:(CmpATTrackingStatusChangedListener)onATTrackingStatusChanged API_AVAILABLE(ios(14));
-  
+
+/// Adds configuration to the CmpViewController
+/// - Parameter controllerConfigurationBlock: Configuration for custom ViewController behaviour and styles
 - (instancetype)withCmpViewControllerConfigurationBlock:(CmpViewControllerConfigurationBlock)controllerConfigurationBlock;
 
+/// Adds configuration to the Cmp UIView
+/// - Parameter viewConfigurationBlock: Configuration for custom UIView styles
 - (instancetype)withCmpViewConfigurationBlock:(CmpUIViewConfigurationBlock)viewConfigurationBlock;
-  
+ 
+- (instancetype)withUpdateGoogleConsent:(CmpGoogleAnalyticsListener)googleAnalyticsListener;
+
 /// Initialize function will initialize the consent layer and checks automatically if the user needs a consent or not. This function will eventually open the consent layer and
 /// will interact wit the Apple Tracking Transparency API to ask the user for Consent
 ///
@@ -346,9 +352,15 @@ extern CMPConsentTool *consentTool;
 
 #pragma mark ATTracking
 
+///  Request ATTracking permission
+/// - Parameter completion: Completion handler for custom business logic
 - (void)requestATTPermissionWithCompletion:(void (^)(ATTrackingManagerAuthorizationStatus status))completion API_AVAILABLE(ios(14));
 
+/// Gets the last ATTracking request Date
 - (NSDate *)getLastATTRequestDate;
 
+/// Gets the last consent request Date
 - (NSDate *)getLastConsentRequest;
+
+- (NSDictionary<NSString *, NSString *> *)getGoogleConsentModeStatus;
 @end

@@ -19,6 +19,7 @@
 - (void)triggerButtonClickedListenerWithEvent:(CmpButtonEvent)event;
 - (void)triggerConfigureViewControllerBlock:(UIViewController*)viewController;
 - (void)triggerConfigureUIViewBlock:(UIView*)view;
+- (void)triggerUpdateGoogleConsentListener:(NSDictionary<NSString *,NSString *>*)consentMap;
 @end
 
 #endif /* CmpEventsProtocol_h */
