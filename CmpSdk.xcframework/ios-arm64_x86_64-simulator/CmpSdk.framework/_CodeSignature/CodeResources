@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CMPConsentTool.h</key>
 		<data>
-		7/kbD5zV+jXSCQ1WdAhsw+aqBEY=
+		oHv4SRwQg2eYSq9LbdytSAZ/obk=
 		</data>
 		<key>Headers/CmpButtonEvent.h</key>
 		<data>
@@ -70,15 +70,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		l1VVrf46Ezs9h4sVwkzBUjmjGbQ=
+		4DOpj+Ub75jdnm7qFn/iS2bqkFo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		8+TU92HSPOaJX7fHAjXj6eEOw3o=
-		</data>
-		<key>PrivateHeaders/CmpATTrackingManager.h</key>
-		<data>
-		BuziYoKEjOJXOpeQJQuU6H11vy0=
 		</data>
 		<key>PrivateHeaders/CmpATTrackingStatus.h</key>
 		<data>
@@ -263,7 +259,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JT8JTGscXj7NGDGgFop1UFm3bI8CVvwupqYKMWPHIKg=
+			0Le8GUnG6fiQFa6kQbld8EqLEL8OghVKCzPAee0SUbI=
 			</data>
 		</dict>
 		<key>Headers/CmpButtonEvent.h</key>
@@ -376,13 +372,6 @@
 			<key>hash2</key>
 			<data>
 			zK7Vo8fWPW+AAC21qkJVHgPRbtAv1oAi3AZTzL0e+MU=
-			</data>
-		</dict>
-		<key>PrivateHeaders/CmpATTrackingManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FTpS3FeKOpndHN7jeWkkeL9qn25X14y9q71tl/+BYU0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CmpATTrackingStatus.h</key>
