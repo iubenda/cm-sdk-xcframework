@@ -19,6 +19,7 @@
 #import "CmpErrorTypes.h"
 #import "CmpEventListenerTypes.h"
 #import "CmpEventMetadata.h"
+#import "CmpGoogleConsentMap.h"
 #import "CmpLayout.h"
 #import "CmpLog.h"
 #import "CmpLogLevel.h"
