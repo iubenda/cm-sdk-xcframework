@@ -1,6 +1,20 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
+
+### Version 1.99.3 (Released on 2024-01-17)
+
+### Added
+- Google ConsentMode feature
+
+### Version 1.99.2 (Released on 2023-12-21)
+
+### Refactor
+- MigrationManager for older versions
+
+### Fixes
+- initial consent save triggers error event but consent is saved
+
 ### Version 1.99.1 (Released on 2023-12-16)
 
 ### Added
