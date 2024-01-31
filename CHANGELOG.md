@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+### Version 1.99.4-no-att (Released on 2024-01-31)
+
+### Fixes
+- incomplete umbrella header fixed
+- iOS 15.3 archiving issue fixed
+
+### Version 1.99.4 (Released on 2024-01-31)
+
+### Fixes
+- incomplete umbrella header fixed
+- iOS 15.3 archiving issue fixed
+
 ### Version 1.99.3 (Released on 2024-01-17)
 
 ### Added
