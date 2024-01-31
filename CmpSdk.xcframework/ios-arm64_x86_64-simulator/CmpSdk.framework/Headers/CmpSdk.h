@@ -15,3 +15,4 @@
 #import "CmpConsentChangeInfo.h"
 #import "CmpLayout.h"
 #import "CmpEventMetadata.h"
+#import "CmpGoogleConsentMap.h"

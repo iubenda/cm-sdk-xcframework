@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CMPConsentTool.h</key>
 		<data>
-		oHv4SRwQg2eYSq9LbdytSAZ/obk=
+		sPRq1reHIG6AuI2F3M9yNx7gQjc=
 		</data>
 		<key>Headers/CmpButtonEvent.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/CmpConfig.h</key>
 		<data>
-		jJdiugM7/7cGM8meW4mHot8Zycg=
+		J71jJMS9xiZ42ojWoKcrFBZ1kfs=
 		</data>
 		<key>Headers/CmpConsentChangeInfo.h</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Headers/CmpSdk-umbrella.h</key>
 		<data>
-		MWmokAXRszbdSEzjLB5261zt4NQ=
+		I1fW01IERQB2CRm3QbsFM/7+Tnc=
 		</data>
 		<key>Headers/CmpSdk.h</key>
 		<data>
-		LPVmubEpz8usBp81PUq1SlM9O/g=
+		xKygoRgsd9y2HhkXA5hOV7lYicU=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -259,7 +259,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Le8GUnG6fiQFa6kQbld8EqLEL8OghVKCzPAee0SUbI=
+			+ZMkVr8RjCuiheGydedsNRu/WIX1kxq0+Ejwnk7aqHo=
 			</data>
 		</dict>
 		<key>Headers/CmpButtonEvent.h</key>
@@ -287,7 +287,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Omu5C5j/W2t3GQTpjwEhkncNbpw37s3canZM3jN0880=
+			du5D7TQLzCFsHbVEQZozBeEjWdLtmYqMYiH7IZgb0B0=
 			</data>
 		</dict>
 		<key>Headers/CmpConsentChangeInfo.h</key>
@@ -357,14 +357,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eAgmM9Ox4zONlbYwdiMZDGoBDd59fRuQgOz7B4zslqw=
+			v3PNWPixRLyrcYr/nRfR1kKj6AZgI15aKEPyd4YsnB0=
 			</data>
 		</dict>
 		<key>Headers/CmpSdk.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OxVDfjxOMhBjsmkAxPe4wMvJ20f+NXSFMA9/8rpZV2A=
+			9HLSFuPPUUQkltmFyliArb/z+fPJCEO+uN9ZfxYXFOQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

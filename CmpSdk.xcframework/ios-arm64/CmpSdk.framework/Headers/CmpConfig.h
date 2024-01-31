@@ -46,11 +46,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// Log level for SDK logging.
 @property (nonatomic, assign) CmpLogLevel logLevel;
 
-// ATT (App Tracking Transparency) configurations
-
-/// Flag indicating whether App Tracking Transparency request is handled automatically.
-@property (nonatomic, assign) BOOL isAutomaticATTRequest;
-
 // Webview configurations
 
 /// Timeout duration for webview operations.
@@ -90,7 +85,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (CmpConfig *)withJumpToSettingsPage:(BOOL)jumpToSettingsPage;
 - (CmpConfig *)withDebugMode:(BOOL)debugMode;
 - (CmpConfig *)withDesignId:(NSString *)designId;
-- (CmpConfig *)withAutomaticATTRequest:(BOOL)isAutomaticATTRequest;
 - (CmpConfig *)withRetryDelay:(NSInteger)retryDelay;
 - (CmpConfig *)withMaxRetries:(NSInteger)maxRetries;
 

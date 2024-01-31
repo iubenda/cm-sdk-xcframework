@@ -84,7 +84,7 @@ extern CMPConsentTool *consentTool;
 /// Adds configuration to the Cmp UIView
 /// - Parameter viewConfigurationBlock: Configuration for custom UIView styles
 - (instancetype)withCmpViewConfigurationBlock:(CmpUIViewConfigurationBlock)viewConfigurationBlock;
- 
+
 - (instancetype)withUpdateGoogleConsent:(CmpGoogleAnalyticsListener)googleAnalyticsListener;
 
 /// Initialize function will initialize the consent layer and checks automatically if the user needs a consent or not. This function will eventually open the consent layer and
@@ -345,8 +345,6 @@ extern CMPConsentTool *consentTool;
 ///
 /// - Returns: consent String
 - (NSString *)getConsentString;
-
-#pragma mark ATTracking
 
 - (NSDictionary<NSString *, NSString *> *)getGoogleConsentModeStatus;
 @end
