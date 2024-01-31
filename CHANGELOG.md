@@ -1,15 +1,31 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
-### Version 1.99.1 (Released on 2023-12-16)
+
+### Version 1.99.4-no-att (Released on 2024-01-31)
+
+### Fixes
+- incomplete umbrella header fixed
+- iOS 15.3 archiving issue fixed
+
+### Version 1.99.4 (Released on 2024-01-31)
+
+### Fixes
+- incomplete umbrella header fixed
+- iOS 15.3 archiving issue fixed
+
+### Version 1.99.3 (Released on 2024-01-17)
 
 ### Added
-- 
+- Google ConsentMode feature
 
-### Fixed
+### Version 1.99.2 (Released on 2023-12-21)
 
-### Refactored 
-- Preparation release 2.0.0
+### Refactor
+- MigrationManager for older versions
+
+### Fixes
+- initial consent save triggers error event but consent is saved
 
 ### Version 1.7.3 (Released on 2023-10-03)
 
