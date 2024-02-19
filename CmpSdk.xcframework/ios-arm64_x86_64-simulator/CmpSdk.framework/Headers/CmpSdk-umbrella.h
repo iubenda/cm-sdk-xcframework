@@ -18,6 +18,7 @@
 #import "CMPConsentTool.h"
 #import "CmpErrorTypes.h"
 #import "CmpEventListenerTypes.h"
+#import "CmpATTrackingManager.h"
 #import "CmpEventMetadata.h"
 #import "CmpGoogleConsentMap.h"
 #import "CmpLayout.h"

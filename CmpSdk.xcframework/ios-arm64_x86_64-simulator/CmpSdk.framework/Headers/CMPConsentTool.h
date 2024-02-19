@@ -91,6 +91,7 @@ extern CMPConsentTool *consentTool;
  
 - (instancetype)withUpdateGoogleConsent:(CmpGoogleAnalyticsListener)googleAnalyticsListener;
 
+- (instancetype)withOnCmpLinkClickListener:(CmpLinkClickListener)linkClickListener;
 /// Initialize function will initialize the consent layer and checks automatically if the user needs a consent or not. This function will eventually open the consent layer and
 /// will interact wit the Apple Tracking Transparency API to ask the user for Consent
 ///
@@ -162,14 +163,6 @@ extern CMPConsentTool *consentTool;
 ///
 /// - Returns: TRUE if the user gave a consent.
 - (BOOL)hasConsent;
-
-/// Checks if the vendor ID is enabled based on the purpose
-///
-/// - Parameters:
-///     - purposeId: purpose id
-///     - vendorId: vendor id
-/// - Returns: TRUE if the user has given consent to the specified vendor for the purpose, FALSE otherwise.
-- (BOOL)hasPurposeConsent:(int)purposeId forVendor:(int)vendorId;
 
 /// Checks with the Consentmanager Network if the consent layer needs to be open. On positive notification by the server the consent layer will show
 - (void)checkAndOpenConsentLayer;

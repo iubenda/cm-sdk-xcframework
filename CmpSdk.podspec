@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CmpSdk"
-  spec.version      = "1.99.4"
+  spec.version      = "1.100.0"
   spec.summary      = "Provides functionality to inform the user about data protection and collect consent from the user."
   spec.description  = <<-DESC
           The ConsentManager SDK for iOS apps implements and provides functionality to inform the user about data protection and ask and collect consent from the user.

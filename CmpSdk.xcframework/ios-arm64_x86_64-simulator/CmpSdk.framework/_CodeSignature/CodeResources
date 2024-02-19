@@ -6,7 +6,11 @@
 	<dict>
 		<key>Headers/CMPConsentTool.h</key>
 		<data>
-		7/kbD5zV+jXSCQ1WdAhsw+aqBEY=
+		WjPqNfWV4LmYskLuzFfPEa2395Q=
+		</data>
+		<key>Headers/CmpATTrackingManager.h</key>
+		<data>
+		qCEji0bYp+DOZL7m/0pRTSGUBEM=
 		</data>
 		<key>Headers/CmpButtonEvent.h</key>
 		<data>
@@ -22,7 +26,7 @@
 		</data>
 		<key>Headers/CmpConfig.h</key>
 		<data>
-		jJdiugM7/7cGM8meW4mHot8Zycg=
+		TNqqNNWLKIl3Et7HsILGjOtI/Yc=
 		</data>
 		<key>Headers/CmpConsentChangeInfo.h</key>
 		<data>
@@ -34,7 +38,7 @@
 		</data>
 		<key>Headers/CmpEventListenerTypes.h</key>
 		<data>
-		k73i6s8lJR13jegDKawjSijahIQ=
+		RmMCtnu3uzEzKZP0YHYWlDYBJRA=
 		</data>
 		<key>Headers/CmpEventMetadata.h</key>
 		<data>
@@ -62,7 +66,7 @@
 		</data>
 		<key>Headers/CmpSdk-umbrella.h</key>
 		<data>
-		I1fW01IERQB2CRm3QbsFM/7+Tnc=
+		xqMb1+GppR513+16oDOFYlDQ1Do=
 		</data>
 		<key>Headers/CmpSdk.h</key>
 		<data>
@@ -75,10 +79,6 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		8+TU92HSPOaJX7fHAjXj6eEOw3o=
-		</data>
-		<key>PrivateHeaders/CmpATTrackingManager.h</key>
-		<data>
-		BuziYoKEjOJXOpeQJQuU6H11vy0=
 		</data>
 		<key>PrivateHeaders/CmpATTrackingStatus.h</key>
 		<data>
@@ -162,7 +162,7 @@
 		</data>
 		<key>PrivateHeaders/CmpEventsProtocol.h</key>
 		<data>
-		WyZbiDG99KXECYbIZ1rLT4PAnDo=
+		pHcska7EZTRjVz0SJPpD1izD65Q=
 		</data>
 		<key>PrivateHeaders/CmpFrameworkDescriptionRepository.h</key>
 		<data>
@@ -242,7 +242,7 @@
 		</data>
 		<key>PrivateHeaders/V2CmpEventHandler.h</key>
 		<data>
-		Gx7rrEXHwxXf7kUpmbnWal1AYrI=
+		JKuWKiHNp23b/Puoszaq8cOc46M=
 		</data>
 		<key>PrivateHeaders/V2CmpUseCaseProtocol.h</key>
 		<data>
@@ -254,7 +254,7 @@
 		</data>
 		<key>PrivateHeaders/V2WebViewManager.h</key>
 		<data>
-		yiJtF+noNZarXg0vSuLQ2kdFWBI=
+		a1kGbdYsGzrEIIFTguTUTtq8vgw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -263,7 +263,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JT8JTGscXj7NGDGgFop1UFm3bI8CVvwupqYKMWPHIKg=
+			PFissy7+lW1VNxhTJIFBZhvVPchRDcyD9bGIN/wcFP4=
+			</data>
+		</dict>
+		<key>Headers/CmpATTrackingManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5/Dfzu61sK2F9PUSZRnpaBNXdZTa2lvcvR+QjpgYz+Q=
 			</data>
 		</dict>
 		<key>Headers/CmpButtonEvent.h</key>
@@ -291,7 +298,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Omu5C5j/W2t3GQTpjwEhkncNbpw37s3canZM3jN0880=
+			uKP0bz9c70gVpI+4q0VEnZUAe1kIIate7PqakYWKxuc=
 			</data>
 		</dict>
 		<key>Headers/CmpConsentChangeInfo.h</key>
@@ -312,7 +319,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xRmO8rc+XOPmln1Xbi9sFPMNV/S/Wl0OI9TbkKNQhBc=
+			rn6ldX9VMjhOH6GHcjLJ5u4mkbKV2CVDXoTmKLVWb9M=
 			</data>
 		</dict>
 		<key>Headers/CmpEventMetadata.h</key>
@@ -361,7 +368,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v3PNWPixRLyrcYr/nRfR1kKj6AZgI15aKEPyd4YsnB0=
+			973r51CQe//Un5vjso+6f1umUa3nwsjCTaucKvQdHJU=
 			</data>
 		</dict>
 		<key>Headers/CmpSdk.h</key>
@@ -376,13 +383,6 @@
 			<key>hash2</key>
 			<data>
 			zK7Vo8fWPW+AAC21qkJVHgPRbtAv1oAi3AZTzL0e+MU=
-			</data>
-		</dict>
-		<key>PrivateHeaders/CmpATTrackingManager.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FTpS3FeKOpndHN7jeWkkeL9qn25X14y9q71tl/+BYU0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CmpATTrackingStatus.h</key>
@@ -529,7 +529,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zsAWv+MaEcZVcFWCwcBhQnG5NVQKLFto2w/yUf7h6AA=
+			xG/K4lVNQGgUPDRz/A/GXPQKhMhwUwhta4ofAeQ3+Ms=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CmpFrameworkDescriptionRepository.h</key>
@@ -669,7 +669,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t59EIlYpAPB5JOveylHYyR4m6geWEtH9ohezPgSfQLk=
+			3y4TKDLEesz/jelhSlorkV70DexpAMN0BIHTb/EoCYY=
 			</data>
 		</dict>
 		<key>PrivateHeaders/V2CmpUseCaseProtocol.h</key>
@@ -690,7 +690,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F9y3OEiLyGUFBnfuBt4g4avidWrkWewQImY82T6PH1A=
+			ju3TycAnm28AqTWLfLy93jPTSbchefv6qfAbBKHU4to=
 			</data>
 		</dict>
 	</dict>
