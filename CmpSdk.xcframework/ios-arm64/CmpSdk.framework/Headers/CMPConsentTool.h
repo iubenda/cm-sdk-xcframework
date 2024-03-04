@@ -278,6 +278,11 @@ extern CMPConsentTool *consentTool;
 ///   - updateVendor: flag if true also enable corresponding vendors
 - (void)disablePurposeList:(NSArray *)purposes onFinish:(void (^)(void))onFinish updateVendor:(BOOL)updateVendor;
 
+/// Gets the regulation key
+///
+/// - Returns: `String` of regulation key
++ (NSString *)getRegulationKey;
+
 /// Gets a list of the enabled `purpose` IDs
 ///
 /// - Returns: `List` of enabled `purpose` IDs
