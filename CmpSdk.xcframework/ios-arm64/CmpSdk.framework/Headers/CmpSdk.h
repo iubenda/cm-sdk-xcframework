@@ -18,3 +18,4 @@
 #include <CmpSdk/CmpLogLevel.h>
 #include <CmpSdk/CmpNotificationConstants.h>
 #include <CmpSdk/CmpGoogleConsentMap.h>
+#include <CmpSdk/CmpUIConfig.h>

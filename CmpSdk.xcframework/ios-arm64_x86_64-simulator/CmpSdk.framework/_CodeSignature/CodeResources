@@ -70,11 +70,15 @@
 		</data>
 		<key>Headers/CmpSdk.h</key>
 		<data>
-		UtVyU5me82qM3Ko7VR/ywrw/T4Q=
+		23QWs1k2HDGhMtKzFnmI4wP5sTA=
+		</data>
+		<key>Headers/CmpUIConfig.h</key>
+		<data>
+		V3x/eUuorjLJYUaS+VZWH9pv3eM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4DOpj+Ub75jdnm7qFn/iS2bqkFo=
+		pYLR7bSv/BnAd1H6//nGnlRX2Gw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -375,7 +379,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UKxm0xubSYRVjEY7e5AF1JtrCe17c4nLyiL7alhR9Fg=
+			3gIhnSc9A8ytLsyQi17Dw3mgbyMO7HBpLiYmQIsp0fg=
+			</data>
+		</dict>
+		<key>Headers/CmpUIConfig.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xY8Xl2qMqWCN1JBuSZiSX2GHYK1KBB1e+ykw8F53wCE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
