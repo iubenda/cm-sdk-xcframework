@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "CmpATTrackingManager.h"
 #import "CmpButtonEvent.h"
 #import "CmpCallbackTypes.h"
 #import "CmpChangeItem.h"
@@ -18,7 +19,6 @@
 #import "CMPConsentTool.h"
 #import "CmpErrorTypes.h"
 #import "CmpEventListenerTypes.h"
-#import "CmpATTrackingManager.h"
 #import "CmpEventMetadata.h"
 #import "CmpGoogleConsentMap.h"
 #import "CmpLayout.h"
@@ -26,6 +26,7 @@
 #import "CmpLogLevel.h"
 #import "CmpNotificationConstants.h"
 #import "CmpSdk.h"
+#import "CmpUIConfig.h"
 
 FOUNDATION_EXPORT double CmpSdkVersionNumber;
 FOUNDATION_EXPORT const unsigned char CmpSdkVersionString[];
