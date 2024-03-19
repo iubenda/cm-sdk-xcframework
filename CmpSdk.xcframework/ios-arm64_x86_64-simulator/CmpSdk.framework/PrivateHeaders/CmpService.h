@@ -5,6 +5,7 @@
 #import <CmpSdk/CmpErrorTypes.h>
 #import <CmpSdk/CmpRepository.h>
 #import <CmpSdk/CmpLog.h>
+#import <CmpSdk/CmpATTrackingManager.h>
 #import <Foundation/Foundation.h>
 #import "CmpSdk/CmpUseCase.h"
 #import "CmpSdk/CmpConsentChangeResult.h"

@@ -25,6 +25,9 @@ API_AVAILABLE(ios(14))
 - (NSDictionary *)checkATTStatusChange;
 - (BOOL)hasATTStatusChanged API_AVAILABLE(ios(14));
 - (void)storeATTStatus:(ATTrackingManagerAuthorizationStatus)status  API_AVAILABLE(ios(14));
+- (BOOL)isConsentLayerUpdated;
+- (void)setConsentLayerUpdated:(BOOL)updated;
+
 @end
 
 #endif /* CmpATTrackingManager_h */
