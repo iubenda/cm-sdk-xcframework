@@ -22,4 +22,6 @@
 + (CmpButtonEvent)buttonEventFromInt:(NSInteger)intValue;
 
 + (NSString *)jsonStringFromDictionary:(NSDictionary *)dictionary;
+
++ (BOOL)isDarkModeEnabled;
 @end

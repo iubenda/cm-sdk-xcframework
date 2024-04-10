@@ -2,8 +2,8 @@
 triple:          'arm64-apple-darwin'
 binary-path:     '/Users/skanderbenabdelmalak/Library/Developer/Xcode/DerivedData/CmpSdk-avnpwxzexhevqpbicjfsmyqzvwda/Build/Intermediates.noindex/ArchiveIntermediates/CmpSdk/InstallationBuildProductsLocation/Library/Frameworks/CmpSdk.framework/CmpSdk'
 relocations:
-  - { offsetInCU: 0x34, offset: 0x57A32, size: 0x8, addend: 0x0, symName: _CmpSdkVersionString, symObjAddr: 0x0, symBinAddr: 0x23950, symSize: 0x0 }
-  - { offsetInCU: 0x69, offset: 0x57A67, size: 0x8, addend: 0x0, symName: _CmpSdkVersionNumber, symObjAddr: 0x28, symBinAddr: 0x23978, symSize: 0x0 }
+  - { offsetInCU: 0x34, offset: 0x57A32, size: 0x8, addend: 0x0, symName: _CmpSdkVersionString, symObjAddr: 0x0, symBinAddr: 0x23AF0, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0x57A67, size: 0x8, addend: 0x0, symName: _CmpSdkVersionNumber, symObjAddr: 0x28, symBinAddr: 0x23B18, symSize: 0x0 }
   - { offsetInCU: 0x27, offset: 0x57AA4, size: 0x8, addend: 0x0, symName: '-[CmpAcceptRejectUseCaseStrategy initWithUseCase:completion:eventHandler:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x16C }
   - { offsetInCU: 0x655, offset: 0x580D2, size: 0x8, addend: 0x0, symName: '-[CmpAcceptRejectUseCaseStrategy initWithUseCase:completion:eventHandler:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x16C }
   - { offsetInCU: 0x6EB, offset: 0x58168, size: 0x8, addend: 0x0, symName: '-[CmpAcceptRejectUseCaseStrategy handleWebViewConsentReceived:]', symObjAddr: 0x16C, symBinAddr: 0x416C, symSize: 0x218 }
@@ -31,8 +31,8 @@ relocations:
   - { offsetInCU: 0xC09, offset: 0x58686, size: 0x8, addend: 0x0, symName: '-[CmpAcceptRejectUseCaseStrategy .cxx_destruct]', symObjAddr: 0x81C, symBinAddr: 0x481C, symSize: 0x68 }
   - { offsetInCU: 0x27, offset: 0x58AA5, size: 0x8, addend: 0x0, symName: '+[CmpATTrackingManager sharedManager]', symObjAddr: 0x0, symBinAddr: 0x4884, symSize: 0x74 }
   - { offsetInCU: 0x35, offset: 0x58AB3, size: 0x8, addend: 0x0, symName: '+[CmpATTrackingManager sharedManager]', symObjAddr: 0x0, symBinAddr: 0x4884, symSize: 0x74 }
-  - { offsetInCU: 0x5F, offset: 0x58ADD, size: 0x8, addend: 0x0, symName: _sharedManager.sharedInstance, symObjAddr: 0x49D8, symBinAddr: 0x3EFD0, symSize: 0x0 }
-  - { offsetInCU: 0x75, offset: 0x58AF3, size: 0x8, addend: 0x0, symName: _sharedManager.onceToken, symObjAddr: 0x49E0, symBinAddr: 0x3EFD8, symSize: 0x0 }
+  - { offsetInCU: 0x5F, offset: 0x58ADD, size: 0x8, addend: 0x0, symName: _sharedManager.sharedInstance, symObjAddr: 0x49D8, symBinAddr: 0x3F080, symSize: 0x0 }
+  - { offsetInCU: 0x75, offset: 0x58AF3, size: 0x8, addend: 0x0, symName: _sharedManager.onceToken, symObjAddr: 0x49E0, symBinAddr: 0x3F088, symSize: 0x0 }
   - { offsetInCU: 0x213, offset: 0x58C91, size: 0x8, addend: 0x0, symName: '___37+[CmpATTrackingManager sharedManager]_block_invoke', symObjAddr: 0x74, symBinAddr: 0x48F8, symSize: 0x2C }
   - { offsetInCU: 0x252, offset: 0x58CD0, size: 0x8, addend: 0x0, symName: '-[CmpATTrackingManager requestATTPermissionWithCompletion:]', symObjAddr: 0xA0, symBinAddr: 0x4924, symSize: 0xC8 }
   - { offsetInCU: 0x2AF, offset: 0x58D2D, size: 0x8, addend: 0x0, symName: '___59-[CmpATTrackingManager requestATTPermissionWithCompletion:]_block_invoke', symObjAddr: 0x168, symBinAddr: 0x49EC, symSize: 0x48 }
@@ -114,8 +114,8 @@ relocations:
   - { offsetInCU: 0xB57, offset: 0x5B62A, size: 0x8, addend: 0x0, symName: '-[CmpCheckConsentUseCaseStrategy .cxx_destruct]', symObjAddr: 0xC50, symBinAddr: 0x7308, symSize: 0x54 }
   - { offsetInCU: 0x27, offset: 0x5BA94, size: 0x8, addend: 0x0, symName: '+[CmpConfig sharedConfig]', symObjAddr: 0x0, symBinAddr: 0x735C, symSize: 0x74 }
   - { offsetInCU: 0x35, offset: 0x5BAA2, size: 0x8, addend: 0x0, symName: '+[CmpConfig sharedConfig]', symObjAddr: 0x0, symBinAddr: 0x735C, symSize: 0x74 }
-  - { offsetInCU: 0x5F, offset: 0x5BACC, size: 0x8, addend: 0x0, symName: _sharedConfig.sharedConfig, symObjAddr: 0x7128, symBinAddr: 0x3EFE0, symSize: 0x0 }
-  - { offsetInCU: 0x75, offset: 0x5BAE2, size: 0x8, addend: 0x0, symName: _sharedConfig.onceToken, symObjAddr: 0x7130, symBinAddr: 0x3EFE8, symSize: 0x0 }
+  - { offsetInCU: 0x5F, offset: 0x5BACC, size: 0x8, addend: 0x0, symName: _sharedConfig.sharedConfig, symObjAddr: 0x7128, symBinAddr: 0x3F090, symSize: 0x0 }
+  - { offsetInCU: 0x75, offset: 0x5BAE2, size: 0x8, addend: 0x0, symName: _sharedConfig.onceToken, symObjAddr: 0x7130, symBinAddr: 0x3F098, symSize: 0x0 }
   - { offsetInCU: 0x490, offset: 0x5BEFD, size: 0x8, addend: 0x0, symName: '___25+[CmpConfig sharedConfig]_block_invoke', symObjAddr: 0x74, symBinAddr: 0x73D0, symSize: 0x2C }
   - { offsetInCU: 0x4CF, offset: 0x5BF3C, size: 0x8, addend: 0x0, symName: '-[CmpConfig init]', symObjAddr: 0xA0, symBinAddr: 0x73FC, symSize: 0xF0 }
   - { offsetInCU: 0x506, offset: 0x5BF73, size: 0x8, addend: 0x0, symName: '-[CmpConfig setupWithId:domain:appName:language:]', symObjAddr: 0x190, symBinAddr: 0x74EC, symSize: 0xD8 }
@@ -475,8 +475,8 @@ relocations:
   - { offsetInCU: 0xBC6, offset: 0x64929, size: 0x8, addend: 0x0, symName: '-[CmpEnableDisableUseCaseStrategy .cxx_destruct]', symObjAddr: 0x8C0, symBinAddr: 0x126D8, symSize: 0x68 }
   - { offsetInCU: 0x27, offset: 0x64D48, size: 0x8, addend: 0x0, symName: '+[CmpEventBus sharedBus]', symObjAddr: 0x0, symBinAddr: 0x12740, symSize: 0x40 }
   - { offsetInCU: 0x3A, offset: 0x64D5B, size: 0x8, addend: 0x0, symName: '+[CmpEventBus sharedBus]', symObjAddr: 0x0, symBinAddr: 0x12740, symSize: 0x40 }
-  - { offsetInCU: 0x64, offset: 0x64D85, size: 0x8, addend: 0x0, symName: _sharedBus.sharedBus, symObjAddr: 0x3F58, symBinAddr: 0x3EFF0, symSize: 0x0 }
-  - { offsetInCU: 0x7A, offset: 0x64D9B, size: 0x8, addend: 0x0, symName: _sharedBus.onceToken, symObjAddr: 0x3F60, symBinAddr: 0x3EFF8, symSize: 0x0 }
+  - { offsetInCU: 0x64, offset: 0x64D85, size: 0x8, addend: 0x0, symName: _sharedBus.sharedBus, symObjAddr: 0x3F58, symBinAddr: 0x3F0A0, symSize: 0x0 }
+  - { offsetInCU: 0x7A, offset: 0x64D9B, size: 0x8, addend: 0x0, symName: _sharedBus.onceToken, symObjAddr: 0x3F60, symBinAddr: 0x3F0A8, symSize: 0x0 }
   - { offsetInCU: 0x29D, offset: 0x64FBE, size: 0x8, addend: 0x0, symName: '___24+[CmpEventBus sharedBus]_block_invoke', symObjAddr: 0x40, symBinAddr: 0x12780, symSize: 0xAC }
   - { offsetInCU: 0x2C4, offset: 0x64FE5, size: 0x8, addend: 0x0, symName: '-[CmpEventBus publishEvent:withDetails:]', symObjAddr: 0xEC, symBinAddr: 0x1282C, symSize: 0x2C4 }
   - { offsetInCU: 0x3C7, offset: 0x650E8, size: 0x8, addend: 0x0, symName: '-[CmpEventBus subscribeToEventsWithCallback:]', symObjAddr: 0x3B0, symBinAddr: 0x12AF0, symSize: 0xA4 }
@@ -548,9 +548,9 @@ relocations:
   - { offsetInCU: 0xED1, offset: 0x673C3, size: 0x8, addend: 0x0, symName: '-[CmpImportUseCaseStrategy setConsentResult:]', symObjAddr: 0xDB0, symBinAddr: 0x15718, symSize: 0xC }
   - { offsetInCU: 0xF10, offset: 0x67402, size: 0x8, addend: 0x0, symName: '-[CmpImportUseCaseStrategy .cxx_destruct]', symObjAddr: 0xDBC, symBinAddr: 0x15724, symSize: 0x90 }
   - { offsetInCU: 0x27, offset: 0x6774F, size: 0x8, addend: 0x0, symName: '+[CmpLayout initialize]', symObjAddr: 0x0, symBinAddr: 0x157B4, symSize: 0x84 }
-  - { offsetInCU: 0x41, offset: 0x67769, size: 0x8, addend: 0x0, symName: _kDefaultBackgroundColor, symObjAddr: 0x52C8, symBinAddr: 0x3F000, symSize: 0x0 }
-  - { offsetInCU: 0x5C, offset: 0x67784, size: 0x8, addend: 0x0, symName: _kDefaultShadowColor, symObjAddr: 0x52D0, symBinAddr: 0x3F008, symSize: 0x0 }
-  - { offsetInCU: 0xA8, offset: 0x677D0, size: 0x8, addend: 0x0, symName: _kDefaultShadowOffset, symObjAddr: 0xCA0, symBinAddr: 0x239F0, symSize: 0x0 }
+  - { offsetInCU: 0x41, offset: 0x67769, size: 0x8, addend: 0x0, symName: _kDefaultBackgroundColor, symObjAddr: 0x52C8, symBinAddr: 0x3F0B0, symSize: 0x0 }
+  - { offsetInCU: 0x5C, offset: 0x67784, size: 0x8, addend: 0x0, symName: _kDefaultShadowColor, symObjAddr: 0x52D0, symBinAddr: 0x3F0B8, symSize: 0x0 }
+  - { offsetInCU: 0xA8, offset: 0x677D0, size: 0x8, addend: 0x0, symName: _kDefaultShadowOffset, symObjAddr: 0xCA0, symBinAddr: 0x23B90, symSize: 0x0 }
   - { offsetInCU: 0x211, offset: 0x67939, size: 0x8, addend: 0x0, symName: '+[CmpLayout initialize]', symObjAddr: 0x0, symBinAddr: 0x157B4, symSize: 0x84 }
   - { offsetInCU: 0x244, offset: 0x6796C, size: 0x8, addend: 0x0, symName: '+[CmpLayout defaultLayout]', symObjAddr: 0x84, symBinAddr: 0x15838, symSize: 0x18 }
   - { offsetInCU: 0x27B, offset: 0x679A3, size: 0x8, addend: 0x0, symName: '-[CmpLayout init]', symObjAddr: 0x9C, symBinAddr: 0x15850, symSize: 0xA8 }
@@ -617,7 +617,7 @@ relocations:
   - { offsetInCU: 0x15D, offset: 0x68A68, size: 0x8, addend: 0x0, symName: _CmpConsentGoogleACChangedNotification, symObjAddr: 0x458, symBinAddr: 0x30678, symSize: 0x0 }
   - { offsetInCU: 0x173, offset: 0x68A7E, size: 0x8, addend: 0x0, symName: _CmpConsentUSPrivacyChangedNotification, symObjAddr: 0x460, symBinAddr: 0x30680, symSize: 0x0 }
   - { offsetInCU: 0x27, offset: 0x68ABD, size: 0x8, addend: 0x0, symName: '+[CmpReachability reachabilityWithHostName:]', symObjAddr: 0x0, symBinAddr: 0x167E8, symSize: 0x60 }
-  - { offsetInCU: 0x41, offset: 0x68AD7, size: 0x8, addend: 0x0, symName: _kReachabilityChangedNotification, symObjAddr: 0x4A0, symBinAddr: 0x3EDE8, symSize: 0x0 }
+  - { offsetInCU: 0x41, offset: 0x68AD7, size: 0x8, addend: 0x0, symName: _kReachabilityChangedNotification, symObjAddr: 0x4A0, symBinAddr: 0x3EE98, symSize: 0x0 }
   - { offsetInCU: 0xCD, offset: 0x68B63, size: 0x8, addend: 0x0, symName: '+[CmpReachability reachabilityWithHostName:]', symObjAddr: 0x0, symBinAddr: 0x167E8, symSize: 0x60 }
   - { offsetInCU: 0x18F, offset: 0x68C25, size: 0x8, addend: 0x0, symName: '+[CmpReachability reachabilityWithAddress:]', symObjAddr: 0x60, symBinAddr: 0x16848, symSize: 0x5C }
   - { offsetInCU: 0x23A, offset: 0x68CD0, size: 0x8, addend: 0x0, symName: '+[CmpReachability reachabilityForInternetConnection]', symObjAddr: 0xBC, symBinAddr: 0x168A4, symSize: 0x60 }
@@ -683,218 +683,220 @@ relocations:
   - { offsetInCU: 0x23E, offset: 0x6AB24, size: 0x8, addend: 0x0, symName: '+[CmpUIConfig configureLargeTopScreenForView:]', symObjAddr: 0x6FC, symBinAddr: 0x19060, symSize: 0x248 }
   - { offsetInCU: 0x2BD, offset: 0x6ABA3, size: 0x8, addend: 0x0, symName: '+[CmpUIConfig configureLargeBottomScreenForView:]', symObjAddr: 0x944, symBinAddr: 0x192A8, symSize: 0x248 }
   - { offsetInCU: 0x27, offset: 0x6AC85, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder initWithCmpURLParams:]', symObjAddr: 0x0, symBinAddr: 0x194F0, symSize: 0xD0 }
-  - { offsetInCU: 0x25A, offset: 0x6AEB8, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder initWithCmpURLParams:]', symObjAddr: 0x0, symBinAddr: 0x194F0, symSize: 0xD0 }
-  - { offsetInCU: 0x2A1, offset: 0x6AEFF, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder getConsent]', symObjAddr: 0xD0, symBinAddr: 0x195C0, symSize: 0x8 }
-  - { offsetInCU: 0x2D8, offset: 0x6AF36, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder build]', symObjAddr: 0xD8, symBinAddr: 0x195C8, symSize: 0x168 }
-  - { offsetInCU: 0x31F, offset: 0x6AF7D, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendQueryStringToComponents:]', symObjAddr: 0x240, symBinAddr: 0x19730, symSize: 0x1C8 }
-  - { offsetInCU: 0x389, offset: 0x6AFE7, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder queryItemForParameter:withKey:]', symObjAddr: 0x408, symBinAddr: 0x198F8, symSize: 0xFC }
-  - { offsetInCU: 0x41F, offset: 0x6B07D, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendConsentFragmentToComponents:]', symObjAddr: 0x504, symBinAddr: 0x199F4, symSize: 0x184 }
-  - { offsetInCU: 0x491, offset: 0x6B0EF, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder setUrlParameters]', symObjAddr: 0x688, symBinAddr: 0x19B78, symSize: 0x148 }
-  - { offsetInCU: 0x4C4, offset: 0x6B122, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendOpenConsentParams:]', symObjAddr: 0x7D0, symBinAddr: 0x19CC0, symSize: 0xFC }
-  - { offsetInCU: 0x507, offset: 0x6B165, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendCheckConsentParams:]', symObjAddr: 0x8CC, symBinAddr: 0x19DBC, symSize: 0xE8 }
-  - { offsetInCU: 0x54A, offset: 0x6B1A8, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendCommonParams:]', symObjAddr: 0x9B4, symBinAddr: 0x19EA4, symSize: 0x310 }
-  - { offsetInCU: 0x59D, offset: 0x6B1FB, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendDryParams:]', symObjAddr: 0xCC4, symBinAddr: 0x1A1B4, symSize: 0x98 }
-  - { offsetInCU: 0x5E0, offset: 0x6B23E, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendImportParams:]', symObjAddr: 0xD5C, symBinAddr: 0x1A24C, symSize: 0x98 }
-  - { offsetInCU: 0x623, offset: 0x6B281, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendAcceptParams:]', symObjAddr: 0xDF4, symBinAddr: 0x1A2E4, symSize: 0x60 }
-  - { offsetInCU: 0x666, offset: 0x6B2C4, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendRejectParams:]', symObjAddr: 0xE54, symBinAddr: 0x1A344, symSize: 0x60 }
-  - { offsetInCU: 0x6A9, offset: 0x6B307, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendEnablePurposesParams:]', symObjAddr: 0xEB4, symBinAddr: 0x1A3A4, symSize: 0x208 }
-  - { offsetInCU: 0x6EC, offset: 0x6B34A, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendDisablePurposesParams:]', symObjAddr: 0x10BC, symBinAddr: 0x1A5AC, symSize: 0x208 }
-  - { offsetInCU: 0x72F, offset: 0x6B38D, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendEnableVendorsParams:]', symObjAddr: 0x12C4, symBinAddr: 0x1A7B4, symSize: 0x190 }
-  - { offsetInCU: 0x772, offset: 0x6B3D0, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendDisableVendorsParams:]', symObjAddr: 0x1454, symBinAddr: 0x1A944, symSize: 0x190 }
-  - { offsetInCU: 0x7B5, offset: 0x6B413, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendParameter:forKey:]', symObjAddr: 0x15E4, symBinAddr: 0x1AAD4, symSize: 0x8C }
-  - { offsetInCU: 0x808, offset: 0x6B466, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendFlagParameterForKey:enabled:]', symObjAddr: 0x1670, symBinAddr: 0x1AB60, symSize: 0x8C }
-  - { offsetInCU: 0x85B, offset: 0x6B4B9, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendConsent:]', symObjAddr: 0x16FC, symBinAddr: 0x1ABEC, symSize: 0x94 }
-  - { offsetInCU: 0x8A0, offset: 0x6B4FE, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder dateAndRandomNumberAsString]', symObjAddr: 0x1790, symBinAddr: 0x1AC80, symSize: 0xC4 }
-  - { offsetInCU: 0x938, offset: 0x6B596, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder params]', symObjAddr: 0x1854, symBinAddr: 0x1AD44, symSize: 0x8 }
-  - { offsetInCU: 0x96F, offset: 0x6B5CD, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder setParams:]', symObjAddr: 0x185C, symBinAddr: 0x1AD4C, symSize: 0xC }
-  - { offsetInCU: 0x9B0, offset: 0x6B60E, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder useCaseParameters]', symObjAddr: 0x1868, symBinAddr: 0x1AD58, symSize: 0x8 }
-  - { offsetInCU: 0x9E7, offset: 0x6B645, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder setUseCaseParameters:]', symObjAddr: 0x1870, symBinAddr: 0x1AD60, symSize: 0xC }
-  - { offsetInCU: 0xA28, offset: 0x6B686, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder urlParameters]', symObjAddr: 0x187C, symBinAddr: 0x1AD6C, symSize: 0x8 }
-  - { offsetInCU: 0xA5F, offset: 0x6B6BD, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder setUrlParameters:]', symObjAddr: 0x1884, symBinAddr: 0x1AD74, symSize: 0xC }
-  - { offsetInCU: 0xAA0, offset: 0x6B6FE, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder .cxx_destruct]', symObjAddr: 0x1890, symBinAddr: 0x1AD80, symSize: 0x3C }
-  - { offsetInCU: 0x27, offset: 0x6B7BE, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:purposes:vendors:forceOpen:skipCookies:updateVendors:rejectAll:acceptAll:]', symObjAddr: 0x0, symBinAddr: 0x1ADBC, symSize: 0x2C8 }
-  - { offsetInCU: 0x367, offset: 0x6BAFE, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:purposes:vendors:forceOpen:skipCookies:updateVendors:rejectAll:acceptAll:]', symObjAddr: 0x0, symBinAddr: 0x1ADBC, symSize: 0x2C8 }
-  - { offsetInCU: 0x44E, offset: 0x6BBE5, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:]', symObjAddr: 0x2C8, symBinAddr: 0x1B084, symSize: 0x34 }
-  - { offsetInCU: 0x4A5, offset: 0x6BC3C, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:purposes:updateVendors:]', symObjAddr: 0x2FC, symBinAddr: 0x1B0B8, symSize: 0x30 }
-  - { offsetInCU: 0x51C, offset: 0x6BCB3, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:rejectAll:]', symObjAddr: 0x32C, symBinAddr: 0x1B0E8, symSize: 0x38 }
-  - { offsetInCU: 0x583, offset: 0x6BD1A, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:acceptAll:]', symObjAddr: 0x364, symBinAddr: 0x1B120, symSize: 0x34 }
-  - { offsetInCU: 0x5EA, offset: 0x6BD81, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:vendors:]', symObjAddr: 0x398, symBinAddr: 0x1B154, symSize: 0x34 }
-  - { offsetInCU: 0x651, offset: 0x6BDE8, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:forceOpen:]', symObjAddr: 0x3CC, symBinAddr: 0x1B188, symSize: 0x34 }
-  - { offsetInCU: 0x6B8, offset: 0x6BE4F, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams cmpATTTrackingStatusFromAuthorizationStatus:]', symObjAddr: 0x400, symBinAddr: 0x1B1BC, symSize: 0x24 }
-  - { offsetInCU: 0x6F9, offset: 0x6BE90, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams useCase]', symObjAddr: 0x424, symBinAddr: 0x1B1E0, symSize: 0x8 }
-  - { offsetInCU: 0x730, offset: 0x6BEC7, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setUseCase:]', symObjAddr: 0x42C, symBinAddr: 0x1B1E8, symSize: 0x8 }
-  - { offsetInCU: 0x76D, offset: 0x6BF04, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams id]', symObjAddr: 0x434, symBinAddr: 0x1B1F0, symSize: 0x8 }
-  - { offsetInCU: 0x7A4, offset: 0x6BF3B, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setId:]', symObjAddr: 0x43C, symBinAddr: 0x1B1F8, symSize: 0xC }
-  - { offsetInCU: 0x7E5, offset: 0x6BF7C, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams domain]', symObjAddr: 0x448, symBinAddr: 0x1B204, symSize: 0x8 }
-  - { offsetInCU: 0x81C, offset: 0x6BFB3, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setDomain:]', symObjAddr: 0x450, symBinAddr: 0x1B20C, symSize: 0xC }
-  - { offsetInCU: 0x85D, offset: 0x6BFF4, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams idfa]', symObjAddr: 0x45C, symBinAddr: 0x1B218, symSize: 0x8 }
-  - { offsetInCU: 0x894, offset: 0x6C02B, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setIdfa:]', symObjAddr: 0x464, symBinAddr: 0x1B220, symSize: 0xC }
-  - { offsetInCU: 0x8D5, offset: 0x6C06C, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams attStatus]', symObjAddr: 0x470, symBinAddr: 0x1B22C, symSize: 0x8 }
-  - { offsetInCU: 0x90C, offset: 0x6C0A3, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setAttStatus:]', symObjAddr: 0x478, symBinAddr: 0x1B234, symSize: 0x8 }
-  - { offsetInCU: 0x949, offset: 0x6C0E0, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams language]', symObjAddr: 0x480, symBinAddr: 0x1B23C, symSize: 0x8 }
-  - { offsetInCU: 0x980, offset: 0x6C117, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setLanguage:]', symObjAddr: 0x488, symBinAddr: 0x1B244, symSize: 0xC }
-  - { offsetInCU: 0x9C1, offset: 0x6C158, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams appName]', symObjAddr: 0x494, symBinAddr: 0x1B250, symSize: 0x8 }
-  - { offsetInCU: 0x9F8, offset: 0x6C18F, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setAppName:]', symObjAddr: 0x49C, symBinAddr: 0x1B258, symSize: 0xC }
-  - { offsetInCU: 0xA39, offset: 0x6C1D0, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams designId]', symObjAddr: 0x4A8, symBinAddr: 0x1B264, symSize: 0x8 }
-  - { offsetInCU: 0xA70, offset: 0x6C207, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setDesignId:]', symObjAddr: 0x4B0, symBinAddr: 0x1B26C, symSize: 0xC }
-  - { offsetInCU: 0xAB1, offset: 0x6C248, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams jumpToSettingsPage]', symObjAddr: 0x4BC, symBinAddr: 0x1B278, symSize: 0x8 }
-  - { offsetInCU: 0xAE8, offset: 0x6C27F, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setJumpToSettingsPage:]', symObjAddr: 0x4C4, symBinAddr: 0x1B280, symSize: 0x8 }
-  - { offsetInCU: 0xB23, offset: 0x6C2BA, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams isDebugMode]', symObjAddr: 0x4CC, symBinAddr: 0x1B288, symSize: 0x8 }
-  - { offsetInCU: 0xB5A, offset: 0x6C2F1, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setIsDebugMode:]', symObjAddr: 0x4D4, symBinAddr: 0x1B290, symSize: 0x8 }
-  - { offsetInCU: 0xB95, offset: 0x6C32C, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams consent]', symObjAddr: 0x4DC, symBinAddr: 0x1B298, symSize: 0x8 }
-  - { offsetInCU: 0xBCC, offset: 0x6C363, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setConsent:]', symObjAddr: 0x4E4, symBinAddr: 0x1B2A0, symSize: 0xC }
-  - { offsetInCU: 0xC0D, offset: 0x6C3A4, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams addPurposes]', symObjAddr: 0x4F0, symBinAddr: 0x1B2AC, symSize: 0x8 }
-  - { offsetInCU: 0xC44, offset: 0x6C3DB, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setAddPurposes:]', symObjAddr: 0x4F8, symBinAddr: 0x1B2B4, symSize: 0xC }
-  - { offsetInCU: 0xC85, offset: 0x6C41C, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams addVendors]', symObjAddr: 0x504, symBinAddr: 0x1B2C0, symSize: 0x8 }
-  - { offsetInCU: 0xCBC, offset: 0x6C453, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setAddVendors:]', symObjAddr: 0x50C, symBinAddr: 0x1B2C8, symSize: 0xC }
-  - { offsetInCU: 0xCFD, offset: 0x6C494, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams updateVendors]', symObjAddr: 0x518, symBinAddr: 0x1B2D4, symSize: 0x8 }
-  - { offsetInCU: 0xD34, offset: 0x6C4CB, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setUpdateVendors:]', symObjAddr: 0x520, symBinAddr: 0x1B2DC, symSize: 0x8 }
-  - { offsetInCU: 0xD6F, offset: 0x6C506, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams forceOpen]', symObjAddr: 0x528, symBinAddr: 0x1B2E4, symSize: 0x8 }
-  - { offsetInCU: 0xDA6, offset: 0x6C53D, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setForceOpen:]', symObjAddr: 0x530, symBinAddr: 0x1B2EC, symSize: 0x8 }
-  - { offsetInCU: 0xDE1, offset: 0x6C578, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams rejectAll]', symObjAddr: 0x538, symBinAddr: 0x1B2F4, symSize: 0x8 }
-  - { offsetInCU: 0xE18, offset: 0x6C5AF, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setRejectAll:]', symObjAddr: 0x540, symBinAddr: 0x1B2FC, symSize: 0x8 }
-  - { offsetInCU: 0xE53, offset: 0x6C5EA, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams acceptAll]', symObjAddr: 0x548, symBinAddr: 0x1B304, symSize: 0x8 }
-  - { offsetInCU: 0xE8A, offset: 0x6C621, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setAcceptAll:]', symObjAddr: 0x550, symBinAddr: 0x1B30C, symSize: 0x8 }
-  - { offsetInCU: 0xEC5, offset: 0x6C65C, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams skipCookies]', symObjAddr: 0x558, symBinAddr: 0x1B314, symSize: 0x8 }
-  - { offsetInCU: 0xEFC, offset: 0x6C693, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setSkipCookies:]', symObjAddr: 0x560, symBinAddr: 0x1B31C, symSize: 0x8 }
-  - { offsetInCU: 0xF37, offset: 0x6C6CE, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams bundleID]', symObjAddr: 0x568, symBinAddr: 0x1B324, symSize: 0x8 }
-  - { offsetInCU: 0xF6E, offset: 0x6C705, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setBundleID:]', symObjAddr: 0x570, symBinAddr: 0x1B32C, symSize: 0xC }
-  - { offsetInCU: 0xFAF, offset: 0x6C746, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams .cxx_destruct]', symObjAddr: 0x57C, symBinAddr: 0x1B338, symSize: 0x90 }
-  - { offsetInCU: 0x27, offset: 0x6C989, size: 0x8, addend: 0x0, symName: _NSStringFromCmpUseCase, symObjAddr: 0x0, symBinAddr: 0x1B3C8, symSize: 0x24 }
-  - { offsetInCU: 0xA5, offset: 0x6CA07, size: 0x8, addend: 0x0, symName: _NSStringFromCmpUseCase, symObjAddr: 0x0, symBinAddr: 0x1B3C8, symSize: 0x24 }
-  - { offsetInCU: 0x27, offset: 0x6CA69, size: 0x8, addend: 0x0, symName: '+[CmpUtils isNetworkAvailable]', symObjAddr: 0x0, symBinAddr: 0x1B3EC, symSize: 0x48 }
-  - { offsetInCU: 0xD8, offset: 0x6CB1A, size: 0x8, addend: 0x0, symName: '+[CmpUtils isNetworkAvailable]', symObjAddr: 0x0, symBinAddr: 0x1B3EC, symSize: 0x48 }
-  - { offsetInCU: 0x11B, offset: 0x6CB5D, size: 0x8, addend: 0x0, symName: '+[CmpUtils validateCmpLayerUrl:]', symObjAddr: 0x48, symBinAddr: 0x1B434, symSize: 0x88 }
-  - { offsetInCU: 0x15E, offset: 0x6CBA0, size: 0x8, addend: 0x0, symName: '+[CmpUtils topViewController]', symObjAddr: 0xD0, symBinAddr: 0x1B4BC, symSize: 0xCC }
-  - { offsetInCU: 0x1A1, offset: 0x6CBE3, size: 0x8, addend: 0x0, symName: '+[CmpUtils dispatchToMainThread:]', symObjAddr: 0x19C, symBinAddr: 0x1B588, symSize: 0x5C }
-  - { offsetInCU: 0x28D, offset: 0x6CCCF, size: 0x8, addend: 0x0, symName: '+[CmpUtils buttonEventFromInt:]', symObjAddr: 0x1F8, symBinAddr: 0x1B5E4, symSize: 0xC }
-  - { offsetInCU: 0x2CE, offset: 0x6CD10, size: 0x8, addend: 0x0, symName: '+[CmpUtils jsonStringFromDictionary:]', symObjAddr: 0x204, symBinAddr: 0x1B5F0, symSize: 0x174 }
-  - { offsetInCU: 0x363, offset: 0x6CDA5, size: 0x8, addend: 0x0, symName: '___37+[CmpUtils jsonStringFromDictionary:]_block_invoke', symObjAddr: 0x378, symBinAddr: 0x1B764, symSize: 0x1E0 }
-  - { offsetInCU: 0x410, offset: 0x6CE52, size: 0x8, addend: 0x0, symName: '+[CmpUtils stringFromDate:]', symObjAddr: 0x568, symBinAddr: 0x1B944, symSize: 0x88 }
-  - { offsetInCU: 0x27, offset: 0x6D03C, size: 0x8, addend: 0x0, symName: '-[Metadata encodeWithCoder:]', symObjAddr: 0x0, symBinAddr: 0x1B9CC, symSize: 0xC4 }
-  - { offsetInCU: 0xD0, offset: 0x6D0E5, size: 0x8, addend: 0x0, symName: '-[Metadata encodeWithCoder:]', symObjAddr: 0x0, symBinAddr: 0x1B9CC, symSize: 0xC4 }
-  - { offsetInCU: 0x113, offset: 0x6D128, size: 0x8, addend: 0x0, symName: '-[Metadata initWithCoder:]', symObjAddr: 0xC4, symBinAddr: 0x1BA90, symSize: 0x168 }
-  - { offsetInCU: 0x179, offset: 0x6D18E, size: 0x8, addend: 0x0, symName: '-[Metadata convertValueType]', symObjAddr: 0x22C, symBinAddr: 0x1BBF8, symSize: 0x114 }
-  - { offsetInCU: 0x1AC, offset: 0x6D1C1, size: 0x8, addend: 0x0, symName: '+[Metadata supportsSecureCoding]', symObjAddr: 0x340, symBinAddr: 0x1BD0C, symSize: 0x8 }
-  - { offsetInCU: 0x1DF, offset: 0x6D1F4, size: 0x8, addend: 0x0, symName: '-[Metadata name]', symObjAddr: 0x348, symBinAddr: 0x1BD14, symSize: 0x8 }
-  - { offsetInCU: 0x216, offset: 0x6D22B, size: 0x8, addend: 0x0, symName: '-[Metadata setName:]', symObjAddr: 0x350, symBinAddr: 0x1BD1C, symSize: 0x8 }
-  - { offsetInCU: 0x255, offset: 0x6D26A, size: 0x8, addend: 0x0, symName: '-[Metadata value]', symObjAddr: 0x358, symBinAddr: 0x1BD24, symSize: 0x8 }
-  - { offsetInCU: 0x28C, offset: 0x6D2A1, size: 0x8, addend: 0x0, symName: '-[Metadata setValue:]', symObjAddr: 0x360, symBinAddr: 0x1BD2C, symSize: 0xC }
-  - { offsetInCU: 0x2CD, offset: 0x6D2E2, size: 0x8, addend: 0x0, symName: '-[Metadata type]', symObjAddr: 0x36C, symBinAddr: 0x1BD38, symSize: 0x8 }
-  - { offsetInCU: 0x304, offset: 0x6D319, size: 0x8, addend: 0x0, symName: '-[Metadata setType:]', symObjAddr: 0x374, symBinAddr: 0x1BD40, symSize: 0x8 }
-  - { offsetInCU: 0x343, offset: 0x6D358, size: 0x8, addend: 0x0, symName: '-[Metadata .cxx_destruct]', symObjAddr: 0x37C, symBinAddr: 0x1BD48, symSize: 0x3C }
-  - { offsetInCU: 0x27, offset: 0x6D3F2, size: 0x8, addend: 0x0, symName: '-[NSObject(DictionaryRepresentation) dictionaryRepresentation]', symObjAddr: 0x0, symBinAddr: 0x1BD84, symSize: 0x49C }
-  - { offsetInCU: 0x4A, offset: 0x6D415, size: 0x8, addend: 0x0, symName: '-[NSObject(DictionaryRepresentation) dictionaryRepresentation]', symObjAddr: 0x0, symBinAddr: 0x1BD84, symSize: 0x49C }
-  - { offsetInCU: 0x224, offset: 0x6D5EF, size: 0x8, addend: 0x0, symName: '___62-[NSObject(DictionaryRepresentation) dictionaryRepresentation]_block_invoke', symObjAddr: 0x49C, symBinAddr: 0x1C220, symSize: 0x90 }
-  - { offsetInCU: 0x27, offset: 0x6D7AF, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerOpenListener:]', symObjAddr: 0x0, symBinAddr: 0x1C2B0, symSize: 0x4 }
-  - { offsetInCU: 0x4B0, offset: 0x6DC38, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerOpenListener:]', symObjAddr: 0x0, symBinAddr: 0x1C2B0, symSize: 0x4 }
-  - { offsetInCU: 0x4EF, offset: 0x6DC77, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerCloseListener:]', symObjAddr: 0x4, symBinAddr: 0x1C2B4, symSize: 0x4 }
-  - { offsetInCU: 0x52E, offset: 0x6DCB6, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerNotOpenedListener:]', symObjAddr: 0x8, symBinAddr: 0x1C2B8, symSize: 0x4 }
-  - { offsetInCU: 0x56D, offset: 0x6DCF5, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerErrorListener:]', symObjAddr: 0xC, symBinAddr: 0x1C2BC, symSize: 0x4 }
-  - { offsetInCU: 0x5AC, offset: 0x6DD34, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerButtonClickedListener:]', symObjAddr: 0x10, symBinAddr: 0x1C2C0, symSize: 0x4 }
-  - { offsetInCU: 0x5EB, offset: 0x6DD73, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerLinkClickListener:]', symObjAddr: 0x14, symBinAddr: 0x1C2C4, symSize: 0x4 }
-  - { offsetInCU: 0x62A, offset: 0x6DDB2, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerViewControllerConfigurationBlock:]', symObjAddr: 0x18, symBinAddr: 0x1C2C8, symSize: 0x4 }
-  - { offsetInCU: 0x669, offset: 0x6DDF1, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerUIViewConfigurationBlock:]', symObjAddr: 0x1C, symBinAddr: 0x1C2CC, symSize: 0x4 }
-  - { offsetInCU: 0x6A8, offset: 0x6DE30, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerGoogleAnalyticsListener:]', symObjAddr: 0x20, symBinAddr: 0x1C2D0, symSize: 0x4 }
-  - { offsetInCU: 0x6E7, offset: 0x6DE6F, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerOpenListener]', symObjAddr: 0x24, symBinAddr: 0x1C2D4, symSize: 0x9C }
-  - { offsetInCU: 0x743, offset: 0x6DECB, size: 0x8, addend: 0x0, symName: '___40-[V2CmpEventHandler triggerOpenListener]_block_invoke', symObjAddr: 0xC0, symBinAddr: 0x1C370, symSize: 0x38 }
-  - { offsetInCU: 0x78E, offset: 0x6DF16, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerCloseListener]', symObjAddr: 0x108, symBinAddr: 0x1C3A8, symSize: 0x9C }
-  - { offsetInCU: 0x7D7, offset: 0x6DF5F, size: 0x8, addend: 0x0, symName: '___41-[V2CmpEventHandler triggerCloseListener]_block_invoke', symObjAddr: 0x1A4, symBinAddr: 0x1C444, symSize: 0x38 }
-  - { offsetInCU: 0x822, offset: 0x6DFAA, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerNotOpenedListener]', symObjAddr: 0x1DC, symBinAddr: 0x1C47C, symSize: 0x9C }
-  - { offsetInCU: 0x86B, offset: 0x6DFF3, size: 0x8, addend: 0x0, symName: '___45-[V2CmpEventHandler triggerNotOpenedListener]_block_invoke', symObjAddr: 0x278, symBinAddr: 0x1C518, symSize: 0x38 }
-  - { offsetInCU: 0x8B6, offset: 0x6E03E, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerErrorListenerWithType:message:]', symObjAddr: 0x2B0, symBinAddr: 0x1C550, symSize: 0xD4 }
-  - { offsetInCU: 0x91F, offset: 0x6E0A7, size: 0x8, addend: 0x0, symName: '___58-[V2CmpEventHandler triggerErrorListenerWithType:message:]_block_invoke', symObjAddr: 0x384, symBinAddr: 0x1C624, symSize: 0x40 }
-  - { offsetInCU: 0x98A, offset: 0x6E112, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerButtonClickedListenerWithEvent:]', symObjAddr: 0x414, symBinAddr: 0x1C664, symSize: 0xA8 }
-  - { offsetInCU: 0x9E3, offset: 0x6E16B, size: 0x8, addend: 0x0, symName: '___59-[V2CmpEventHandler triggerButtonClickedListenerWithEvent:]_block_invoke', symObjAddr: 0x4BC, symBinAddr: 0x1C70C, symSize: 0x40 }
-  - { offsetInCU: 0xA3E, offset: 0x6E1C6, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerLinkClickListenerWithURL:navigationActionPolicy:]', symObjAddr: 0x4FC, symBinAddr: 0x1C74C, symSize: 0x180 }
-  - { offsetInCU: 0xAEF, offset: 0x6E277, size: 0x8, addend: 0x0, symName: '___76-[V2CmpEventHandler triggerLinkClickListenerWithURL:navigationActionPolicy:]_block_invoke', symObjAddr: 0x67C, symBinAddr: 0x1C8CC, symSize: 0x50 }
-  - { offsetInCU: 0xB6A, offset: 0x6E2F2, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48r, symObjAddr: 0x6CC, symBinAddr: 0x1C91C, symSize: 0x3C }
-  - { offsetInCU: 0xB93, offset: 0x6E31B, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48r, symObjAddr: 0x708, symBinAddr: 0x1C958, symSize: 0x34 }
-  - { offsetInCU: 0xBB2, offset: 0x6E33A, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerConfigureViewControllerBlock:]', symObjAddr: 0x73C, symBinAddr: 0x1C98C, symSize: 0x94 }
-  - { offsetInCU: 0xC09, offset: 0x6E391, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerUpdateGoogleConsentListener:]', symObjAddr: 0x7D0, symBinAddr: 0x1CA20, symSize: 0xCC }
-  - { offsetInCU: 0xC62, offset: 0x6E3EA, size: 0x8, addend: 0x0, symName: '___56-[V2CmpEventHandler triggerUpdateGoogleConsentListener:]_block_invoke', symObjAddr: 0x89C, symBinAddr: 0x1CAEC, symSize: 0x40 }
-  - { offsetInCU: 0xCBD, offset: 0x6E445, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerConfigureUIViewBlock:]', symObjAddr: 0x8DC, symBinAddr: 0x1CB2C, symSize: 0x78 }
-  - { offsetInCU: 0xD14, offset: 0x6E49C, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler getLinkClickListener]', symObjAddr: 0x954, symBinAddr: 0x1CBA4, symSize: 0x4 }
-  - { offsetInCU: 0xD49, offset: 0x6E4D1, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler openListener]', symObjAddr: 0x958, symBinAddr: 0x1CBA8, symSize: 0x8 }
-  - { offsetInCU: 0xD80, offset: 0x6E508, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setOpenListener:]', symObjAddr: 0x960, symBinAddr: 0x1CBB0, symSize: 0x8 }
-  - { offsetInCU: 0xDBF, offset: 0x6E547, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler closeListener]', symObjAddr: 0x968, symBinAddr: 0x1CBB8, symSize: 0x8 }
-  - { offsetInCU: 0xDF6, offset: 0x6E57E, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setCloseListener:]', symObjAddr: 0x970, symBinAddr: 0x1CBC0, symSize: 0x8 }
-  - { offsetInCU: 0xE35, offset: 0x6E5BD, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler notOpenedListener]', symObjAddr: 0x978, symBinAddr: 0x1CBC8, symSize: 0x8 }
-  - { offsetInCU: 0xE6C, offset: 0x6E5F4, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setNotOpenedListener:]', symObjAddr: 0x980, symBinAddr: 0x1CBD0, symSize: 0x8 }
-  - { offsetInCU: 0xEAB, offset: 0x6E633, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler errorListener]', symObjAddr: 0x988, symBinAddr: 0x1CBD8, symSize: 0x8 }
-  - { offsetInCU: 0xEE2, offset: 0x6E66A, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setErrorListener:]', symObjAddr: 0x990, symBinAddr: 0x1CBE0, symSize: 0x8 }
-  - { offsetInCU: 0xF21, offset: 0x6E6A9, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler buttonClickedListener]', symObjAddr: 0x998, symBinAddr: 0x1CBE8, symSize: 0x8 }
-  - { offsetInCU: 0xF58, offset: 0x6E6E0, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setButtonClickedListener:]', symObjAddr: 0x9A0, symBinAddr: 0x1CBF0, symSize: 0x8 }
-  - { offsetInCU: 0xF97, offset: 0x6E71F, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler linkClickListener]', symObjAddr: 0x9A8, symBinAddr: 0x1CBF8, symSize: 0x8 }
-  - { offsetInCU: 0xFCE, offset: 0x6E756, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setLinkClickListener:]', symObjAddr: 0x9B0, symBinAddr: 0x1CC00, symSize: 0x8 }
-  - { offsetInCU: 0x100D, offset: 0x6E795, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler viewControllerConfigurationBlock]', symObjAddr: 0x9B8, symBinAddr: 0x1CC08, symSize: 0x8 }
-  - { offsetInCU: 0x1044, offset: 0x6E7CC, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setViewControllerConfigurationBlock:]', symObjAddr: 0x9C0, symBinAddr: 0x1CC10, symSize: 0x8 }
-  - { offsetInCU: 0x1083, offset: 0x6E80B, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler uiViewConfigurationBlock]', symObjAddr: 0x9C8, symBinAddr: 0x1CC18, symSize: 0x8 }
-  - { offsetInCU: 0x10BA, offset: 0x6E842, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setUiViewConfigurationBlock:]', symObjAddr: 0x9D0, symBinAddr: 0x1CC20, symSize: 0x8 }
-  - { offsetInCU: 0x10F9, offset: 0x6E881, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler googleAnalyticsListener]', symObjAddr: 0x9D8, symBinAddr: 0x1CC28, symSize: 0x8 }
-  - { offsetInCU: 0x1130, offset: 0x6E8B8, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setGoogleAnalyticsListener:]', symObjAddr: 0x9E0, symBinAddr: 0x1CC30, symSize: 0x8 }
-  - { offsetInCU: 0x116F, offset: 0x6E8F7, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler .cxx_destruct]', symObjAddr: 0x9E8, symBinAddr: 0x1CC38, symSize: 0x84 }
-  - { offsetInCU: 0x27, offset: 0x6ECD4, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController viewDidLoad]', symObjAddr: 0x0, symBinAddr: 0x1CCBC, symSize: 0xF4 }
-  - { offsetInCU: 0x362, offset: 0x6F00F, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController viewDidLoad]', symObjAddr: 0x0, symBinAddr: 0x1CCBC, symSize: 0xF4 }
-  - { offsetInCU: 0x395, offset: 0x6F042, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController viewWillAppear:]', symObjAddr: 0xF4, symBinAddr: 0x1CDB0, symSize: 0x50 }
-  - { offsetInCU: 0x3D8, offset: 0x6F085, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController viewDidAppear:]', symObjAddr: 0x144, symBinAddr: 0x1CE00, symSize: 0x50 }
-  - { offsetInCU: 0x41B, offset: 0x6F0C8, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController configureNavigationGesture]', symObjAddr: 0x194, symBinAddr: 0x1CE50, symSize: 0x98 }
-  - { offsetInCU: 0x44E, offset: 0x6F0FB, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController resetNavigationGestureDelegate]', symObjAddr: 0x22C, symBinAddr: 0x1CEE8, symSize: 0x98 }
-  - { offsetInCU: 0x481, offset: 0x6F12E, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController closeViewController]', symObjAddr: 0x2C4, symBinAddr: 0x1CF80, symSize: 0xCC }
-  - { offsetInCU: 0x4B4, offset: 0x6F161, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController webViewManager]', symObjAddr: 0x390, symBinAddr: 0x1D04C, symSize: 0x10 }
-  - { offsetInCU: 0x4EB, offset: 0x6F198, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController setWebViewManager:]', symObjAddr: 0x3A0, symBinAddr: 0x1D05C, symSize: 0x14 }
-  - { offsetInCU: 0x52C, offset: 0x6F1D9, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController strategy]', symObjAddr: 0x3B4, symBinAddr: 0x1D070, symSize: 0x10 }
-  - { offsetInCU: 0x563, offset: 0x6F210, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController setStrategy:]', symObjAddr: 0x3C4, symBinAddr: 0x1D080, symSize: 0x14 }
-  - { offsetInCU: 0x5A4, offset: 0x6F251, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController .cxx_destruct]', symObjAddr: 0x3D8, symBinAddr: 0x1D094, symSize: 0x40 }
-  - { offsetInCU: 0x27, offset: 0x6F2C8, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager initWithConsentURL:]', symObjAddr: 0x0, symBinAddr: 0x1D0D4, symSize: 0xC0 }
-  - { offsetInCU: 0x3CE, offset: 0x6F66F, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager initWithConsentURL:]', symObjAddr: 0x0, symBinAddr: 0x1D0D4, symSize: 0xC0 }
-  - { offsetInCU: 0x415, offset: 0x6F6B6, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager createWebView]', symObjAddr: 0xC0, symBinAddr: 0x1D194, symSize: 0x100 }
-  - { offsetInCU: 0x4AE, offset: 0x6F74F, size: 0x8, addend: 0x0, symName: ___Block_byref_object_copy_, symObjAddr: 0x1C0, symBinAddr: 0x1D294, symSize: 0x10 }
-  - { offsetInCU: 0x4D3, offset: 0x6F774, size: 0x8, addend: 0x0, symName: ___Block_byref_object_dispose_, symObjAddr: 0x1D0, symBinAddr: 0x1D2A4, symSize: 0x8 }
-  - { offsetInCU: 0x4F2, offset: 0x6F793, size: 0x8, addend: 0x0, symName: '___33-[V2WebViewManager createWebView]_block_invoke', symObjAddr: 0x1D8, symBinAddr: 0x1D2AC, symSize: 0x1B0 }
-  - { offsetInCU: 0x580, offset: 0x6F821, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40r, symObjAddr: 0x388, symBinAddr: 0x1D45C, symSize: 0x34 }
-  - { offsetInCU: 0x5A9, offset: 0x6F84A, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40r, symObjAddr: 0x3BC, symBinAddr: 0x1D490, symSize: 0x2C }
-  - { offsetInCU: 0x5C8, offset: 0x6F869, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager loadWebView]', symObjAddr: 0x3E8, symBinAddr: 0x1D4BC, symSize: 0x88 }
-  - { offsetInCU: 0x624, offset: 0x6F8C5, size: 0x8, addend: 0x0, symName: '___31-[V2WebViewManager loadWebView]_block_invoke', symObjAddr: 0x470, symBinAddr: 0x1D544, symSize: 0x9C }
-  - { offsetInCU: 0x663, offset: 0x6F904, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager retryApproachAfterTimeout]', symObjAddr: 0x51C, symBinAddr: 0x1D5E0, symSize: 0x40 }
-  - { offsetInCU: 0x696, offset: 0x6F937, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager removeWebView]', symObjAddr: 0x55C, symBinAddr: 0x1D620, symSize: 0x40 }
-  - { offsetInCU: 0x6C9, offset: 0x6F96A, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager startRetryTimer]', symObjAddr: 0x59C, symBinAddr: 0x1D660, symSize: 0xC0 }
-  - { offsetInCU: 0x6FC, offset: 0x6F99D, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager retryLoading]', symObjAddr: 0x65C, symBinAddr: 0x1D720, symSize: 0x164 }
-  - { offsetInCU: 0x72F, offset: 0x6F9D0, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager handleNetworkError]', symObjAddr: 0x7C0, symBinAddr: 0x1D884, symSize: 0x8C }
-  - { offsetInCU: 0x776, offset: 0x6FA17, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager handleTimeoutError]', symObjAddr: 0x84C, symBinAddr: 0x1D910, symSize: 0xC4 }
-  - { offsetInCU: 0x7BD, offset: 0x6FA5E, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager cancelRetryTimer]', symObjAddr: 0x910, symBinAddr: 0x1D9D4, symSize: 0x40 }
-  - { offsetInCU: 0x7F0, offset: 0x6FA91, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager webView:didFailNavigation:withError:]', symObjAddr: 0x950, symBinAddr: 0x1DA14, symSize: 0x8C }
-  - { offsetInCU: 0x85B, offset: 0x6FAFC, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager webView:didFinishNavigation:]', symObjAddr: 0x9DC, symBinAddr: 0x1DAA0, symSize: 0x60 }
-  - { offsetInCU: 0x8B2, offset: 0x6FB53, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager userContentController:didReceiveScriptMessage:]', symObjAddr: 0xA3C, symBinAddr: 0x1DB00, symSize: 0x2CC }
-  - { offsetInCU: 0x976, offset: 0x6FC17, size: 0x8, addend: 0x0, symName: '___66-[V2WebViewManager userContentController:didReceiveScriptMessage:]_block_invoke', symObjAddr: 0xD08, symBinAddr: 0x1DDCC, symSize: 0x84 }
-  - { offsetInCU: 0x9CD, offset: 0x6FC6E, size: 0x8, addend: 0x0, symName: '___66-[V2WebViewManager userContentController:didReceiveScriptMessage:]_block_invoke.50', symObjAddr: 0xD8C, symBinAddr: 0x1DE50, symSize: 0x98 }
-  - { offsetInCU: 0xA37, offset: 0x6FCD8, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager webView:decidePolicyForNavigationAction:decisionHandler:]', symObjAddr: 0xE24, symBinAddr: 0x1DEE8, symSize: 0x284 }
-  - { offsetInCU: 0xB38, offset: 0x6FDD9, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:]', symObjAddr: 0x10A8, symBinAddr: 0x1E16C, symSize: 0xA4 }
-  - { offsetInCU: 0xBA3, offset: 0x6FE44, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager webView:decidePolicyForNavigationResponse:decisionHandler:]', symObjAddr: 0x114C, symBinAddr: 0x1E210, symSize: 0x44 }
-  - { offsetInCU: 0xC14, offset: 0x6FEB5, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager isDomainWhitelisted:]', symObjAddr: 0x1190, symBinAddr: 0x1E254, symSize: 0x1C4 }
-  - { offsetInCU: 0xCAB, offset: 0x6FF4C, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager webView]', symObjAddr: 0x1354, symBinAddr: 0x1E418, symSize: 0x8 }
-  - { offsetInCU: 0xCE2, offset: 0x6FF83, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setWebView:]', symObjAddr: 0x135C, symBinAddr: 0x1E420, symSize: 0xC }
-  - { offsetInCU: 0xD23, offset: 0x6FFC4, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager openHandler]', symObjAddr: 0x1368, symBinAddr: 0x1E42C, symSize: 0x8 }
-  - { offsetInCU: 0xD5A, offset: 0x6FFFB, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setOpenHandler:]', symObjAddr: 0x1370, symBinAddr: 0x1E434, symSize: 0x8 }
-  - { offsetInCU: 0xD99, offset: 0x7003A, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager closeHandler]', symObjAddr: 0x1378, symBinAddr: 0x1E43C, symSize: 0x8 }
-  - { offsetInCU: 0xDD0, offset: 0x70071, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setCloseHandler:]', symObjAddr: 0x1380, symBinAddr: 0x1E444, symSize: 0x8 }
-  - { offsetInCU: 0xE0F, offset: 0x700B0, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager errorHandler]', symObjAddr: 0x1388, symBinAddr: 0x1E44C, symSize: 0x8 }
-  - { offsetInCU: 0xE46, offset: 0x700E7, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setErrorHandler:]', symObjAddr: 0x1390, symBinAddr: 0x1E454, symSize: 0x8 }
-  - { offsetInCU: 0xE85, offset: 0x70126, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager consentReceivedhandler]', symObjAddr: 0x1398, symBinAddr: 0x1E45C, symSize: 0x8 }
-  - { offsetInCU: 0xEBC, offset: 0x7015D, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setConsentReceivedhandler:]', symObjAddr: 0x13A0, symBinAddr: 0x1E464, symSize: 0x8 }
-  - { offsetInCU: 0xEFB, offset: 0x7019C, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager linkClickHandler]', symObjAddr: 0x13A8, symBinAddr: 0x1E46C, symSize: 0x8 }
-  - { offsetInCU: 0xF32, offset: 0x701D3, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setLinkClickHandler:]', symObjAddr: 0x13B0, symBinAddr: 0x1E474, symSize: 0x8 }
-  - { offsetInCU: 0xF71, offset: 0x70212, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager completion]', symObjAddr: 0x13B8, symBinAddr: 0x1E47C, symSize: 0x8 }
-  - { offsetInCU: 0xFA8, offset: 0x70249, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setCompletion:]', symObjAddr: 0x13C0, symBinAddr: 0x1E484, symSize: 0x8 }
-  - { offsetInCU: 0xFE7, offset: 0x70288, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager isInRetryState]', symObjAddr: 0x13C8, symBinAddr: 0x1E48C, symSize: 0x8 }
-  - { offsetInCU: 0x101E, offset: 0x702BF, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setRetryState:]', symObjAddr: 0x13D0, symBinAddr: 0x1E494, symSize: 0x8 }
-  - { offsetInCU: 0x1059, offset: 0x702FA, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager consentURL]', symObjAddr: 0x13D8, symBinAddr: 0x1E49C, symSize: 0x8 }
-  - { offsetInCU: 0x1090, offset: 0x70331, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setConsentURL:]', symObjAddr: 0x13E0, symBinAddr: 0x1E4A4, symSize: 0xC }
-  - { offsetInCU: 0x10D1, offset: 0x70372, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager maxRetryCount]', symObjAddr: 0x13EC, symBinAddr: 0x1E4B0, symSize: 0x8 }
-  - { offsetInCU: 0x1108, offset: 0x703A9, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setMaxRetryCount:]', symObjAddr: 0x13F4, symBinAddr: 0x1E4B8, symSize: 0x8 }
-  - { offsetInCU: 0x1145, offset: 0x703E6, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager retryTimer]', symObjAddr: 0x13FC, symBinAddr: 0x1E4C0, symSize: 0x8 }
-  - { offsetInCU: 0x117C, offset: 0x7041D, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setRetryTimer:]', symObjAddr: 0x1404, symBinAddr: 0x1E4C8, symSize: 0xC }
-  - { offsetInCU: 0x11BD, offset: 0x7045E, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager timeoutReached]', symObjAddr: 0x1410, symBinAddr: 0x1E4D4, symSize: 0x8 }
-  - { offsetInCU: 0x11F4, offset: 0x70495, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setTimeoutReached:]', symObjAddr: 0x1418, symBinAddr: 0x1E4DC, symSize: 0x8 }
-  - { offsetInCU: 0x122F, offset: 0x704D0, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager .cxx_destruct]', symObjAddr: 0x1420, symBinAddr: 0x1E4E4, symSize: 0x84 }
+  - { offsetInCU: 0x26F, offset: 0x6AECD, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder initWithCmpURLParams:]', symObjAddr: 0x0, symBinAddr: 0x194F0, symSize: 0xD0 }
+  - { offsetInCU: 0x2B6, offset: 0x6AF14, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder getConsent]', symObjAddr: 0xD0, symBinAddr: 0x195C0, symSize: 0x8 }
+  - { offsetInCU: 0x2ED, offset: 0x6AF4B, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder build]', symObjAddr: 0xD8, symBinAddr: 0x195C8, symSize: 0x174 }
+  - { offsetInCU: 0x334, offset: 0x6AF92, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendQueryStringToComponents:]', symObjAddr: 0x24C, symBinAddr: 0x1973C, symSize: 0x1C8 }
+  - { offsetInCU: 0x39E, offset: 0x6AFFC, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendDarkModeParameterToComponents:]', symObjAddr: 0x414, symBinAddr: 0x19904, symSize: 0xC4 }
+  - { offsetInCU: 0x40D, offset: 0x6B06B, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder queryItemForParameter:withKey:]', symObjAddr: 0x4D8, symBinAddr: 0x199C8, symSize: 0xFC }
+  - { offsetInCU: 0x4A3, offset: 0x6B101, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendConsentFragmentToComponents:]', symObjAddr: 0x5D4, symBinAddr: 0x19AC4, symSize: 0x184 }
+  - { offsetInCU: 0x515, offset: 0x6B173, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder setUrlParameters]', symObjAddr: 0x758, symBinAddr: 0x19C48, symSize: 0x148 }
+  - { offsetInCU: 0x548, offset: 0x6B1A6, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendOpenConsentParams:]', symObjAddr: 0x8A0, symBinAddr: 0x19D90, symSize: 0xFC }
+  - { offsetInCU: 0x58B, offset: 0x6B1E9, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendCheckConsentParams:]', symObjAddr: 0x99C, symBinAddr: 0x19E8C, symSize: 0xCC }
+  - { offsetInCU: 0x5CE, offset: 0x6B22C, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendCommonParams:]', symObjAddr: 0xA68, symBinAddr: 0x19F58, symSize: 0x310 }
+  - { offsetInCU: 0x621, offset: 0x6B27F, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendDryParams:]', symObjAddr: 0xD78, symBinAddr: 0x1A268, symSize: 0x98 }
+  - { offsetInCU: 0x664, offset: 0x6B2C2, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendImportParams:]', symObjAddr: 0xE10, symBinAddr: 0x1A300, symSize: 0x98 }
+  - { offsetInCU: 0x6A7, offset: 0x6B305, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendAcceptParams:]', symObjAddr: 0xEA8, symBinAddr: 0x1A398, symSize: 0x60 }
+  - { offsetInCU: 0x6EA, offset: 0x6B348, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendRejectParams:]', symObjAddr: 0xF08, symBinAddr: 0x1A3F8, symSize: 0x60 }
+  - { offsetInCU: 0x72D, offset: 0x6B38B, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendEnablePurposesParams:]', symObjAddr: 0xF68, symBinAddr: 0x1A458, symSize: 0x208 }
+  - { offsetInCU: 0x770, offset: 0x6B3CE, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendDisablePurposesParams:]', symObjAddr: 0x1170, symBinAddr: 0x1A660, symSize: 0x208 }
+  - { offsetInCU: 0x7B3, offset: 0x6B411, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendEnableVendorsParams:]', symObjAddr: 0x1378, symBinAddr: 0x1A868, symSize: 0x190 }
+  - { offsetInCU: 0x7F6, offset: 0x6B454, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendDisableVendorsParams:]', symObjAddr: 0x1508, symBinAddr: 0x1A9F8, symSize: 0x190 }
+  - { offsetInCU: 0x839, offset: 0x6B497, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendParameter:forKey:]', symObjAddr: 0x1698, symBinAddr: 0x1AB88, symSize: 0x8C }
+  - { offsetInCU: 0x88C, offset: 0x6B4EA, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendFlagParameterForKey:enabled:]', symObjAddr: 0x1724, symBinAddr: 0x1AC14, symSize: 0x8C }
+  - { offsetInCU: 0x8E2, offset: 0x6B540, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder appendConsent:]', symObjAddr: 0x17B0, symBinAddr: 0x1ACA0, symSize: 0x94 }
+  - { offsetInCU: 0x927, offset: 0x6B585, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder dateAndRandomNumberAsString]', symObjAddr: 0x1844, symBinAddr: 0x1AD34, symSize: 0xC4 }
+  - { offsetInCU: 0x9BF, offset: 0x6B61D, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder params]', symObjAddr: 0x1908, symBinAddr: 0x1ADF8, symSize: 0x8 }
+  - { offsetInCU: 0x9F6, offset: 0x6B654, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder setParams:]', symObjAddr: 0x1910, symBinAddr: 0x1AE00, symSize: 0xC }
+  - { offsetInCU: 0xA37, offset: 0x6B695, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder useCaseParameters]', symObjAddr: 0x191C, symBinAddr: 0x1AE0C, symSize: 0x8 }
+  - { offsetInCU: 0xA6E, offset: 0x6B6CC, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder setUseCaseParameters:]', symObjAddr: 0x1924, symBinAddr: 0x1AE14, symSize: 0xC }
+  - { offsetInCU: 0xAAF, offset: 0x6B70D, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder urlParameters]', symObjAddr: 0x1930, symBinAddr: 0x1AE20, symSize: 0x8 }
+  - { offsetInCU: 0xAE6, offset: 0x6B744, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder setUrlParameters:]', symObjAddr: 0x1938, symBinAddr: 0x1AE28, symSize: 0xC }
+  - { offsetInCU: 0xB27, offset: 0x6B785, size: 0x8, addend: 0x0, symName: '-[CmpUrlBuilder .cxx_destruct]', symObjAddr: 0x1944, symBinAddr: 0x1AE34, symSize: 0x3C }
+  - { offsetInCU: 0x27, offset: 0x6B845, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:purposes:vendors:forceOpen:skipCookies:updateVendors:rejectAll:acceptAll:]', symObjAddr: 0x0, symBinAddr: 0x1AE70, symSize: 0x2C8 }
+  - { offsetInCU: 0x367, offset: 0x6BB85, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:purposes:vendors:forceOpen:skipCookies:updateVendors:rejectAll:acceptAll:]', symObjAddr: 0x0, symBinAddr: 0x1AE70, symSize: 0x2C8 }
+  - { offsetInCU: 0x44E, offset: 0x6BC6C, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:]', symObjAddr: 0x2C8, symBinAddr: 0x1B138, symSize: 0x34 }
+  - { offsetInCU: 0x4A5, offset: 0x6BCC3, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:purposes:updateVendors:]', symObjAddr: 0x2FC, symBinAddr: 0x1B16C, symSize: 0x30 }
+  - { offsetInCU: 0x51C, offset: 0x6BD3A, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:rejectAll:]', symObjAddr: 0x32C, symBinAddr: 0x1B19C, symSize: 0x38 }
+  - { offsetInCU: 0x583, offset: 0x6BDA1, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:acceptAll:]', symObjAddr: 0x364, symBinAddr: 0x1B1D4, symSize: 0x34 }
+  - { offsetInCU: 0x5EA, offset: 0x6BE08, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:vendors:]', symObjAddr: 0x398, symBinAddr: 0x1B208, symSize: 0x34 }
+  - { offsetInCU: 0x651, offset: 0x6BE6F, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams paramsWithUseCase:consent:forceOpen:]', symObjAddr: 0x3CC, symBinAddr: 0x1B23C, symSize: 0x34 }
+  - { offsetInCU: 0x6B8, offset: 0x6BED6, size: 0x8, addend: 0x0, symName: '+[CmpUrlParams cmpATTTrackingStatusFromAuthorizationStatus:]', symObjAddr: 0x400, symBinAddr: 0x1B270, symSize: 0x24 }
+  - { offsetInCU: 0x6F9, offset: 0x6BF17, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams useCase]', symObjAddr: 0x424, symBinAddr: 0x1B294, symSize: 0x8 }
+  - { offsetInCU: 0x730, offset: 0x6BF4E, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setUseCase:]', symObjAddr: 0x42C, symBinAddr: 0x1B29C, symSize: 0x8 }
+  - { offsetInCU: 0x76D, offset: 0x6BF8B, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams id]', symObjAddr: 0x434, symBinAddr: 0x1B2A4, symSize: 0x8 }
+  - { offsetInCU: 0x7A4, offset: 0x6BFC2, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setId:]', symObjAddr: 0x43C, symBinAddr: 0x1B2AC, symSize: 0xC }
+  - { offsetInCU: 0x7E5, offset: 0x6C003, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams domain]', symObjAddr: 0x448, symBinAddr: 0x1B2B8, symSize: 0x8 }
+  - { offsetInCU: 0x81C, offset: 0x6C03A, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setDomain:]', symObjAddr: 0x450, symBinAddr: 0x1B2C0, symSize: 0xC }
+  - { offsetInCU: 0x85D, offset: 0x6C07B, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams idfa]', symObjAddr: 0x45C, symBinAddr: 0x1B2CC, symSize: 0x8 }
+  - { offsetInCU: 0x894, offset: 0x6C0B2, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setIdfa:]', symObjAddr: 0x464, symBinAddr: 0x1B2D4, symSize: 0xC }
+  - { offsetInCU: 0x8D5, offset: 0x6C0F3, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams attStatus]', symObjAddr: 0x470, symBinAddr: 0x1B2E0, symSize: 0x8 }
+  - { offsetInCU: 0x90C, offset: 0x6C12A, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setAttStatus:]', symObjAddr: 0x478, symBinAddr: 0x1B2E8, symSize: 0x8 }
+  - { offsetInCU: 0x949, offset: 0x6C167, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams language]', symObjAddr: 0x480, symBinAddr: 0x1B2F0, symSize: 0x8 }
+  - { offsetInCU: 0x980, offset: 0x6C19E, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setLanguage:]', symObjAddr: 0x488, symBinAddr: 0x1B2F8, symSize: 0xC }
+  - { offsetInCU: 0x9C1, offset: 0x6C1DF, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams appName]', symObjAddr: 0x494, symBinAddr: 0x1B304, symSize: 0x8 }
+  - { offsetInCU: 0x9F8, offset: 0x6C216, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setAppName:]', symObjAddr: 0x49C, symBinAddr: 0x1B30C, symSize: 0xC }
+  - { offsetInCU: 0xA39, offset: 0x6C257, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams designId]', symObjAddr: 0x4A8, symBinAddr: 0x1B318, symSize: 0x8 }
+  - { offsetInCU: 0xA70, offset: 0x6C28E, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setDesignId:]', symObjAddr: 0x4B0, symBinAddr: 0x1B320, symSize: 0xC }
+  - { offsetInCU: 0xAB1, offset: 0x6C2CF, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams jumpToSettingsPage]', symObjAddr: 0x4BC, symBinAddr: 0x1B32C, symSize: 0x8 }
+  - { offsetInCU: 0xAE8, offset: 0x6C306, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setJumpToSettingsPage:]', symObjAddr: 0x4C4, symBinAddr: 0x1B334, symSize: 0x8 }
+  - { offsetInCU: 0xB23, offset: 0x6C341, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams isDebugMode]', symObjAddr: 0x4CC, symBinAddr: 0x1B33C, symSize: 0x8 }
+  - { offsetInCU: 0xB5A, offset: 0x6C378, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setIsDebugMode:]', symObjAddr: 0x4D4, symBinAddr: 0x1B344, symSize: 0x8 }
+  - { offsetInCU: 0xB95, offset: 0x6C3B3, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams consent]', symObjAddr: 0x4DC, symBinAddr: 0x1B34C, symSize: 0x8 }
+  - { offsetInCU: 0xBCC, offset: 0x6C3EA, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setConsent:]', symObjAddr: 0x4E4, symBinAddr: 0x1B354, symSize: 0xC }
+  - { offsetInCU: 0xC0D, offset: 0x6C42B, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams addPurposes]', symObjAddr: 0x4F0, symBinAddr: 0x1B360, symSize: 0x8 }
+  - { offsetInCU: 0xC44, offset: 0x6C462, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setAddPurposes:]', symObjAddr: 0x4F8, symBinAddr: 0x1B368, symSize: 0xC }
+  - { offsetInCU: 0xC85, offset: 0x6C4A3, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams addVendors]', symObjAddr: 0x504, symBinAddr: 0x1B374, symSize: 0x8 }
+  - { offsetInCU: 0xCBC, offset: 0x6C4DA, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setAddVendors:]', symObjAddr: 0x50C, symBinAddr: 0x1B37C, symSize: 0xC }
+  - { offsetInCU: 0xCFD, offset: 0x6C51B, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams updateVendors]', symObjAddr: 0x518, symBinAddr: 0x1B388, symSize: 0x8 }
+  - { offsetInCU: 0xD34, offset: 0x6C552, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setUpdateVendors:]', symObjAddr: 0x520, symBinAddr: 0x1B390, symSize: 0x8 }
+  - { offsetInCU: 0xD6F, offset: 0x6C58D, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams forceOpen]', symObjAddr: 0x528, symBinAddr: 0x1B398, symSize: 0x8 }
+  - { offsetInCU: 0xDA6, offset: 0x6C5C4, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setForceOpen:]', symObjAddr: 0x530, symBinAddr: 0x1B3A0, symSize: 0x8 }
+  - { offsetInCU: 0xDE1, offset: 0x6C5FF, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams rejectAll]', symObjAddr: 0x538, symBinAddr: 0x1B3A8, symSize: 0x8 }
+  - { offsetInCU: 0xE18, offset: 0x6C636, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setRejectAll:]', symObjAddr: 0x540, symBinAddr: 0x1B3B0, symSize: 0x8 }
+  - { offsetInCU: 0xE53, offset: 0x6C671, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams acceptAll]', symObjAddr: 0x548, symBinAddr: 0x1B3B8, symSize: 0x8 }
+  - { offsetInCU: 0xE8A, offset: 0x6C6A8, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setAcceptAll:]', symObjAddr: 0x550, symBinAddr: 0x1B3C0, symSize: 0x8 }
+  - { offsetInCU: 0xEC5, offset: 0x6C6E3, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams skipCookies]', symObjAddr: 0x558, symBinAddr: 0x1B3C8, symSize: 0x8 }
+  - { offsetInCU: 0xEFC, offset: 0x6C71A, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setSkipCookies:]', symObjAddr: 0x560, symBinAddr: 0x1B3D0, symSize: 0x8 }
+  - { offsetInCU: 0xF37, offset: 0x6C755, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams bundleID]', symObjAddr: 0x568, symBinAddr: 0x1B3D8, symSize: 0x8 }
+  - { offsetInCU: 0xF6E, offset: 0x6C78C, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams setBundleID:]', symObjAddr: 0x570, symBinAddr: 0x1B3E0, symSize: 0xC }
+  - { offsetInCU: 0xFAF, offset: 0x6C7CD, size: 0x8, addend: 0x0, symName: '-[CmpUrlParams .cxx_destruct]', symObjAddr: 0x57C, symBinAddr: 0x1B3EC, symSize: 0x90 }
+  - { offsetInCU: 0x27, offset: 0x6CA10, size: 0x8, addend: 0x0, symName: _NSStringFromCmpUseCase, symObjAddr: 0x0, symBinAddr: 0x1B47C, symSize: 0x24 }
+  - { offsetInCU: 0xA5, offset: 0x6CA8E, size: 0x8, addend: 0x0, symName: _NSStringFromCmpUseCase, symObjAddr: 0x0, symBinAddr: 0x1B47C, symSize: 0x24 }
+  - { offsetInCU: 0x27, offset: 0x6CAF0, size: 0x8, addend: 0x0, symName: '+[CmpUtils isNetworkAvailable]', symObjAddr: 0x0, symBinAddr: 0x1B4A0, symSize: 0x48 }
+  - { offsetInCU: 0xD8, offset: 0x6CBA1, size: 0x8, addend: 0x0, symName: '+[CmpUtils isNetworkAvailable]', symObjAddr: 0x0, symBinAddr: 0x1B4A0, symSize: 0x48 }
+  - { offsetInCU: 0x11B, offset: 0x6CBE4, size: 0x8, addend: 0x0, symName: '+[CmpUtils validateCmpLayerUrl:]', symObjAddr: 0x48, symBinAddr: 0x1B4E8, symSize: 0x88 }
+  - { offsetInCU: 0x15E, offset: 0x6CC27, size: 0x8, addend: 0x0, symName: '+[CmpUtils topViewController]', symObjAddr: 0xD0, symBinAddr: 0x1B570, symSize: 0xCC }
+  - { offsetInCU: 0x1A1, offset: 0x6CC6A, size: 0x8, addend: 0x0, symName: '+[CmpUtils dispatchToMainThread:]', symObjAddr: 0x19C, symBinAddr: 0x1B63C, symSize: 0x5C }
+  - { offsetInCU: 0x28D, offset: 0x6CD56, size: 0x8, addend: 0x0, symName: '+[CmpUtils buttonEventFromInt:]', symObjAddr: 0x1F8, symBinAddr: 0x1B698, symSize: 0xC }
+  - { offsetInCU: 0x2CE, offset: 0x6CD97, size: 0x8, addend: 0x0, symName: '+[CmpUtils jsonStringFromDictionary:]', symObjAddr: 0x204, symBinAddr: 0x1B6A4, symSize: 0x174 }
+  - { offsetInCU: 0x363, offset: 0x6CE2C, size: 0x8, addend: 0x0, symName: '___37+[CmpUtils jsonStringFromDictionary:]_block_invoke', symObjAddr: 0x378, symBinAddr: 0x1B818, symSize: 0x1E0 }
+  - { offsetInCU: 0x410, offset: 0x6CED9, size: 0x8, addend: 0x0, symName: '+[CmpUtils stringFromDate:]', symObjAddr: 0x568, symBinAddr: 0x1B9F8, symSize: 0x88 }
+  - { offsetInCU: 0x463, offset: 0x6CF2C, size: 0x8, addend: 0x0, symName: '+[CmpUtils isDarkModeEnabled]', symObjAddr: 0x5F0, symBinAddr: 0x1BA80, symSize: 0x68 }
+  - { offsetInCU: 0x27, offset: 0x6D0F6, size: 0x8, addend: 0x0, symName: '-[Metadata encodeWithCoder:]', symObjAddr: 0x0, symBinAddr: 0x1BAE8, symSize: 0xC4 }
+  - { offsetInCU: 0xD0, offset: 0x6D19F, size: 0x8, addend: 0x0, symName: '-[Metadata encodeWithCoder:]', symObjAddr: 0x0, symBinAddr: 0x1BAE8, symSize: 0xC4 }
+  - { offsetInCU: 0x113, offset: 0x6D1E2, size: 0x8, addend: 0x0, symName: '-[Metadata initWithCoder:]', symObjAddr: 0xC4, symBinAddr: 0x1BBAC, symSize: 0x168 }
+  - { offsetInCU: 0x179, offset: 0x6D248, size: 0x8, addend: 0x0, symName: '-[Metadata convertValueType]', symObjAddr: 0x22C, symBinAddr: 0x1BD14, symSize: 0x114 }
+  - { offsetInCU: 0x1AC, offset: 0x6D27B, size: 0x8, addend: 0x0, symName: '+[Metadata supportsSecureCoding]', symObjAddr: 0x340, symBinAddr: 0x1BE28, symSize: 0x8 }
+  - { offsetInCU: 0x1DF, offset: 0x6D2AE, size: 0x8, addend: 0x0, symName: '-[Metadata name]', symObjAddr: 0x348, symBinAddr: 0x1BE30, symSize: 0x8 }
+  - { offsetInCU: 0x216, offset: 0x6D2E5, size: 0x8, addend: 0x0, symName: '-[Metadata setName:]', symObjAddr: 0x350, symBinAddr: 0x1BE38, symSize: 0x8 }
+  - { offsetInCU: 0x255, offset: 0x6D324, size: 0x8, addend: 0x0, symName: '-[Metadata value]', symObjAddr: 0x358, symBinAddr: 0x1BE40, symSize: 0x8 }
+  - { offsetInCU: 0x28C, offset: 0x6D35B, size: 0x8, addend: 0x0, symName: '-[Metadata setValue:]', symObjAddr: 0x360, symBinAddr: 0x1BE48, symSize: 0xC }
+  - { offsetInCU: 0x2CD, offset: 0x6D39C, size: 0x8, addend: 0x0, symName: '-[Metadata type]', symObjAddr: 0x36C, symBinAddr: 0x1BE54, symSize: 0x8 }
+  - { offsetInCU: 0x304, offset: 0x6D3D3, size: 0x8, addend: 0x0, symName: '-[Metadata setType:]', symObjAddr: 0x374, symBinAddr: 0x1BE5C, symSize: 0x8 }
+  - { offsetInCU: 0x343, offset: 0x6D412, size: 0x8, addend: 0x0, symName: '-[Metadata .cxx_destruct]', symObjAddr: 0x37C, symBinAddr: 0x1BE64, symSize: 0x3C }
+  - { offsetInCU: 0x27, offset: 0x6D4AC, size: 0x8, addend: 0x0, symName: '-[NSObject(DictionaryRepresentation) dictionaryRepresentation]', symObjAddr: 0x0, symBinAddr: 0x1BEA0, symSize: 0x49C }
+  - { offsetInCU: 0x4A, offset: 0x6D4CF, size: 0x8, addend: 0x0, symName: '-[NSObject(DictionaryRepresentation) dictionaryRepresentation]', symObjAddr: 0x0, symBinAddr: 0x1BEA0, symSize: 0x49C }
+  - { offsetInCU: 0x224, offset: 0x6D6A9, size: 0x8, addend: 0x0, symName: '___62-[NSObject(DictionaryRepresentation) dictionaryRepresentation]_block_invoke', symObjAddr: 0x49C, symBinAddr: 0x1C33C, symSize: 0x90 }
+  - { offsetInCU: 0x27, offset: 0x6D869, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerOpenListener:]', symObjAddr: 0x0, symBinAddr: 0x1C3CC, symSize: 0x4 }
+  - { offsetInCU: 0x4B0, offset: 0x6DCF2, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerOpenListener:]', symObjAddr: 0x0, symBinAddr: 0x1C3CC, symSize: 0x4 }
+  - { offsetInCU: 0x4EF, offset: 0x6DD31, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerCloseListener:]', symObjAddr: 0x4, symBinAddr: 0x1C3D0, symSize: 0x4 }
+  - { offsetInCU: 0x52E, offset: 0x6DD70, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerNotOpenedListener:]', symObjAddr: 0x8, symBinAddr: 0x1C3D4, symSize: 0x4 }
+  - { offsetInCU: 0x56D, offset: 0x6DDAF, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerErrorListener:]', symObjAddr: 0xC, symBinAddr: 0x1C3D8, symSize: 0x4 }
+  - { offsetInCU: 0x5AC, offset: 0x6DDEE, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerButtonClickedListener:]', symObjAddr: 0x10, symBinAddr: 0x1C3DC, symSize: 0x4 }
+  - { offsetInCU: 0x5EB, offset: 0x6DE2D, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerLinkClickListener:]', symObjAddr: 0x14, symBinAddr: 0x1C3E0, symSize: 0x4 }
+  - { offsetInCU: 0x62A, offset: 0x6DE6C, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerViewControllerConfigurationBlock:]', symObjAddr: 0x18, symBinAddr: 0x1C3E4, symSize: 0x4 }
+  - { offsetInCU: 0x669, offset: 0x6DEAB, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerUIViewConfigurationBlock:]', symObjAddr: 0x1C, symBinAddr: 0x1C3E8, symSize: 0x4 }
+  - { offsetInCU: 0x6A8, offset: 0x6DEEA, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler registerGoogleAnalyticsListener:]', symObjAddr: 0x20, symBinAddr: 0x1C3EC, symSize: 0x4 }
+  - { offsetInCU: 0x6E7, offset: 0x6DF29, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerOpenListener]', symObjAddr: 0x24, symBinAddr: 0x1C3F0, symSize: 0x9C }
+  - { offsetInCU: 0x743, offset: 0x6DF85, size: 0x8, addend: 0x0, symName: '___40-[V2CmpEventHandler triggerOpenListener]_block_invoke', symObjAddr: 0xC0, symBinAddr: 0x1C48C, symSize: 0x38 }
+  - { offsetInCU: 0x78E, offset: 0x6DFD0, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerCloseListener]', symObjAddr: 0x108, symBinAddr: 0x1C4C4, symSize: 0x9C }
+  - { offsetInCU: 0x7D7, offset: 0x6E019, size: 0x8, addend: 0x0, symName: '___41-[V2CmpEventHandler triggerCloseListener]_block_invoke', symObjAddr: 0x1A4, symBinAddr: 0x1C560, symSize: 0x38 }
+  - { offsetInCU: 0x822, offset: 0x6E064, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerNotOpenedListener]', symObjAddr: 0x1DC, symBinAddr: 0x1C598, symSize: 0x9C }
+  - { offsetInCU: 0x86B, offset: 0x6E0AD, size: 0x8, addend: 0x0, symName: '___45-[V2CmpEventHandler triggerNotOpenedListener]_block_invoke', symObjAddr: 0x278, symBinAddr: 0x1C634, symSize: 0x38 }
+  - { offsetInCU: 0x8B6, offset: 0x6E0F8, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerErrorListenerWithType:message:]', symObjAddr: 0x2B0, symBinAddr: 0x1C66C, symSize: 0xD4 }
+  - { offsetInCU: 0x91F, offset: 0x6E161, size: 0x8, addend: 0x0, symName: '___58-[V2CmpEventHandler triggerErrorListenerWithType:message:]_block_invoke', symObjAddr: 0x384, symBinAddr: 0x1C740, symSize: 0x40 }
+  - { offsetInCU: 0x98A, offset: 0x6E1CC, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerButtonClickedListenerWithEvent:]', symObjAddr: 0x414, symBinAddr: 0x1C780, symSize: 0xA8 }
+  - { offsetInCU: 0x9E3, offset: 0x6E225, size: 0x8, addend: 0x0, symName: '___59-[V2CmpEventHandler triggerButtonClickedListenerWithEvent:]_block_invoke', symObjAddr: 0x4BC, symBinAddr: 0x1C828, symSize: 0x40 }
+  - { offsetInCU: 0xA3E, offset: 0x6E280, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerLinkClickListenerWithURL:navigationActionPolicy:]', symObjAddr: 0x4FC, symBinAddr: 0x1C868, symSize: 0x180 }
+  - { offsetInCU: 0xAEF, offset: 0x6E331, size: 0x8, addend: 0x0, symName: '___76-[V2CmpEventHandler triggerLinkClickListenerWithURL:navigationActionPolicy:]_block_invoke', symObjAddr: 0x67C, symBinAddr: 0x1C9E8, symSize: 0x50 }
+  - { offsetInCU: 0xB6A, offset: 0x6E3AC, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48r, symObjAddr: 0x6CC, symBinAddr: 0x1CA38, symSize: 0x3C }
+  - { offsetInCU: 0xB93, offset: 0x6E3D5, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48r, symObjAddr: 0x708, symBinAddr: 0x1CA74, symSize: 0x34 }
+  - { offsetInCU: 0xBB2, offset: 0x6E3F4, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerConfigureViewControllerBlock:]', symObjAddr: 0x73C, symBinAddr: 0x1CAA8, symSize: 0x94 }
+  - { offsetInCU: 0xC09, offset: 0x6E44B, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerUpdateGoogleConsentListener:]', symObjAddr: 0x7D0, symBinAddr: 0x1CB3C, symSize: 0xCC }
+  - { offsetInCU: 0xC62, offset: 0x6E4A4, size: 0x8, addend: 0x0, symName: '___56-[V2CmpEventHandler triggerUpdateGoogleConsentListener:]_block_invoke', symObjAddr: 0x89C, symBinAddr: 0x1CC08, symSize: 0x40 }
+  - { offsetInCU: 0xCBD, offset: 0x6E4FF, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler triggerConfigureUIViewBlock:]', symObjAddr: 0x8DC, symBinAddr: 0x1CC48, symSize: 0x78 }
+  - { offsetInCU: 0xD14, offset: 0x6E556, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler getLinkClickListener]', symObjAddr: 0x954, symBinAddr: 0x1CCC0, symSize: 0x4 }
+  - { offsetInCU: 0xD49, offset: 0x6E58B, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler openListener]', symObjAddr: 0x958, symBinAddr: 0x1CCC4, symSize: 0x8 }
+  - { offsetInCU: 0xD80, offset: 0x6E5C2, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setOpenListener:]', symObjAddr: 0x960, symBinAddr: 0x1CCCC, symSize: 0x8 }
+  - { offsetInCU: 0xDBF, offset: 0x6E601, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler closeListener]', symObjAddr: 0x968, symBinAddr: 0x1CCD4, symSize: 0x8 }
+  - { offsetInCU: 0xDF6, offset: 0x6E638, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setCloseListener:]', symObjAddr: 0x970, symBinAddr: 0x1CCDC, symSize: 0x8 }
+  - { offsetInCU: 0xE35, offset: 0x6E677, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler notOpenedListener]', symObjAddr: 0x978, symBinAddr: 0x1CCE4, symSize: 0x8 }
+  - { offsetInCU: 0xE6C, offset: 0x6E6AE, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setNotOpenedListener:]', symObjAddr: 0x980, symBinAddr: 0x1CCEC, symSize: 0x8 }
+  - { offsetInCU: 0xEAB, offset: 0x6E6ED, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler errorListener]', symObjAddr: 0x988, symBinAddr: 0x1CCF4, symSize: 0x8 }
+  - { offsetInCU: 0xEE2, offset: 0x6E724, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setErrorListener:]', symObjAddr: 0x990, symBinAddr: 0x1CCFC, symSize: 0x8 }
+  - { offsetInCU: 0xF21, offset: 0x6E763, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler buttonClickedListener]', symObjAddr: 0x998, symBinAddr: 0x1CD04, symSize: 0x8 }
+  - { offsetInCU: 0xF58, offset: 0x6E79A, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setButtonClickedListener:]', symObjAddr: 0x9A0, symBinAddr: 0x1CD0C, symSize: 0x8 }
+  - { offsetInCU: 0xF97, offset: 0x6E7D9, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler linkClickListener]', symObjAddr: 0x9A8, symBinAddr: 0x1CD14, symSize: 0x8 }
+  - { offsetInCU: 0xFCE, offset: 0x6E810, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setLinkClickListener:]', symObjAddr: 0x9B0, symBinAddr: 0x1CD1C, symSize: 0x8 }
+  - { offsetInCU: 0x100D, offset: 0x6E84F, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler viewControllerConfigurationBlock]', symObjAddr: 0x9B8, symBinAddr: 0x1CD24, symSize: 0x8 }
+  - { offsetInCU: 0x1044, offset: 0x6E886, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setViewControllerConfigurationBlock:]', symObjAddr: 0x9C0, symBinAddr: 0x1CD2C, symSize: 0x8 }
+  - { offsetInCU: 0x1083, offset: 0x6E8C5, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler uiViewConfigurationBlock]', symObjAddr: 0x9C8, symBinAddr: 0x1CD34, symSize: 0x8 }
+  - { offsetInCU: 0x10BA, offset: 0x6E8FC, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setUiViewConfigurationBlock:]', symObjAddr: 0x9D0, symBinAddr: 0x1CD3C, symSize: 0x8 }
+  - { offsetInCU: 0x10F9, offset: 0x6E93B, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler googleAnalyticsListener]', symObjAddr: 0x9D8, symBinAddr: 0x1CD44, symSize: 0x8 }
+  - { offsetInCU: 0x1130, offset: 0x6E972, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler setGoogleAnalyticsListener:]', symObjAddr: 0x9E0, symBinAddr: 0x1CD4C, symSize: 0x8 }
+  - { offsetInCU: 0x116F, offset: 0x6E9B1, size: 0x8, addend: 0x0, symName: '-[V2CmpEventHandler .cxx_destruct]', symObjAddr: 0x9E8, symBinAddr: 0x1CD54, symSize: 0x84 }
+  - { offsetInCU: 0x27, offset: 0x6ED8E, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController viewDidLoad]', symObjAddr: 0x0, symBinAddr: 0x1CDD8, symSize: 0xF4 }
+  - { offsetInCU: 0x362, offset: 0x6F0C9, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController viewDidLoad]', symObjAddr: 0x0, symBinAddr: 0x1CDD8, symSize: 0xF4 }
+  - { offsetInCU: 0x395, offset: 0x6F0FC, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController viewWillAppear:]', symObjAddr: 0xF4, symBinAddr: 0x1CECC, symSize: 0x50 }
+  - { offsetInCU: 0x3D8, offset: 0x6F13F, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController viewDidAppear:]', symObjAddr: 0x144, symBinAddr: 0x1CF1C, symSize: 0x50 }
+  - { offsetInCU: 0x41B, offset: 0x6F182, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController configureNavigationGesture]', symObjAddr: 0x194, symBinAddr: 0x1CF6C, symSize: 0x98 }
+  - { offsetInCU: 0x44E, offset: 0x6F1B5, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController resetNavigationGestureDelegate]', symObjAddr: 0x22C, symBinAddr: 0x1D004, symSize: 0x98 }
+  - { offsetInCU: 0x481, offset: 0x6F1E8, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController closeViewController]', symObjAddr: 0x2C4, symBinAddr: 0x1D09C, symSize: 0xCC }
+  - { offsetInCU: 0x4B4, offset: 0x6F21B, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController webViewManager]', symObjAddr: 0x390, symBinAddr: 0x1D168, symSize: 0x10 }
+  - { offsetInCU: 0x4EB, offset: 0x6F252, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController setWebViewManager:]', symObjAddr: 0x3A0, symBinAddr: 0x1D178, symSize: 0x14 }
+  - { offsetInCU: 0x52C, offset: 0x6F293, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController strategy]', symObjAddr: 0x3B4, symBinAddr: 0x1D18C, symSize: 0x10 }
+  - { offsetInCU: 0x563, offset: 0x6F2CA, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController setStrategy:]', symObjAddr: 0x3C4, symBinAddr: 0x1D19C, symSize: 0x14 }
+  - { offsetInCU: 0x5A4, offset: 0x6F30B, size: 0x8, addend: 0x0, symName: '-[V2CmpViewController .cxx_destruct]', symObjAddr: 0x3D8, symBinAddr: 0x1D1B0, symSize: 0x40 }
+  - { offsetInCU: 0x27, offset: 0x6F382, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager initWithConsentURL:]', symObjAddr: 0x0, symBinAddr: 0x1D1F0, symSize: 0xC0 }
+  - { offsetInCU: 0x3CE, offset: 0x6F729, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager initWithConsentURL:]', symObjAddr: 0x0, symBinAddr: 0x1D1F0, symSize: 0xC0 }
+  - { offsetInCU: 0x415, offset: 0x6F770, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager createWebView]', symObjAddr: 0xC0, symBinAddr: 0x1D2B0, symSize: 0x100 }
+  - { offsetInCU: 0x4AE, offset: 0x6F809, size: 0x8, addend: 0x0, symName: ___Block_byref_object_copy_, symObjAddr: 0x1C0, symBinAddr: 0x1D3B0, symSize: 0x10 }
+  - { offsetInCU: 0x4D3, offset: 0x6F82E, size: 0x8, addend: 0x0, symName: ___Block_byref_object_dispose_, symObjAddr: 0x1D0, symBinAddr: 0x1D3C0, symSize: 0x8 }
+  - { offsetInCU: 0x4F2, offset: 0x6F84D, size: 0x8, addend: 0x0, symName: '___33-[V2WebViewManager createWebView]_block_invoke', symObjAddr: 0x1D8, symBinAddr: 0x1D3C8, symSize: 0x1B0 }
+  - { offsetInCU: 0x580, offset: 0x6F8DB, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40r, symObjAddr: 0x388, symBinAddr: 0x1D578, symSize: 0x34 }
+  - { offsetInCU: 0x5A9, offset: 0x6F904, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40r, symObjAddr: 0x3BC, symBinAddr: 0x1D5AC, symSize: 0x2C }
+  - { offsetInCU: 0x5C8, offset: 0x6F923, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager loadWebView]', symObjAddr: 0x3E8, symBinAddr: 0x1D5D8, symSize: 0x88 }
+  - { offsetInCU: 0x624, offset: 0x6F97F, size: 0x8, addend: 0x0, symName: '___31-[V2WebViewManager loadWebView]_block_invoke', symObjAddr: 0x470, symBinAddr: 0x1D660, symSize: 0x9C }
+  - { offsetInCU: 0x663, offset: 0x6F9BE, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager retryApproachAfterTimeout]', symObjAddr: 0x51C, symBinAddr: 0x1D6FC, symSize: 0x40 }
+  - { offsetInCU: 0x696, offset: 0x6F9F1, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager removeWebView]', symObjAddr: 0x55C, symBinAddr: 0x1D73C, symSize: 0x40 }
+  - { offsetInCU: 0x6C9, offset: 0x6FA24, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager startRetryTimer]', symObjAddr: 0x59C, symBinAddr: 0x1D77C, symSize: 0xC0 }
+  - { offsetInCU: 0x6FC, offset: 0x6FA57, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager retryLoading]', symObjAddr: 0x65C, symBinAddr: 0x1D83C, symSize: 0x164 }
+  - { offsetInCU: 0x72F, offset: 0x6FA8A, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager handleNetworkError]', symObjAddr: 0x7C0, symBinAddr: 0x1D9A0, symSize: 0x8C }
+  - { offsetInCU: 0x776, offset: 0x6FAD1, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager handleTimeoutError]', symObjAddr: 0x84C, symBinAddr: 0x1DA2C, symSize: 0xC4 }
+  - { offsetInCU: 0x7BD, offset: 0x6FB18, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager cancelRetryTimer]', symObjAddr: 0x910, symBinAddr: 0x1DAF0, symSize: 0x40 }
+  - { offsetInCU: 0x7F0, offset: 0x6FB4B, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager webView:didFailNavigation:withError:]', symObjAddr: 0x950, symBinAddr: 0x1DB30, symSize: 0x8C }
+  - { offsetInCU: 0x85B, offset: 0x6FBB6, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager webView:didFinishNavigation:]', symObjAddr: 0x9DC, symBinAddr: 0x1DBBC, symSize: 0x60 }
+  - { offsetInCU: 0x8B2, offset: 0x6FC0D, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager userContentController:didReceiveScriptMessage:]', symObjAddr: 0xA3C, symBinAddr: 0x1DC1C, symSize: 0x2CC }
+  - { offsetInCU: 0x976, offset: 0x6FCD1, size: 0x8, addend: 0x0, symName: '___66-[V2WebViewManager userContentController:didReceiveScriptMessage:]_block_invoke', symObjAddr: 0xD08, symBinAddr: 0x1DEE8, symSize: 0x84 }
+  - { offsetInCU: 0x9CD, offset: 0x6FD28, size: 0x8, addend: 0x0, symName: '___66-[V2WebViewManager userContentController:didReceiveScriptMessage:]_block_invoke.50', symObjAddr: 0xD8C, symBinAddr: 0x1DF6C, symSize: 0x98 }
+  - { offsetInCU: 0xA37, offset: 0x6FD92, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager webView:decidePolicyForNavigationAction:decisionHandler:]', symObjAddr: 0xE24, symBinAddr: 0x1E004, symSize: 0x284 }
+  - { offsetInCU: 0xB38, offset: 0x6FE93, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:]', symObjAddr: 0x10A8, symBinAddr: 0x1E288, symSize: 0xA4 }
+  - { offsetInCU: 0xBA3, offset: 0x6FEFE, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager webView:decidePolicyForNavigationResponse:decisionHandler:]', symObjAddr: 0x114C, symBinAddr: 0x1E32C, symSize: 0x44 }
+  - { offsetInCU: 0xC14, offset: 0x6FF6F, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager isDomainWhitelisted:]', symObjAddr: 0x1190, symBinAddr: 0x1E370, symSize: 0x1C4 }
+  - { offsetInCU: 0xCAB, offset: 0x70006, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager webView]', symObjAddr: 0x1354, symBinAddr: 0x1E534, symSize: 0x8 }
+  - { offsetInCU: 0xCE2, offset: 0x7003D, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setWebView:]', symObjAddr: 0x135C, symBinAddr: 0x1E53C, symSize: 0xC }
+  - { offsetInCU: 0xD23, offset: 0x7007E, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager openHandler]', symObjAddr: 0x1368, symBinAddr: 0x1E548, symSize: 0x8 }
+  - { offsetInCU: 0xD5A, offset: 0x700B5, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setOpenHandler:]', symObjAddr: 0x1370, symBinAddr: 0x1E550, symSize: 0x8 }
+  - { offsetInCU: 0xD99, offset: 0x700F4, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager closeHandler]', symObjAddr: 0x1378, symBinAddr: 0x1E558, symSize: 0x8 }
+  - { offsetInCU: 0xDD0, offset: 0x7012B, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setCloseHandler:]', symObjAddr: 0x1380, symBinAddr: 0x1E560, symSize: 0x8 }
+  - { offsetInCU: 0xE0F, offset: 0x7016A, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager errorHandler]', symObjAddr: 0x1388, symBinAddr: 0x1E568, symSize: 0x8 }
+  - { offsetInCU: 0xE46, offset: 0x701A1, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setErrorHandler:]', symObjAddr: 0x1390, symBinAddr: 0x1E570, symSize: 0x8 }
+  - { offsetInCU: 0xE85, offset: 0x701E0, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager consentReceivedhandler]', symObjAddr: 0x1398, symBinAddr: 0x1E578, symSize: 0x8 }
+  - { offsetInCU: 0xEBC, offset: 0x70217, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setConsentReceivedhandler:]', symObjAddr: 0x13A0, symBinAddr: 0x1E580, symSize: 0x8 }
+  - { offsetInCU: 0xEFB, offset: 0x70256, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager linkClickHandler]', symObjAddr: 0x13A8, symBinAddr: 0x1E588, symSize: 0x8 }
+  - { offsetInCU: 0xF32, offset: 0x7028D, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setLinkClickHandler:]', symObjAddr: 0x13B0, symBinAddr: 0x1E590, symSize: 0x8 }
+  - { offsetInCU: 0xF71, offset: 0x702CC, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager completion]', symObjAddr: 0x13B8, symBinAddr: 0x1E598, symSize: 0x8 }
+  - { offsetInCU: 0xFA8, offset: 0x70303, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setCompletion:]', symObjAddr: 0x13C0, symBinAddr: 0x1E5A0, symSize: 0x8 }
+  - { offsetInCU: 0xFE7, offset: 0x70342, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager isInRetryState]', symObjAddr: 0x13C8, symBinAddr: 0x1E5A8, symSize: 0x8 }
+  - { offsetInCU: 0x101E, offset: 0x70379, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setRetryState:]', symObjAddr: 0x13D0, symBinAddr: 0x1E5B0, symSize: 0x8 }
+  - { offsetInCU: 0x1059, offset: 0x703B4, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager consentURL]', symObjAddr: 0x13D8, symBinAddr: 0x1E5B8, symSize: 0x8 }
+  - { offsetInCU: 0x1090, offset: 0x703EB, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setConsentURL:]', symObjAddr: 0x13E0, symBinAddr: 0x1E5C0, symSize: 0xC }
+  - { offsetInCU: 0x10D1, offset: 0x7042C, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager maxRetryCount]', symObjAddr: 0x13EC, symBinAddr: 0x1E5CC, symSize: 0x8 }
+  - { offsetInCU: 0x1108, offset: 0x70463, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setMaxRetryCount:]', symObjAddr: 0x13F4, symBinAddr: 0x1E5D4, symSize: 0x8 }
+  - { offsetInCU: 0x1145, offset: 0x704A0, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager retryTimer]', symObjAddr: 0x13FC, symBinAddr: 0x1E5DC, symSize: 0x8 }
+  - { offsetInCU: 0x117C, offset: 0x704D7, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setRetryTimer:]', symObjAddr: 0x1404, symBinAddr: 0x1E5E4, symSize: 0xC }
+  - { offsetInCU: 0x11BD, offset: 0x70518, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager timeoutReached]', symObjAddr: 0x1410, symBinAddr: 0x1E5F0, symSize: 0x8 }
+  - { offsetInCU: 0x11F4, offset: 0x7054F, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager setTimeoutReached:]', symObjAddr: 0x1418, symBinAddr: 0x1E5F8, symSize: 0x8 }
+  - { offsetInCU: 0x122F, offset: 0x7058A, size: 0x8, addend: 0x0, symName: '-[V2WebViewManager .cxx_destruct]', symObjAddr: 0x1420, symBinAddr: 0x1E600, symSize: 0x84 }
 ...
