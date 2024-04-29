@@ -84,6 +84,10 @@
 		<data>
 		8+TU92HSPOaJX7fHAjXj6eEOw3o=
 		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		avgmWz1wDSlyX5gVMi+hGZtAcOw=
+		</data>
 		<key>PrivateHeaders/CmpATTrackingStatus.h</key>
 		<data>
 		yuoHkERhs3uefi+FCFg9grD7M04=
@@ -186,7 +190,7 @@
 		</data>
 		<key>PrivateHeaders/CmpMigrationManager.h</key>
 		<data>
-		7PVcSBl+Oh3td0z6zN+m2rFDCEc=
+		NXBliimUVIvjf9wsHBeezMlHW9A=
 		</data>
 		<key>PrivateHeaders/CmpReachability.h</key>
 		<data>
@@ -396,6 +400,13 @@
 			zK7Vo8fWPW+AAC21qkJVHgPRbtAv1oAi3AZTzL0e+MU=
 			</data>
 		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6v5Ute9nI251Qm89Ii2HDJTCrJasmaC2bBqsHa3bUsE=
+			</data>
+		</dict>
 		<key>PrivateHeaders/CmpATTrackingStatus.h</key>
 		<dict>
 			<key>hash2</key>
@@ -575,7 +586,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l5C8HHebNgGfapuwgSFpQpwMZJm6mKWD+ToDFpkZevY=
+			TStkdfXxFRmpCM9rybe3Gv/Pl3gNGutbcXAyrS6BG/8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CmpReachability.h</key>
