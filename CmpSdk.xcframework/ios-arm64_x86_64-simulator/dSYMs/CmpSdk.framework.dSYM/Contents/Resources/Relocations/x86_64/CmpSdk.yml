@@ -595,10 +595,10 @@ relocations:
   - { offsetInCU: 0x683, offset: 0x784F5, size: 0x8, addend: 0x0, symName: '+[CmpLog stringForLogLevel:]', symObjAddr: 0x3B9, symBinAddr: 0x177CB, symSize: 0x1F }
   - { offsetInCU: 0x6C4, offset: 0x78536, size: 0x8, addend: 0x0, symName: '+[CmpLog currentTimestamp]', symObjAddr: 0x3D8, symBinAddr: 0x177EA, symSize: 0x9C }
   - { offsetInCU: 0x27, offset: 0x78638, size: 0x8, addend: 0x0, symName: '+[CmpMigrationManager performMigrationIfNeeded]', symObjAddr: 0x0, symBinAddr: 0x17886, symSize: 0x18D }
-  - { offsetInCU: 0x4B, offset: 0x7865C, size: 0x8, addend: 0x0, symName: _CURRENT_SDK_VERSION, symObjAddr: 0xA00, symBinAddr: 0x2C618, symSize: 0x0 }
-  - { offsetInCU: 0x61, offset: 0x78672, size: 0x8, addend: 0x0, symName: _CMP_IS_PRESENT, symObjAddr: 0xA08, symBinAddr: 0x2C620, symSize: 0x0 }
-  - { offsetInCU: 0x77, offset: 0x78688, size: 0x8, addend: 0x0, symName: _CMP_REGULATION_STATUS, symObjAddr: 0xA10, symBinAddr: 0x2C628, symSize: 0x0 }
-  - { offsetInCU: 0x8D, offset: 0x7869E, size: 0x8, addend: 0x0, symName: _CMP_ACCEPTED, symObjAddr: 0xA18, symBinAddr: 0x2C630, symSize: 0x0 }
+  - { offsetInCU: 0x4B, offset: 0x7865C, size: 0x8, addend: 0x0, symName: _CURRENT_SDK_VERSION, symObjAddr: 0x9F8, symBinAddr: 0x2C618, symSize: 0x0 }
+  - { offsetInCU: 0x61, offset: 0x78672, size: 0x8, addend: 0x0, symName: _CMP_IS_PRESENT, symObjAddr: 0xA00, symBinAddr: 0x2C620, symSize: 0x0 }
+  - { offsetInCU: 0x77, offset: 0x78688, size: 0x8, addend: 0x0, symName: _CMP_REGULATION_STATUS, symObjAddr: 0xA08, symBinAddr: 0x2C628, symSize: 0x0 }
+  - { offsetInCU: 0x8D, offset: 0x7869E, size: 0x8, addend: 0x0, symName: _CMP_ACCEPTED, symObjAddr: 0xA10, symBinAddr: 0x2C630, symSize: 0x0 }
   - { offsetInCU: 0xB3, offset: 0x786C4, size: 0x8, addend: 0x0, symName: '+[CmpMigrationManager performMigrationIfNeeded]', symObjAddr: 0x0, symBinAddr: 0x17886, symSize: 0x18D }
   - { offsetInCU: 0x208, offset: 0x78819, size: 0x8, addend: 0x0, symName: '+[CmpMigrationManager getOldConsentString]', symObjAddr: 0x18D, symBinAddr: 0x17A13, symSize: 0x61 }
   - { offsetInCU: 0x267, offset: 0x78878, size: 0x8, addend: 0x0, symName: '+[CmpMigrationManager performMigration]', symObjAddr: 0x1EE, symBinAddr: 0x17A74, symSize: 0x3D9 }
