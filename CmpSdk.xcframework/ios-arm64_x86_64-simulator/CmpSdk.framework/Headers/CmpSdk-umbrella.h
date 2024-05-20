@@ -25,6 +25,7 @@
 #import "CmpLogLevel.h"
 #import "CmpNotificationConstants.h"
 #import "CmpSdk.h"
+#import "CmpUIConfig.h"
 
 FOUNDATION_EXPORT double CmpSdkVersionNumber;
 FOUNDATION_EXPORT const unsigned char CmpSdkVersionString[];

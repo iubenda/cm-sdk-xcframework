@@ -17,9 +17,11 @@
 - (void)triggerNotOpenedListener;
 - (void)triggerErrorListenerWithType:(CmpErrorType)errorType message:(NSString *)message;
 - (void)triggerButtonClickedListenerWithEvent:(CmpButtonEvent)event;
+- (BOOL)triggerLinkClickListenerWithURL:(NSString *)url navigationActionPolicy:(WKNavigationActionPolicy *)policy;
 - (void)triggerConfigureViewControllerBlock:(UIViewController*)viewController;
 - (void)triggerConfigureUIViewBlock:(UIView*)view;
 - (void)triggerUpdateGoogleConsentListener:(NSDictionary<NSString *,NSString *>*)consentMap;
+- (CmpLinkClickListener)getLinkClickListener;
 @end
 
 #endif /* CmpEventsProtocol_h */

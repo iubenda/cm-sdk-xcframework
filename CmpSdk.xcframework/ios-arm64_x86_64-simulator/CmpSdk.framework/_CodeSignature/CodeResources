@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CMPConsentTool.h</key>
 		<data>
-		sPRq1reHIG6AuI2F3M9yNx7gQjc=
+		d+boq4KkfQOLnfhJT5zOpzga/tw=
 		</data>
 		<key>Headers/CmpButtonEvent.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/CmpConfig.h</key>
 		<data>
-		J71jJMS9xiZ42ojWoKcrFBZ1kfs=
+		Z+xsq8yPVh/PDt5cuFbAIOGcT2Y=
 		</data>
 		<key>Headers/CmpConsentChangeInfo.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/CmpEventListenerTypes.h</key>
 		<data>
-		k73i6s8lJR13jegDKawjSijahIQ=
+		RmMCtnu3uzEzKZP0YHYWlDYBJRA=
 		</data>
 		<key>Headers/CmpEventMetadata.h</key>
 		<data>
@@ -62,19 +62,27 @@
 		</data>
 		<key>Headers/CmpSdk-umbrella.h</key>
 		<data>
-		I1fW01IERQB2CRm3QbsFM/7+Tnc=
+		RmO6HxhaBLwLIXIEpwyEJzuT4qE=
 		</data>
 		<key>Headers/CmpSdk.h</key>
 		<data>
-		xKygoRgsd9y2HhkXA5hOV7lYicU=
+		23QWs1k2HDGhMtKzFnmI4wP5sTA=
+		</data>
+		<key>Headers/CmpUIConfig.h</key>
+		<data>
+		V3x/eUuorjLJYUaS+VZWH9pv3eM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4DOpj+Ub75jdnm7qFn/iS2bqkFo=
+		WQ0K1rrq9w77ANPNsHrInuLJu78=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		8+TU92HSPOaJX7fHAjXj6eEOw3o=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		mh4qSBhpJmVVgBj7gPIdqbVbRaM=
 		</data>
 		<key>PrivateHeaders/CmpATTrackingStatus.h</key>
 		<data>
@@ -158,7 +166,7 @@
 		</data>
 		<key>PrivateHeaders/CmpEventsProtocol.h</key>
 		<data>
-		WyZbiDG99KXECYbIZ1rLT4PAnDo=
+		pHcska7EZTRjVz0SJPpD1izD65Q=
 		</data>
 		<key>PrivateHeaders/CmpFrameworkDescriptionRepository.h</key>
 		<data>
@@ -178,7 +186,7 @@
 		</data>
 		<key>PrivateHeaders/CmpMigrationManager.h</key>
 		<data>
-		7PVcSBl+Oh3td0z6zN+m2rFDCEc=
+		NXBliimUVIvjf9wsHBeezMlHW9A=
 		</data>
 		<key>PrivateHeaders/CmpReachability.h</key>
 		<data>
@@ -218,7 +226,7 @@
 		</data>
 		<key>PrivateHeaders/CmpUtils.h</key>
 		<data>
-		DZOXb2YVLyGPcB7uKG0mijU07s4=
+		nB2SIP9dSsyAjTu20pj4OMww43Y=
 		</data>
 		<key>PrivateHeaders/CmpViewConfigurationBlock.h</key>
 		<data>
@@ -238,7 +246,7 @@
 		</data>
 		<key>PrivateHeaders/V2CmpEventHandler.h</key>
 		<data>
-		Gx7rrEXHwxXf7kUpmbnWal1AYrI=
+		JKuWKiHNp23b/Puoszaq8cOc46M=
 		</data>
 		<key>PrivateHeaders/V2CmpUseCaseProtocol.h</key>
 		<data>
@@ -250,7 +258,7 @@
 		</data>
 		<key>PrivateHeaders/V2WebViewManager.h</key>
 		<data>
-		yiJtF+noNZarXg0vSuLQ2kdFWBI=
+		a1kGbdYsGzrEIIFTguTUTtq8vgw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -259,7 +267,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+ZMkVr8RjCuiheGydedsNRu/WIX1kxq0+Ejwnk7aqHo=
+			ueYfMBV6ogAmuJ+1YTTJO1+1WKTWIIUrN4qWtccngYA=
 			</data>
 		</dict>
 		<key>Headers/CmpButtonEvent.h</key>
@@ -287,7 +295,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			du5D7TQLzCFsHbVEQZozBeEjWdLtmYqMYiH7IZgb0B0=
+			9+fR2Fc2c8/qxY9V1sIwRLlpr+LxBU875SjmBPrBSII=
 			</data>
 		</dict>
 		<key>Headers/CmpConsentChangeInfo.h</key>
@@ -308,7 +316,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xRmO8rc+XOPmln1Xbi9sFPMNV/S/Wl0OI9TbkKNQhBc=
+			rn6ldX9VMjhOH6GHcjLJ5u4mkbKV2CVDXoTmKLVWb9M=
 			</data>
 		</dict>
 		<key>Headers/CmpEventMetadata.h</key>
@@ -357,14 +365,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v3PNWPixRLyrcYr/nRfR1kKj6AZgI15aKEPyd4YsnB0=
+			Bd86SBhAFV6jF5jH/0s667NbPSPfHKm1vZ8Jzb4S5ws=
 			</data>
 		</dict>
 		<key>Headers/CmpSdk.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9HLSFuPPUUQkltmFyliArb/z+fPJCEO+uN9ZfxYXFOQ=
+			3gIhnSc9A8ytLsyQi17Dw3mgbyMO7HBpLiYmQIsp0fg=
+			</data>
+		</dict>
+		<key>Headers/CmpUIConfig.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xY8Xl2qMqWCN1JBuSZiSX2GHYK1KBB1e+ykw8F53wCE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -372,6 +387,13 @@
 			<key>hash2</key>
 			<data>
 			zK7Vo8fWPW+AAC21qkJVHgPRbtAv1oAi3AZTzL0e+MU=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ull5LPMuaoXNGirt3rO5Hz2fuIUyLfMEvswdFXfg8M0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CmpATTrackingStatus.h</key>
@@ -518,7 +540,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zsAWv+MaEcZVcFWCwcBhQnG5NVQKLFto2w/yUf7h6AA=
+			xG/K4lVNQGgUPDRz/A/GXPQKhMhwUwhta4ofAeQ3+Ms=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CmpFrameworkDescriptionRepository.h</key>
@@ -553,7 +575,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l5C8HHebNgGfapuwgSFpQpwMZJm6mKWD+ToDFpkZevY=
+			TStkdfXxFRmpCM9rybe3Gv/Pl3gNGutbcXAyrS6BG/8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CmpReachability.h</key>
@@ -623,7 +645,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			we2Dkr1qojl/7aJDOijXD3YQ0A51BqoVcOTETf8dHiw=
+			ws72rG++YV+93c6lmeYPTqjy4+FI4gOgdmZ+se+nQJU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CmpViewConfigurationBlock.h</key>
@@ -658,7 +680,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t59EIlYpAPB5JOveylHYyR4m6geWEtH9ohezPgSfQLk=
+			3y4TKDLEesz/jelhSlorkV70DexpAMN0BIHTb/EoCYY=
 			</data>
 		</dict>
 		<key>PrivateHeaders/V2CmpUseCaseProtocol.h</key>
@@ -679,7 +701,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F9y3OEiLyGUFBnfuBt4g4avidWrkWewQImY82T6PH1A=
+			ju3TycAnm28AqTWLfLy93jPTSbchefv6qfAbBKHU4to=
 			</data>
 		</dict>
 	</dict>

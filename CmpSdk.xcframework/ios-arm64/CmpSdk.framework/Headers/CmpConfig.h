@@ -46,6 +46,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// Log level for SDK logging.
 @property (nonatomic, assign) CmpLogLevel logLevel;
 
+/// domain Whitelist
+@property (nonatomic, strong) NSSet<NSString *> *domainWhitelist;
+
+/// Flag indicating whether App Tracking Transparency request is handled automatically during initialize function
+@property (nonatomic, assign) BOOL isAutomaticATTRequest;
+
 // Webview configurations
 
 /// Timeout duration for webview operations.
@@ -68,6 +74,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// Layout configuration for the CMP UI.
 @property (nonatomic, strong) CmpLayout *cmpLayout;
 
+@property (nonatomic, strong) UIViewController *viewController;
 /**
  * Sets up the CMP configuration with the specified parameters.
  *
@@ -87,7 +94,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (CmpConfig *)withDesignId:(NSString *)designId;
 - (CmpConfig *)withRetryDelay:(NSInteger)retryDelay;
 - (CmpConfig *)withMaxRetries:(NSInteger)maxRetries;
+- (CmpConfig *)withViewController:(UIViewController *)viewController;
 
+- (UIViewController *)currentViewController;
 /// Retrieves the current `CmpLayout` configuration.
 - (CmpLayout *)getCmpLayout;
 

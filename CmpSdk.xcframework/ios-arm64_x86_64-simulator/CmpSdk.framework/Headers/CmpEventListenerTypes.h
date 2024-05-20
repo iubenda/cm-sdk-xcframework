@@ -9,14 +9,17 @@
 #import <CmpSdk/CmpButtonEvent.h>
 #import <AppTrackingTransparency/ATTrackingManager.h>
 #import <CmpSdk/CmpErrorTypes.h>
-typedef NSDictionary<NSString *, NSString *> CMPConsentMap;
+#import <WebKit/WebKit.h>
 
+typedef NSDictionary<NSString *, NSString *> CMPConsentMap;
+typedef BOOL (^CmpLinkClickListener)(NSString *url, WKNavigationActionPolicy *policy);
 typedef void (^CmpOpenListener)(void);
 typedef void (^CmpCloseListener)(void);
 typedef void (^CmpNotOpenedListener)(void);
 typedef void (^CmpErrorListener)(CmpErrorType errorType, NSString *message);
 typedef void (^CmpButtonClickedListener)(CmpButtonEvent type);
 typedef void (^CmpGoogleAnalyticsListener)(CMPConsentMap *consentMap);
+
 API_AVAILABLE(ios(14))
 typedef void (^CmpATTrackingStatusChangedListener)(ATTrackingManagerAuthorizationStatus oldStatus, ATTrackingManagerAuthorizationStatus newStatus, NSDate *lastUpdated);
 

@@ -9,7 +9,7 @@
 #define CmpMigrationManager_h
 
 @interface CmpMigrationManager : NSObject
-
+extern NSString *const CURRENT_SDK_VERSION;
 + (void)performMigrationIfNeeded;
 + (NSString *)getOldConsentString;
 @end
