@@ -1,6 +1,8 @@
 //
-//  CMPConsentTool.h
-//  GDPR
+//  CmpManager.h
+//  CmpSdk
+//
+//  Created by Skander Ben Abdelmalak on 24.06.24.
 //
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -18,13 +20,13 @@ typedef void (^CmpUIViewConfigurationBlock)(UIView *view);
 
 @class CmpLayerViewController;
 
-/// CMPConsentTool instance to interact with the Consentmanager Platform. You can open the Consent layer and manage the user consent
-@interface CMPConsentTool : NSObject
+/// CmpManager instance to interact with the Consentmanager Platform. You can open the Consent layer and manage the user consent
+@interface CmpManager : NSObject
 
-/// The singleton CMPConsentToolInstance
-//extern CMPConsentTool *consentTool;
+/// The singleton CmpManagerInstance
+extern CmpManager *cmpManager;
 
-/// The Config set to the CMPConsentTool while initialisation
+/// The Config set to the CmpManager while initialisation
 @property(nonatomic, retain) CmpConfig *cmpConfig;
 
 /// Initializes a new instance of the class with the specified CMP domain, code ID, app name, language, and view controller.
@@ -35,7 +37,7 @@ typedef void (^CmpUIViewConfigurationBlock)(UIView *view);
 ///     - appName: name of the app
 ///     - language: language for the consentlayer
 ///     - viewController: `UIViewController` instance
-/// - Returns: ``CMPConsentTool`` instance
+/// - Returns: ``CmpManager`` instance
 - (instancetype)initWithDomain:(NSString *)domain
                         codeId:(NSString *)codeId
                        appName:(NSString *)appName
@@ -47,7 +49,7 @@ typedef void (^CmpUIViewConfigurationBlock)(UIView *view);
 /// - Parameters:
 ///     - cmpConfig: The ``CmpConfig`` object.
 ///     - viewController: `UIViewController` instance
-/// - Returns: ``CMPConsentTool`` instance
+/// - Returns: ``CmpManager`` instance
 - (instancetype)initWithCmpConfig:(CmpConfig *)cmpConfig;
 
 /// Adds a close listener to receive notifications when the consent layer is being closed.
@@ -91,18 +93,20 @@ typedef void (^CmpUIViewConfigurationBlock)(UIView *view);
 /// Initialize function will initialize the consent layer and checks automatically if the user needs a consent or not. This function will eventually open the consent layer and
 /// will interact wit the Apple Tracking Transparency API to ask the user for Consent
 ///
-/// - Returns: ``CMPConsentTool`` instance
+/// - Returns: ``CmpManager`` instance
 - (instancetype)initialize;
 
 #pragma mark - API functions
 
 /// opens consent layer
-- (void)openCmpConsentToolView;
+- (void)openCmpManagerView __attribute__((deprecated("Use `-openConsentLayer` instead. This method will be removed in future versions.")));
+
+- (void)openConsentLayer;
 
 /// Opens the CMP consent layer view
 ///
 /// - Parameter closeListener: Callback which will be called when the consent layer is closed: The block should have the following signature: `void (^)(void)` close listener callback
-- (void)openCmpConsentToolView:(void (^)(void))closeListener __attribute__((deprecated("Use `-openCmpConsentToolView` instead. This method will be removed in future versions.The closelistener should be already declared on instantiation")));
+- (void)openCmpManagerView:(void (^)(void))closeListener __attribute__((deprecated("Use `-openConsentLayer` instead. This method will be removed in future versions.The closelistener should be already declared on instantiation")));
 
 /// Get vendor ids comma separated
 ///
@@ -124,6 +128,8 @@ typedef void (^CmpUIViewConfigurationBlock)(UIView *view);
 /// - Returns: The Google Advertising ID (`addtlConsent`) string.
 - (NSString *)getGoogleACString;
 
+- (BOOL)hasVendor:(NSString *)vendorId defaultReturn:(BOOL)defaultReturn;
+
 /// Checks if the vendor ID is enabled based on the user consent.
 ///
 /// - Parameters:
@@ -136,23 +142,41 @@ typedef void (^CmpUIViewConfigurationBlock)(UIView *view);
 ///
 /// - Parameters:
 ///     - vendorId: vendor id
+///     - isIABVendor: if vendor id is an IAB vendor. (deprecated: The flag is not needed anymore)
 /// - Returns: TRUE if the user has given consent to the specified vendor, FALSE otherwise.
-- (BOOL)hasVendorConsent:(NSString *)vendorId;
+- (BOOL)hasVendorConsent:(NSString *)vendorId __attribute__((deprecated("Use -hasVendorConsent instead. This method will be removed in future versions.")));
 
+/// Checks if the vendor ID is enabled based on the user consent.
+///
+/// - Parameters:
+///     - vendorId: vendor id
+/// - Returns: TRUE if the user has given consent to the specified vendor, FALSE otherwise.
+- (BOOL)hasVendor:(NSString *)vendorId;
+
+
+- (BOOL)hasPurpose:(NSString *)purposeId defaultReturn:(BOOL)defaultReturn;
 /// Checks if the purpose ID is enabled based on the user consent.
 ///
 /// - Parameters:
 ///     - purposeId: purpose id
 ///     - isIABVendor: is an IAB vendor. (deprecated: The flag is not needed anymore)
 /// - Returns: TRUE if the user has given consent to the specified vendor, FALSE otherwise.
-- (BOOL)hasPurposeConsent:(NSString *)purposeId purposeIsV1orV2:(BOOL)isIABPurpose __attribute__((deprecated("Use -hasVendorConsent instead. This method will be removed in future versions.")));
+- (BOOL)hasPurposeConsent:(NSString *)purposeId purposeIsV1orV2:(BOOL)isIABPurpose __attribute__((deprecated("Use -hasPurpose instead. This method will be removed in future versions.")));
+
+/// Checks if the vendor ID is enabled based on the user consent.
+///
+/// - Parameters:
+///     - vendorId: vendor id
+///     - isIABVendor: if vendor id is an IAB vendor. (deprecated: The flag is not needed anymore)
+/// - Returns: TRUE if the user has given consent to the specified vendor, FALSE otherwise.
+- (BOOL)hasPurposeConsent:(NSString *)purposeId __attribute__((deprecated("Use -hasPurpose instead. This method will be removed in future versions.")));
 
 /// Checks if the purpose ID is enabled based on the user consent.
 ///
 /// - Parameters:
 ///     - purposeId: purpose id
 /// - Returns: TRUE if the user has given consent to the specified vendor, FALSE otherwise.
-- (BOOL)hasPurposeConsent:(NSString *)purposeId;
+- (BOOL)hasPurpose:(NSString *)purposeId;
 
 /// Checks if the user gave a consent. The consent layer can have the option to just close the layer by. In this case the user does not gave a consent.
 /// The function does not determine if the consent layer was shown or not.
@@ -161,8 +185,7 @@ typedef void (^CmpUIViewConfigurationBlock)(UIView *view);
 - (BOOL)hasConsent;
 
 /// Checks with the Consentmanager Network if the consent layer needs to be open. On positive notification by the server the consent layer will show
-/// TODO DEPRECATED use openConsentLayerOnCheck
-- (void)checkAndOpenConsentLayer;
+- (void)checkAndOpenConsentLayer __attribute__((deprecated("Use -openConsentLayerOnCheck instead. This method will be removed in future versions.")));
 
 /// Checks with the Consentmanager Network if the consent layer needs to be open. On positive notification by the server the consent layer will show
 - (void)openConsentLayerOnCheck;
@@ -192,8 +215,24 @@ typedef void (^CmpUIViewConfigurationBlock)(UIView *view);
 /// - Returns:TRUE if the user needs to give a consent.
 - (BOOL)isConsentRequired;
 
-/// Resets all data set by the ``CMPConsentTool``
+/// Resets all data set by the ``CmpManager``
 + (void)reset;
+
+
+/// Adds event listeners to the CmpManager.
+/// - Parameters:
+///     - openListener: Callback which will be called when the consent layer is opened.
+///     - closeListener: Callback which will be called when the consent layer is closed.
+///     - cmpNotOpenedCallback: Callback which will be called when the consent layer is not opened.
+///     - onErrorCallback: Callback to add action if an error occurred.
+///     - onButtonClickedCallback: Callback that will be invoked with the CmpButtonEvent indicating which button was pressed.
+- (instancetype)addEventListenersWithOpenListener:(CmpOpenListener)openListener
+                                    closeListener:(CmpCloseListener)closeListener
+                              cmpNotOpenedCallback:(CmpNotOpenedListener)cmpNotOpenedCallback
+                                    onErrorCallback:(CmpErrorListener)onErrorCallback
+                            onButtonClickedCallback:(CmpButtonClickedListener)onButtonClickedCallback
+                          googleConsentModeListener:(CmpGoogleAnalyticsListener)googleConsentModeListener;
+
 
 /// Rejects the consent layer and behaves the same when the user `did not accept` the consent
 ///
@@ -204,14 +243,20 @@ typedef void (^CmpUIViewConfigurationBlock)(UIView *view);
 ///
 /// - Parameter onCmpLayerOpen: callback when the consent layer needs to be open
 /// - Parameter onCmpLayerNotOpen:callback when the consent layer don't need to be open
-- (void)check:(void (^)(void))onCmpLayerOpen onCmpLayerNotOpen:(void (^)(void))onCmpLayerNotOpen;
+- (void)check:(void (^)(void))onCmpLayerOpen onCmpLayerNotOpen:(void (^)(void))onCmpLayerNotOpen __attribute__((deprecated("Use `-checkConsentIsRequired` instead. This method will be removed in future versions.")));
 
 /// Checks with the Consentmanager server, if the user needs to give a consent and the consent layer has to be opened
 ///
 /// - Parameter onCmpLayerOpen: Callback when the consent layer needs to be open. The block should have the following signature: `void (^)(CmpErrorType, NSString *)`
 /// - Parameter isCached: BOOL flag when TRUE, the request will be cached and the response will be saved
 /// - Parameter onCmpLayerNotOpen: Callback when the consent layer does not need to be open. The block should have the following signature: `void (^)(CmpErrorType, NSString *)`
-- (void)check:(void (^)(void))onCmpLayerOpen isCached:(BOOL)isCached onCmpLayerNotOpen:(void (^)(void))onCmpLayerNotOpen;
+- (void)check:(void (^)(void))onCmpLayerOpen isCached:(BOOL)isCached onCmpLayerNotOpen:(void (^)(void))onCmpLayerNotOpen __attribute__((deprecated("Use `-checkConsentIsRequired` instead. This method will be removed in future versions.")));
+
+
+- (void)checkConsentIsRequired:(BOOL)isCached onUpdate:(void (^)(BOOL needsToOpen))onUpdate;
+
+
+- (void)checkConsentIsRequired:(void (^)(BOOL needsToOpen))onUpdate;
 
 /// Accepts the consent layer and behaves the same when the user `did accepts` the consent
 ///

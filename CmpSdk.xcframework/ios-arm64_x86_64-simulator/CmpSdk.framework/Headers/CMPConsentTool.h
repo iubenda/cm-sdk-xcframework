@@ -22,7 +22,7 @@ typedef void (^CmpUIViewConfigurationBlock)(UIView *view);
 @interface CMPConsentTool : NSObject
 
 /// The singleton CMPConsentToolInstance
-extern CMPConsentTool *consentTool;
+//extern CMPConsentTool *consentTool;
 
 /// The Config set to the CMPConsentTool while initialisation
 @property(nonatomic, retain) CmpConfig *cmpConfig;
@@ -161,7 +161,11 @@ extern CMPConsentTool *consentTool;
 - (BOOL)hasConsent;
 
 /// Checks with the Consentmanager Network if the consent layer needs to be open. On positive notification by the server the consent layer will show
+/// TODO DEPRECATED use openConsentLayerOnCheck
 - (void)checkAndOpenConsentLayer;
+
+/// Checks with the Consentmanager Network if the consent layer needs to be open. On positive notification by the server the consent layer will show
+- (void)openConsentLayerOnCheck;
 
 /// imports the CmpData String which is used by the Cmp SDK
 ///

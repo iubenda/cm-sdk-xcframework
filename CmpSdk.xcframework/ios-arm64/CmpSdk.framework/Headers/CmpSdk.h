@@ -19,3 +19,4 @@
 #include <CmpSdk/CmpNotificationConstants.h>
 #include <CmpSdk/CmpGoogleConsentMap.h>
 #include <CmpSdk/CmpUIConfig.h>
+#include <CmpSdk/CmpManager.h>
