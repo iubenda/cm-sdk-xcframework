@@ -70,7 +70,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL isJumpToSettingsPage;
 
 // Layout configurations
-
+@property (nonatomic, strong) NSString* sdkPlatform;
 /// Layout configuration for the CMP UI.
 @property (nonatomic, strong) CmpLayout *cmpLayout;
 
