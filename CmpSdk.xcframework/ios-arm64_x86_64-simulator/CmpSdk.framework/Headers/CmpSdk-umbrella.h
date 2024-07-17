@@ -17,6 +17,7 @@
 #import "CmpConfig.h"
 #import "CmpConsentChangeInfo.h"
 #import "CMPConsentTool.h"
+#import "CmpManager.h"
 #import "CmpErrorTypes.h"
 #import "CmpEventListenerTypes.h"
 #import "CmpEventMetadata.h"

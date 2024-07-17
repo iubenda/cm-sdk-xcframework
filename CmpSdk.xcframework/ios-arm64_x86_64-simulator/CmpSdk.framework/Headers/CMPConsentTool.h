@@ -77,9 +77,7 @@ extern CMPConsentTool *consentTool;
 /// - Parameter onCmpButtonClickedCallback: Callback that will be invoked with the ``CmpButtonEvent`` indicating which button was pressed. The block should have the following signature: `void (^)(CmpButtonEvent)`
 - (instancetype)withOnCmpButtonClickedCallback:(void (^)(CmpButtonEvent))onCmpButtonClickedCallback;
 
-/// Add a Cmp Button clicked callback to get notification which button was clicked in the consent layer
-/// - Parameter onCmpButtonClickedCallback Callback
-- (instancetype)withOnCmpATTrackingStatusChangedCallback:(CmpATTrackingStatusChangedListener)onATTrackingStatusChanged API_AVAILABLE(ios(14));
+
 
 /// Adds configuration to the CmpViewController
 /// - Parameter controllerConfigurationBlock: Configuration for custom ViewController behaviour and styles

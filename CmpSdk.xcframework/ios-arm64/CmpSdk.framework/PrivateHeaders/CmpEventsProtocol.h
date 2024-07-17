@@ -9,6 +9,7 @@
 #import <CmpSdk/CmpButtonEvent.h>
 #import "CmpErrorTypes.h"
 #import <CmpSdk/CmpConsentTool.h>
+#import <CmpSdk/CmpManager.h>
 @protocol CmpEventsProtocol <NSObject>
 
 @optional

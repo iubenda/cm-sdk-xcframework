@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CMPConsentTool.h</key>
 		<data>
-		uqmBtUp0a5KIfU2dngymxvdOyrk=
+		US03eCckou/5d+e2UI/2pv2T3H4=
 		</data>
 		<key>Headers/CmpATTrackingManager.h</key>
 		<data>
@@ -60,17 +60,21 @@
 		<data>
 		ibJCId+nTYKOCdnqdB6LUyhvkKM=
 		</data>
+		<key>Headers/CmpManager.h</key>
+		<data>
+		CV2CVLHQhBGna3FoLO77iSkAdLo=
+		</data>
 		<key>Headers/CmpNotificationConstants.h</key>
 		<data>
 		6vacpnBpnr7sRUG9yMghf7GU7M0=
 		</data>
 		<key>Headers/CmpSdk-umbrella.h</key>
 		<data>
-		qJaVUxgTCT0i8N2evzbzpGvegKc=
+		IvJhJqk5CFcf57wcz8vXRToVqNw=
 		</data>
 		<key>Headers/CmpSdk.h</key>
 		<data>
-		23QWs1k2HDGhMtKzFnmI4wP5sTA=
+		kDoCLzAAD342NLS2F+fGDoUKhw8=
 		</data>
 		<key>Headers/CmpUIConfig.h</key>
 		<data>
@@ -170,7 +174,7 @@
 		</data>
 		<key>PrivateHeaders/CmpEventsProtocol.h</key>
 		<data>
-		pHcska7EZTRjVz0SJPpD1izD65Q=
+		w2SC08X4TUc3xShuBIxips/khgQ=
 		</data>
 		<key>PrivateHeaders/CmpFrameworkDescriptionRepository.h</key>
 		<data>
@@ -271,7 +275,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L9pvFPZZlTiwEx6h6zoY3PtezUmpPKMHWAIE0jHj2zg=
+			pLcmi2khYLmdsszGbZ3PKcUHzuqrOKGQHVX54+c/0ic=
 			</data>
 		</dict>
 		<key>Headers/CmpATTrackingManager.h</key>
@@ -365,6 +369,13 @@
 			7sl936yWPWauOcmElpU9c5xgx0ujoPDf8BqtZ+vI3t8=
 			</data>
 		</dict>
+		<key>Headers/CmpManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rq/IB73qpgcmYRRgfodk1pU6+ZuFv+Qw5YI3ElCo0a8=
+			</data>
+		</dict>
 		<key>Headers/CmpNotificationConstants.h</key>
 		<dict>
 			<key>hash2</key>
@@ -376,14 +387,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1OIYrARGcem55ZPMIent/8udAPDr+h0QLgE8EtT8evY=
+			vFAiheVUsaoY6KiXUPrPaiQQG3aDpSpp2TpyKan1t1Y=
 			</data>
 		</dict>
 		<key>Headers/CmpSdk.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3gIhnSc9A8ytLsyQi17Dw3mgbyMO7HBpLiYmQIsp0fg=
+			a8WYWTPIAOF64NA+3obnM7j0dsa+bHLD2C5l1iwAuFY=
 			</data>
 		</dict>
 		<key>Headers/CmpUIConfig.h</key>
@@ -551,7 +562,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xG/K4lVNQGgUPDRz/A/GXPQKhMhwUwhta4ofAeQ3+Ms=
+			EPPwBz6SdT7+dcaDbFmeSFWM76Eyb9HcYDJ4fZ5FdVU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/CmpFrameworkDescriptionRepository.h</key>

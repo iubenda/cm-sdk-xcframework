@@ -9,7 +9,6 @@
 #include <CmpSdk/CmpChangeItem.h>
 #include <CmpSdk/CmpConfig.h>
 #include <CmpSdk/CmpConsentChangeInfo.h>
-#include <CmpSdk/CMPConsentTool.h>
 #include <CmpSdk/CmpErrorTypes.h>
 #include <CmpSdk/CmpEventListenerTypes.h>
 #include <CmpSdk/CmpEventMetadata.h>
@@ -19,3 +18,5 @@
 #include <CmpSdk/CmpNotificationConstants.h>
 #include <CmpSdk/CmpGoogleConsentMap.h>
 #include <CmpSdk/CmpUIConfig.h>
+#include <CmpSdk/CmpManager.h>
+#include <CmpSdk/CMPConsentTool.h>
